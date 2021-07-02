@@ -1,5 +1,10 @@
-BACKUP ~saradas_magic_2\backup~
-AUTHOR ~SARADAS saradas85@gmail.com~
+BACKUP ~saradas_magic_2/backup~
+
+//AUTHOR ~SARADAS saradas85@gmail.com~
+SUPPORT ~SHS Staff at http://www.shsforums.net/forum/633-bgee-modding~
+
+VERSION ~v1.7~
+
 BEGIN ~saradas_magic_2~
 
 LOAD_TRA ~saradas_magic_2\english\english.tra~
