@@ -1,0 +1,26 @@
+IF
+  StateCheck(Myself,STATE_PANIC)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  Heard([ANYONE],111)
+  GlobalTimerExpired("!Stimer2","locals")
+THEN
+  RESPONSE #100
+    MoveToObject(NearestEnemyOf(Myself))
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  InWeaponRange(LastSeenBy(Myself))
+  GlobalTimerExpired("!Stimer2","locals")
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+    Continue()
+END
+

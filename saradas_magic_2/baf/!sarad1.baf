@@ -1,0 +1,249 @@
+
+///////////////////////////////
+/////  Reazioni Generali  /////
+///////////////////////////////
+
+
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  StealFailed([PC])
+THEN
+  RESPONSE #100
+    setglobal("!SaraSteal","GLOBAL",1)
+    wait(1)
+    StartDialogue("!SARANGR",[PC])
+    continue()
+END
+
+
+IF
+  global("!SaraSteal","GLOBAL",2)
+THEN
+  RESPONSE #100
+    setglobal("!SaraSteal","GLOBAL",3)
+    reallyforcespell(player1,CHICKEN_CHANGE)
+    reallyforcespell(player2,CHICKEN_CHANGE)
+    reallyforcespell(player3,CHICKEN_CHANGE)
+    reallyforcespell(player4,CHICKEN_CHANGE)
+    reallyforcespell(player5,CHICKEN_CHANGE)
+    reallyforcespell(player6,CHICKEN_CHANGE)
+    SmallWait(1)
+    ClearAllActions()
+    NoAction()
+    wait(2)
+    StartDialogue("!SARAGO",[PC])
+END
+
+
+IF
+  PickPocketFailed([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  See(Nearestenemyof(Myself))
+  Global("!SaradasAggro","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("!SaradasAggro","LOCALS",1)
+    SetGlobalTimer("!Stimer1","LOCALS",100)
+    Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("!SaradasAggro","LOCALS",1)
+	!Global("!SaradasAngry","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("!Stimer2","LOCALS",1)
+		SetGlobal("!SaradasAngry","LOCALS",1)
+		StartDialogue("!SARANGR",[PC])
+END
+
+
+IF
+  GlobalTimerExpired("!Stimer1","LOCALS")
+  Global("!SaradasAggro","LOCALS",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    NoAction()
+    ForceSpell(Myself,POOF_GONE)
+    SmallWait(2)
+    StartDialogue("!SARAGO",[PC])
+    SetGlobal("!Sarago","LOCALS",1)
+    SmallWait(1)
+END
+
+IF
+  !See(Nearestenemyof(Myself))
+  Global("!SaradasAggro","LOCALS",1)
+THEN
+  RESPONSE #100
+    MoveToObject(protagonist)
+    Continue()
+END
+
+IF
+OR(2)
+statecheck(myself,state_stunned)
+statecheck(myself,state_helpless)
+THEN
+RESPONSE #100
+applyspell(myself,WIZARD_DISPEL_MAGIC)
+continue()
+END
+
+
+
+
+///////////////////////////////////////////
+/////  Attribuzione abilità speciali  /////
+///////////////////////////////////////////
+
+
+
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassINV","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcinv"))
+            SetGlobal("!SaradasGaveSpellClassINV","GLOBAL",2)
+End
+
+
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassABJ","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcabj"))
+            SetGlobal("!SaradasGaveSpellClassABJ","GLOBAL",2)
+End
+
+
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassDIV","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!Spcdiv"))
+            SetGlobal("!SaradasGaveSpellClassDIV","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassENC","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcenc"))
+            SetGlobal("!SaradasGaveSpellClassENC","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassILL","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcill"))
+            SetGlobal("!SaradasGaveSpellClassILL","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassNEC","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcnec"))
+            SetGlobal("!SaradasGaveSpellClassNEC","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassCON","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spccon"))
+            SetGlobal("!SaradasGaveSpellClassCON","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassWIL","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcwil"))
+            SetGlobal("!SaradasGaveSpellClassWIL","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassALT","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcalt"))
+            SetGlobal("!SaradasGaveSpellClassALT","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassGEN","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcgen"))
+            SetGlobal("!SaradasGaveSpellClassGEN","GLOBAL",2)
+End
+
+IF
+    Global("!SaradasTalkAfterUnderdark","GLOBAL",1)
+    Global("!SaradasGaveSpellClassDRA","GLOBAL",1)
+THEN
+    RESPONSE #100
+            wait(1)
+            ActionOverride(Protagonist,AddSpecialAbility("!spcdra"))
+            SetGlobal("!SaradasGaveSpellClassDRA","GLOBAL",2)
+End
+
+
+
+
+//////////////////////////////////////////
+/////  Dialogo post scena artefatti  /////
+//////////////////////////////////////////
+
+
+
+IF
+global("!SAfterCutScene","GLOBAL",1)
+THEN
+RESPONSE #100
+smallwait(2)
+StartDialogOverride("!Saftrcs",[PC])
+END

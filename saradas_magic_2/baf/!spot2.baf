@@ -1,0 +1,11 @@
+IF
+See([pc])
+!ActuallyInCombat()
+InParty("!Sartob")
+THEN
+RESPONSE #100
+Wait(3)
+StartCutSceneMode()
+StartCutScene("!Scutbal")
+DestroySelf()
+END

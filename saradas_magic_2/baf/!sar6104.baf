@@ -1,0 +1,7 @@
+IF
+Global("!Spot2Spawned","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("!Spot2",[2132.1605],6)
+SetGlobal("!Spot2Spawned","GLOBAL",1)
+END

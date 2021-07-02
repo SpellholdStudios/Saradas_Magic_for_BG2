@@ -1,0 +1,435 @@
+BACKUP ~saradas_magic_2\backup~
+AUTHOR ~SARADAS saradas85@gmail.com~
+BEGIN ~saradas_magic_2~
+
+LOAD_TRA ~saradas_magic_2\english\english.tra~
+LOAD_TRA ~saradas_magic_2\english\!saradas.tra~
+LOAD_TRA ~saradas_magic_2\english\!sarago.tra~
+LOAD_TRA ~saradas_magic_2\english\!sarangr.tra~
+LOAD_TRA ~saradas_magic_2\english\!sarafin.tra~
+
+
+COPY ~saradas_magic_2/spl/!scombus.spl~ ~override~
+  SAY NAME1 @2                  //nome magia
+  SAY UNIDENTIFIED_DESC @4      //descrizione magia
+
+COPY ~saradas_magic_2/itm/!scombus.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @2                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @4                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!sdrains.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @5                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @6                   //desc. ident.
+
+COPY ~saradas_magic_2/spl/!sdrains.spl~ ~override~
+  SAY NAME1 @5                  //nome magia
+  SAY UNIDENTIFIED_DESC @6      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!sdrainr.spl~ ~override~ SAY 0x12e @7
+
+
+COPY ~saradas_magic_2/itm/!sforce.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @8                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @9                   //desc. ident.
+  
+
+COPY ~saradas_magic_2/spl/!sforce.spl~ ~override~
+  SAY NAME1 @8                  //nome magia
+  SAY UNIDENTIFIED_DESC @9      //descrizione magia
+
+
+COPY ~saradas_magic_2/itm/!sgravit.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @10                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @11                   //desc. ident.
+
+COPY ~saradas_magic_2/spl/!sgravit.spl~ ~override~
+  SAY NAME1 @10                  //nome magia
+  SAY UNIDENTIFIED_DESC @11      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcinv.spl~ ~override~
+  SAY NAME1 @12                  //nome magia
+  SAY UNIDENTIFIED_DESC @13      //descrizione magia
+
+
+COPY ~saradas_magic_2/itm/!stelepo.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @14                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @15                   //desc. ident.
+
+COPY ~saradas_magic_2/spl/!stelepo.spl~ ~override~
+  SAY NAME1 @14                  //nome magia
+  SAY UNIDENTIFIED_DESC @15      //descrizione magia
+
+
+COPY ~saradas_magic_2/itm/!stenscr.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @16                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @17                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!stenssw.itm~ ~override~
+  SAY NAME2 @18                  //nome identificato
+
+COPY ~saradas_magic_2/spl/!stens.spl~ ~override~
+  SAY NAME1 @16                  //nome magia
+  SAY UNIDENTIFIED_DESC @17      //descrizione magia
+
+
+COPY ~saradas_magic_2/itm/!szomscr.itm~ ~override~
+  SAY NAME1 @1                  //nome non identificato
+  SAY NAME2 @19                  //nome identificato
+  SAY UNIDENTIFIED_DESC @3      //desc. non ident.
+  SAY DESC @20                   //desc. ident.
+
+COPY ~saradas_magic_2/spl/!szom.spl~ ~override~
+  SAY NAME1 @19                  //nome magia
+  SAY UNIDENTIFIED_DESC @20      //descrizione magia
+
+
+COPY ~saradas_magic_2/cre/!saradas.cre~ ~override~
+  SAY NAME1 @23            //nome non identificato
+  SAY NAME2 @23           //nome identificato
+
+COPY ~saradas_magic_2/cre/!sarafin.cre~ ~override~
+  SAY NAME1 @23            //nome non identificato
+  SAY NAME2 @23           //nome identificato
+
+COPY ~saradas_magic_2\!saradas.sto~ ~override~
+  SAY NAME2 @23           //nome identificato
+
+
+COPY ~saradas_magic_2/spl/!spcabj.spl~ ~override~
+  SAY NAME1 @24                  //nome magia
+  SAY UNIDENTIFIED_DESC @25      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcabj2.spl~ ~override~
+
+
+COPY ~saradas_magic_2/spl/!spcalt.spl~ ~override~ SAY 0x51e @40
+  SAY NAME1 @26                  //nome magia
+  SAY UNIDENTIFIED_DESC @27      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spccon.spl~ ~override~
+  SAY NAME1 @28                  //nome magia
+  SAY UNIDENTIFIED_DESC @29      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spccon2.spl~ ~override~
+
+COPY ~saradas_magic_2/cre/!spccon.cre~ ~override~
+  SAY NAME1 @30
+  SAY NAME2 @30
+  
+COPY ~saradas_magic_2/cre/!spotted.cre~ ~override~
+
+
+COPY ~saradas_magic_2/itm/!sbalorc.itm~ ~override~
+
+
+COPY ~saradas_magic_2/eff/!spccon.eff~ ~override~
+
+
+COPY ~saradas_magic_2/spl/!spcdiv.spl~ ~override~ SAY 0x4ee @41
+  SAY NAME1 @31                  //nome magia
+  SAY UNIDENTIFIED_DESC @32      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcenc.spl~ ~override~
+  SAY NAME1 @33                  //nome magia
+  SAY UNIDENTIFIED_DESC @34      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcgen.spl~ ~override~
+  SAY NAME1 @42
+  SAY UNIDENTIFIED_DESC @43      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcgen2.spl~ ~override~ SAY 0x3ce @47
+
+COPY ~saradas_magic_2/spl/!spcill.spl~ ~override~
+  SAY NAME1 @35                  //nome magia
+  SAY UNIDENTIFIED_DESC @36      //descrizione magia
+
+COPY ~saradas_magic_2/eff/!spcill.eff~ ~override~
+
+
+COPY ~saradas_magic_2/spl/!spcnec.spl~ ~override~
+  SAY NAME1 @37                  //nome magia
+  SAY UNIDENTIFIED_DESC @38      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcnec2.spl~ ~override~
+
+COPY ~saradas_magic_2/spl/!spcnec3.spl~ ~override~
+
+COPY ~saradas_magic_2/itm/!spcnec.itm~ ~override~
+  SAY NAME1 @39                  //nome non identificato
+  SAY NAME2 @39                  //nome identificato
+
+COPY ~saradas_magic_2/spl/!spcwil.spl~ ~override~ SAY 0x21e @46
+  SAY NAME1 @44
+  SAY UNIDENTIFIED_DESC @45      //descrizione magia
+
+COPY ~saradas_magic_2/spl/!spcdra.spl~ ~override~
+  SAY NAME1 @48
+  SAY UNIDENTIFIED_DESC @50      //descrizione magia
+
+COPY ~saradas_magic_2/itm/!spcdra.itm~ ~override~
+  SAY NAME1 @49                  //nome non identificato
+  SAY NAME2 @49                  //nome identificato
+  
+  
+
+
+COPY ~saradas_magic_2/itm/!strohm2.itm~ ~override~
+  SAY NAME2 @51                  //nome identificato
+  SAY DESC @52                   //desc. ident.
+  
+COPY ~saradas_magic_2/itm/!skaza2.itm~ ~override~
+  SAY NAME2 @53                  //nome identificato
+  SAY DESC @54                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!samauna.itm~ ~override~
+  SAY NAME2 @55                  //nome identificato
+  SAY DESC @56                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!shaman2.itm~ ~override~
+  SAY NAME2 @57                  //nome identificato
+  SAY DESC @58                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!shadow2.itm~ ~override~
+  SAY NAME2 @59                  //nome identificato
+  SAY DESC @60                   //desc. ident.
+
+COPY ~saradas_magic_2/itm/!swaukn.itm~ ~override~
+  SAY NAME2 @61                  //nome identificato
+  SAY DESC @62                   //desc. ident.
+  
+COPY ~saradas_magic_2/spl/!swaukn1.spl~ ~override~
+  SAY NAME1 @63
+
+COPY ~saradas_magic_2/spl/!swaukn2.spl~ ~override~ SAY 0xce @41
+  SAY NAME1 @64
+
+
+
+
+
+COMPILE ~saradas_magic_2/baf/!sarad1.baf~
+COMPILE ~saradas_magic_2/baf/!sarad2.baf~
+COMPILE ~saradas_magic_2/baf/!sarad3.baf~
+COMPILE ~saradas_magic_2/baf/!sarafin.baf~
+COMPILE ~saradas_magic_2/baf/!spccon.baf~
+COMPILE ~saradas_magic_2/baf/!scut01.baf~
+COMPILE ~saradas_magic_2/baf/!scut02.baf~
+COMPILE ~saradas_magic_2/baf/!spotted.baf~
+EXTEND_TOP ~ar0902.bcs~ ~saradas_magic_2/baf/ar0902.baf~
+EXTEND_TOP ~ar2805.bcs~ ~saradas_magic_2/baf/ar2805.baf~
+
+COMPILE ~saradas_magic_2/dlg/!saradas.d~ USING ~saradas_magic_2\english\!saradas.tra~
+
+COMPILE ~saradas_magic_2/dlg/!saftrcs.d~ USING ~saradas_magic_2\english\!saradas.tra~
+
+COMPILE ~saradas_magic_2/dlg/!sarago.d~ USING ~saradas_magic_2\english\!sarago.tra~
+
+COMPILE ~saradas_magic_2/dlg/!sarangr.d~ USING ~saradas_magic_2\english\!sarangr.tra~
+
+COMPILE ~saradas_magic_2/dlg/!sarafin.d~ USING ~saradas_magic_2\english\!sarafin.tra~
+
+
+COPY ~saradas_magic_2/eff/!sdrain1.eff~    ~override~
+COPY ~saradas_magic_2/eff/!sdrain2.eff~    ~override~
+COPY ~saradas_magic_2/eff/!sdrain3.eff~    ~override~
+COPY ~saradas_magic_2/eff/!sdrain4.eff~    ~override~
+COPY ~saradas_magic_2/eff/!sdrain5.eff~    ~override~
+COPY ~saradas_magic_2/eff/!sdrain6.eff~    ~override~ SAY 0x1c @21
+COPY ~saradas_magic_2/eff/!sforce.eff~  ~override~
+COPY ~saradas_magic_2/eff/!swrngtr.eff~  ~override~ SAY 0x1c @22
+COPY ~saradas_magic_2/eff/!szom1.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom2.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom3.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom4.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom5.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom6.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom7.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom8.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom9.eff~   ~override~
+COPY ~saradas_magic_2/eff/!szom10.eff~  ~override~
+COPY ~saradas_magic_2/eff/!szom11.eff~  ~override~
+COPY ~saradas_magic_2/eff/!szom12.eff~  ~override~
+COPY ~saradas_magic_2/eff/!szom13.eff~  ~override~
+COPY ~saradas_magic_2/eff/!szom14.eff~  ~override~
+COPY ~saradas_magic_2/eff/!szom15.eff~  ~override~
+
+
+
+
+////////////////////////////////////////////////////////////////////
+/////              SARADAS ToB                                 /////
+/////                                                          /////
+////////////////////////////////////////////////////////////////////
+
+
+
+
+COPY ~saradas_magic_2/cre/!sartob.cre~ ~override~
+SAY NAME1 ~Saradas~
+SAY NAME2 ~Saradas~
+SAY MORALE ~I-  I'm too old for this.~
+SAY HAPPY ~The gods smile upon our path, I'm glad I joined this group.~
+SAY UNHAPPY_ANNOYED ~I don't think Gorion taught you such things...You'd better reconsider the path you're following.~
+SAY UNHAPPY_SERIOUS ~I will not tolerate such behaviour any longer. Change your ways, for I'm growing tired of you. ~
+SAY LEADER ~I suppose I could lead the way for a while, but your destiny is yours to make.~
+SAY TIRED ~This old body demands rest, <CHARNAME>. I suggest we rest for a while and start arranging a campfire for the night.~
+SAY BORED ~I'd rather spend my time in a more productive way, if you don't mind.~
+SAY BATTLE_CRY1 ~You are no match for my magic.~
+SAY BATTLE_CRY2 ~Face the destiny you deserve!~
+SAY BATTLE_CRY3 ~The brute force will lead you nowhere.~
+SAY BATTLE_CRY4 ~You can't hide from Lathander's light!~
+SAY DAMAGE ~Ohf... I-  I am bleeding...~
+SAY DYING ~Merciful Morninglord...Accept this servant in your holy light.~
+SAY HURT ~Protect me while I cast my healing spells!~
+SAY AREA_FOREST ~Oh, the peaceful atmosphere of the forest. Reminds me of good memories of a past long gone.~
+SAY AREA_CITY ~The threads of fate of countless people cross in the city's din.~
+SAY AREA_DUNGEON ~Every step could be our last in a place like this. Be prepared for everything.~
+SAY AREA_DAY ~The sun truly does justice to the Morninglord's glory.~
+SAY AREA_NIGHT ~My thoughts find peace when the calmness of evening enfolds the land.~
+SAY SELECT_COMMON1 ~Do you need my guidance, young one?~
+SAY SELECT_COMMON2 ~Speak louder son, my hearing is no longer what it used to be.~
+SAY SELECT_COMMON3 ~Mh? What do you need?~
+SAY SELECT_COMMON4 ~I'm still here, don't worry for me.~
+SAY SELECT_COMMON5 ~Don't abuse my patience.~
+SAY SELECT_COMMON6 ~You can't keep up with this old man?~
+SAY SELECT_ACTION1 ~In the blink of an eye.~
+SAY SELECT_ACTION2 ~You take pleasure in commanding, don't you?~
+SAY SELECT_ACTION3 ~I'm going I'm going, I'm not completely deaf yet.~
+SAY SELECT_ACTION4 ~I will do as you ask.~
+SAY SELECT_ACTION5 ~Nothing to worry about, young one.~
+SAY SELECT_ACTION6 ~Not my highest aspiration, but I'll will do it nonetheless.~
+SAY SELECT_ACTION7 ~Such an ungrateful task.~
+SAY SELECT_RARE1 ~Wisdom can improve your overall vision of life.~
+SAY SELECT_RARE2 ~Have you forgotten the good manners, <PRO_GIRLBOY>?~
+SAY CRITICAL_HIT ~I'm not that senile, after all mh?~
+SAY CRITICAL_MISS ~...not even close...~
+SAY TARGET_IMMUNE ~My efforts are vain! We must change strategy.~
+SAY INVENTORY_FULL ~Do I look like a pack mule?~
+SAY SPELL_DISRUPTED ~Acc! My spell was almost complete!~
+SAY BIO ~You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from the Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.~
+
+
+COPY ~saradas_magic_2/cre/!sbalcut.cre~ ~override~
+SAY NAME1 ~Balrog~
+SAY NAME2 ~Balrog~
+
+COPY ~saradas_magic_2/cre/!spot2.cre~ ~override~
+
+COPY ~saradas_magic_2/cre/!selmcut.cre~ ~override~
+
+COMPILE ~saradas_magic_2/dlg/!sar25j.d~
+COMPILE ~saradas_magic_2/dlg/!sar25b.d~
+COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
+COMPILE ~saradas_magic_2/dlg/!sartob.d~
+COMPILE ~saradas_magic_2/baf/!sartob.baf~
+COMPILE ~saradas_magic_2/baf/!scutbal.baf~
+COMPILE ~saradas_magic_2/baf/!selmcut.baf~
+COMPILE ~saradas_magic_2/baf/!spot2.baf~
+
+COMPILE ~saradas_magic_2/dlg/edwin25j.d~
+COPY ~saradas_magic_2/spl/!sedwina.spl~ ~override~
+
+EXTEND_TOP ~ar6104.bcs~ ~saradas_magic_2/baf/!sar6104.baf~
+EXTEND_TOP ~ar6200.bcs~ ~saradas_magic_2/baf/ar6200.baf~
+
+
+COPY ~saradas_magic_2\!sartobm.bmp~ ~override~
+COPY ~saradas_magic_2\!sartobs.bmp~ ~override~
+COPY ~saradas_magic_2\!sedwina.bmp~ ~override~
+
+COPY ~saradas_magic_2/itm/!sarring.itm~ ~override~
+  SAY NAME2 ~Saradas's Ring~
+  SAY DESC ~Saradas never parts from his finely chiseled ring. Its creator is unknown to you, but the special blue alloy suggests that it was crafted by a very skilled artisan. An exceptionally pure Moonstone was socketed on top of the band and it pulsates of a bright white light during a full moon. The ring has been enchanted, though only Saradas would know its powers.~
+
+
+
+// Appending 2da
+
+
+APPEND ~pdialog.2da~
+~!SARTOB            !SARP        !SARJ          !SARD           !SAR25P           !SAR25J              !SAR25D               !SARTOB~
+UNLESS ~!SARTOB~
+
+
+APPEND ~interdia.2da~
+~!Sartob !SarB !Sar25B~
+UNLESS ~!Sartob~
+
+
+
+
+// Finale divinità Keldorn amico  (F-G-KF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-G-KF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually accepted his father's essence and became a god. Without <CHARNAME>'s guidance, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerun. He felt that his days as a pilgrim were finally over and wished to set in his old house in Yhaunn for his last years.
+He kept in contact with his good friend, Lord Keldorn Firecam, who visited him from time to time. The tale of <CHARNAME> though, had reached the Realm's fartest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas's door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+
+// Finale divinità Keldorn non amico  (F-G-KNF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-G-KNF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually accepted his father's essence and became a god. Without <CHARNAME>'s guidance, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerun. He felt that his days as a pilgrim were finally over and wished to set in his old house in Yhaunn for his last years.
+The tale of <CHARNAME> though, had reached the Realm's fartest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas's door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+
+
+// Finale non divinità Keldorn amico (F-NG-KF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-NG-KF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually rejected his father's essence and purified his soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerun. He felt that his days as a pilgrim were finally over and wished to set in his old house in Yhaunn for his last years.
+He kept in contact with his good friend, Lord Keldorn Firecam, who visited him from time to time. The tale of <CHARNAME> though, had reached the Realm's fartest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas's door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times. ~
+
+
+
+
+// Finale non divinità Keldorn non amico   (F-NG-KNF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-NG-KNF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually rejected his father's essence and purified his soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerun. He felt that his days as a pilgrim were finally over and wished to set in his old house in Yhaunn for his last years.
+The tale of <CHARNAME> though, had reached the Realm's fartest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas's door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun, for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times. ~
+
+
+
+// Finale non divinità protagonista mago Keldorn non amico  (F-M-KNF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-M-KNF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually rejected his father's essence and purified his soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. With the essence of Bhaal gone, <CHARNAME> lost some of <PRO_HISHER> powers as a mage. Saradas offered his guidance once again, to make <PRO_HIMHER> recover them.
+They went to Saradas's beloved homeland, Sembia, and after one year, <CHARNAME> recovered <PRO_HISHER> previously lost abilities and incremented them even further, becoming an arch wizard of incomparable power. <PRO_HESHE> eventually parted from <PRO_HISHER> old mentor and started a new life, but <PRO_HESHE> kept visiting him from time to time. With his apprentice gone, Saradas enjoyed a calm life in his old house, but his mind often indulged on his last adventure and on <CHARNAME>'s future.
+After five years, Saradas eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun, for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+
+
+
+// Finale non divinità protagonista mago Keldorn amico   (F-M-KF)
+
+COPY ~saradas_magic_2\!Sfinale.2da~ ~override\F-M-KF.2da~
+REPLACE ~99999~ ~After the epic battle that took place at the throne of Bhaal, <CHARNAME> eventually rejected his father's essence and purified his soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. With the essence of Bhaal gone, <CHARNAME> lost some of <PRO_HISHER> powers as a mage. Saradas offered his guidance once again, to make <PRO_HIMHER> recover them.
+They went to Saradas's beloved homeland, Sembia, and after one year, <CHARNAME> recovered <PRO_HISHER> previously lost abilities and incremented them even further, becoming an arch wizard of incomparable power. <PRO_HESHE> eventually parted from <PRO_HISHER> old mentor and started a new life, but <PRO_HESHE> kept visiting him from time to time. With his apprentice gone, Saradas enjoyed a calm life in his old house, but his mind often indulged on his last adventure and on <CHARNAME>'s future.
+He kept in contact with another of his good friends, Lord Keldorn Firecam, who visited him from time to time.
+After five years, Saradas eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerun's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the church's hall that day and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~

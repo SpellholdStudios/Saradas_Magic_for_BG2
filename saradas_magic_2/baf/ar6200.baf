@@ -1,0 +1,146 @@
+/////////////////////////////////
+///   God - Keldorn Friend    //
+///////////////////////////////
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",1)
+  GlobalGT("!SKeldornBanter","GLOBAL",1)
+  Global("!sartobBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("!sartobBio","GLOBAL",1)
+    TextScreen("F-G-KF")
+    SmallWait(1)
+    Continue()
+END
+
+
+//////////////////////////////////
+///   God - Keldorn non Friend //
+////////////////////////////////
+
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",1)
+  GlobalLT("!SKeldornBanter","GLOBAL",2)
+  Global("!sartobBio","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("!sartobBio","GLOBAL",1)
+    TextScreen("F-G-KNF")
+    SmallWait(1)
+    Continue()
+END
+
+
+
+/////////////////////////////////////
+///   Non God - Keldorn Friend    //
+///////////////////////////////////
+
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",0)
+  Global("!sartobBio","GLOBAL",0)
+  GlobalGT("!SKeldornBanter","GLOBAL",1)
+  !Class(protagonist,MAGE)
+  !Class(protagonist,FIGHTER_MAGE)
+  !Class(protagonist,FIGHTER_MAGE_THIEF)
+  !Class(protagonist,MAGE_THIEF)
+  !Class(protagonist,CLERIC_MAGE)
+  !Class(protagonist,FIGHTER_MAGE_CLERIC)
+THEN
+RESPONSE #100
+  SetGlobal("!sartobBio","GLOBAL",1)
+  TextScreen("F-NG-KF")
+  SmallWait(1)
+  Continue()
+END
+
+
+
+//////////////////////////////////////
+///  No God - Keldorn no Friend    //
+////////////////////////////////////
+
+
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",0)
+  Global("!sartobBio","GLOBAL",0)
+  GlobalLT("!SKeldornBanter","GLOBAL",2)
+  !Class(protagonist,MAGE)
+  !Class(protagonist,FIGHTER_MAGE)
+  !Class(protagonist,FIGHTER_MAGE_THIEF)
+  !Class(protagonist,MAGE_THIEF)
+  !Class(protagonist,CLERIC_MAGE)
+  !Class(protagonist,FIGHTER_MAGE_CLERIC)
+THEN
+RESPONSE #100
+  SetGlobal("!sartobBio","GLOBAL",1)
+  TextScreen("F-NG-KNF")
+  SmallWait(1)
+  Continue()
+END
+
+
+
+
+/////////////////////////////////////////////
+///  No God - Mage - Keldorn no Friend    //
+///////////////////////////////////////////
+
+
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",0)
+  Global("!sartobBio","GLOBAL",0)
+  GlobalLT("!SKeldornBanter","GLOBAL",2)
+  OR(6)
+  Class(protagonist,MAGE)
+  Class(protagonist,FIGHTER_MAGE)
+  Class(protagonist,FIGHTER_MAGE_THIEF)
+  Class(protagonist,MAGE_THIEF)
+  Class(protagonist,CLERIC_MAGE)
+  Class(protagonist,FIGHTER_MAGE_CLERIC)
+  THEN
+  RESPONSE #100
+    SetGlobal("!sartobBio","GLOBAL",1)
+    TextScreen("F-M-KNF")
+    SmallWait(1)
+    Continue()
+END
+
+
+
+
+//////////////////////////////////////////
+///  No God - Mage - Keldorn Friend    //
+////////////////////////////////////////
+
+
+IF
+  InParty("!sartob")
+  Global("StartEndBios","AR6200",1)
+  Global("PlayerChoseEssence","GLOBAL",0)
+  Global("!sartobBio","GLOBAL",0)
+  GlobalGT("!SKeldornBanter","GLOBAL",1)
+  OR(6)
+  Class(protagonist,MAGE)
+  Class(protagonist,FIGHTER_MAGE)
+  Class(protagonist,FIGHTER_MAGE_THIEF)
+  Class(protagonist,MAGE_THIEF)
+  Class(protagonist,CLERIC_MAGE)
+  Class(protagonist,FIGHTER_MAGE_CLERIC)
+  THEN
+  RESPONSE #100
+    SetGlobal("!sartobBio","GLOBAL",1)
+    TextScreen("F-M-KF")
+    SmallWait(1)
+    Continue()
+END

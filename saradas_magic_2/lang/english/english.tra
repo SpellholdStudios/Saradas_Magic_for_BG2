@@ -1,0 +1,339 @@
+@1=~Scroll~
+@2=~Spectacular combustion~
+@3=~Mysterious scroll~
+@4=~Spectacular combustion (Invocation)
+
+
+Level: 7
+Radius: 30m
+Target: Single
+Casting Time: 7
+Saving throw: halves damage spells
+
+The wizard creates a small luminescent sphere into its hands, ready to be thrown at the target. When it touches the target creature, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not succeed a saving throw vs. spells, must let it fall to the ground to avoid being burned. The initial fire damage is 5d10, and 3d10 more if target fails a saving throw. The target also continues to burn for the next three rounds, taking 10 fire damage for each one of them.~
+
+@5 = ~Drain spell~
+@6 = ~Drain spell (Enchantment)
+
+
+Level: 7
+Target: Single
+Radius: 7m
+Duration : Instantaneous
+Casting Time : 7
+Saving Throw: spells -5 denies
+
+This spell is quite famous among sorcerers. It was used many time in the past in the settling of scores between magicians, with the intent to ridicule the opponent. It's definitely one of the most devastating spells to use against a magician. Saradas was one of the most powerful and reknowned masters in Faerun and he used to entertain himself to use this spell, which he invented, on unsuspecting students, to make the exams much more difficult. EFFECT : The caster attacks the opponent's mind to make him forget two memorized spell if he fails a saving throw vs. spells ( -5), restoring one of his own. It affects spells from level 1 to 9, but it will try to start from the highest level available. The caster of this spell can restore a spell not higher than level 8. NOTE: This spell affects only sorcerers and wizards (including dual-class and multiclass). If the target is not a magician, nothing would happen and the spell would be wasted.~
+
+@7=~Spell recovered~
+@8=~Lashing Wind~
+@9=~Lashing Wind (Evocation)
+
+Level: 6
+Casting Time: 6
+Radius: 15m
+Area of Effect: front of magician
+Saving Throw: breath (-2) reduces the effects
+
+With a single gesture of his hand the magician conjures a powerful gust of wind capable of knocking out an entire group of enemies. They are thrown 20 meters away from the mage, suffering 1d6 bludgeoning damage every 5 levels of the caster (for a maximum of 8d6 at level 36), they will also lose their grip on their weapons and faint for 2 rounds because of the strong impact with the ground or other obstacles met on their way. If they succeed a saving throw, the damage will be halved and they will not faint nor lose their weapons.~
+
+@10=~Gravitational Field~
+@11=~Gravitational Field (Alteration)
+
+Level: 5
+Time to cast: 5
+Range: 20 meters
+Target: Area
+Duration: the effects last for 15 seconds
+Saving Throw: vs Spell (+2) negates
+
+This spell increases the force of gravity in a small area decided by the enchanter. All creatures in the area of effect must succeed a saving throw vs spell, or be overwhelmed by a sudden increase in gravity, thus dropping their weapons on the ground, because of their unsustainable weight. In addition, they are slowed down and their dexterity value is halved. The effects can be dispelled.~
+
+@12=~Spiritual explosion~
+@13=~Spiritual explosion (Invocation)
+
+Level: Epic
+Range: 75m
+Target: 1 creature
+Duration: Instantaneous
+Saving Throw: vs spells (-7)
+
+This is the final offensive spell, plasmed for the first time by Saradas, the Blue Wizard. The caster focuses an immense energy in <PRO_HISHER> hands, including a fraction of <PRO_HISHER> spirit.
+The base damage is 1d10 per level of the wizard (up to a maximum of 10) and cannot be avoided with a saving throw, although the magic resistance helps to prevent the effects. The other component of the damage comes from the spirit of the sorcerer, which inflicts 20D10.
+If the target succeeds against a saving throw vs. spells with penalty -7, will avoid the spiritual damage. The magic resistance cannot stop the spiritual damage.
+Exhausted by the casting, the Invoker will loose 3d10 hit points and will be fatigued for the next hour.
+Note that the sphere can overcome the effects of protective barriers.~
+
+@14=~Flawless Teleport~
+@15=~Flawless Teleport (Illusion)
+
+Level: 3
+Radius: 30m
+Duration: Instantaneous
+Casting Time: 3
+Area of Effect: Caster
+
+This prodigious spell allows the caster to teleport without error within 30 meters in his range of vision, also, as soon as he arrives to the chosen destination, he will turn invisible as for the spell of invisibility, getting a considerable tactical advantage over is foes. The wizard will remain in this state for 2 rounds, unless he starts an offensive action during this period.~
+
+
+@16=~Tenser's supremacy~
+@17=~Tenser's supremacy (Alteration)
+
+Level: 9
+Duration: 1 minute
+Area of Effect: Caster
+Casting Time: 9
+
+This spell is the terror of every fool in the Realms. Many warriors bullies the magicians for their lack of athleticism, but the magician under the effect of this spell will no doubt wipe the smiles from their faces. His body is transformed, becoming impressively strong. The magician leaves <PRO_HISHER> old nature, believing that <PRO_HESHE> has always been a warrior and becoming very skilled in combat. As if that was not enough, the sorcerer summons a magical sword +5, with base damage 1d8+5, that <PRO_HESHE> can brandish perfectly. The magician can maintain this status only for a minute, during which <PRO_HESHE> cannot cast spells. At the end of the effects, <PRO_HESHE>'ll be fatigued for trauma suffered and will experience severe difficulty in spell casting. The effects can be dispelled.
+
+BONUS:
+CA +5
+TACH0 set to -3
+Strength rised to 25
+HP and movement speed doubled.~
+
+@18=~Tenser's enchanted sword +5~
+@19=~Horrid transformation~
+@20=~Horrid transformation (Necromancy)
+
+Level: 7
+Range: 5m
+Target: 1 creature
+Duration: Permanent
+Saving throw: negates the effects
+
+The target reached by this terrible curse must succeed a saving throw vs. Polymorph (-2 penalty) or suffer a horrid and nauseating transformation. His limbs begin to rot quickly, losing most of their strength. He will become so repellent to cause nausea and disgust in anyone standing less than a few feet away from him. He also suffers a serious motor impairment that will halve his movement speed.
+Even the lucidity disappears, making the target completely unable to think and undertake any action, even the most basic one.
+The intelligence, strength and charisma suffer the heaviest penalty.
+The only action available to the target is the use of potions and equipped items.
+The effects are permanent unless a "remove curse" spell is casted on the victim of this curse.
+NOTE:
+It only affects humanoid creatures, therefore animals, undead or giant humanoids are not affected by this spell.~
+
+@21=~Spells have been drained~
+@22=~The target is not affected by this spell~
+@23=~Saradas~
+@24=~Impenetrable defense~
+@25=~Impenetrable defense (Abjuration)
+
+Level: Epic
+Range: Allies within 10m
+Duration: 1 turn
+
+The magician that has specialized in the school of Abjuration and has achieved total mastery in this field, has access to this barrier of magical nature of incomparable power.
+All of the elemental defenses are raised up to 75%, also resistance to bludgeoning, slashing, piercing and ranged damage, are raised to 33%.
+The saving throws receive a universal bonus of +2 and +3 to armor class, the barrier also prevents 7th level spells to penetrate it.
+Note that the creatures protected by Impenetrable Defense are also immune to the effects of level drain, instant death, disintegration and petrification.
+The abjurer can cast this spell only once a day and its great effectiveness makes it relatively short in duration. Also for the entire duration of the spell, the caster cannot cast other spells because he must focus to maintain the barrier active.
+It cannot be dispelled by Dispel Magic.~
+
+@26=~Ego's frailty ~
+@27=~Ego's frailty (Alteration)
+
+Level: Epic
+Range: 20m
+Target: multiple enemies
+Duration: 1 turn and a half
+Saving Throw: Negates effects
+
+The magician that has specialized in the school of Alteration and has achieved total mastery in this field, has access to this spell that allows him to destabilize not only the matter of the target, but also its soul.
+When the spell hits the target he will feel the weight of the whole universe on his shoulders, leaving him heavily weakened and dismayed.
+All his elemental resistances, magic damage resistance, and physical resistance will be brought to a flat value of -25, thus exposing the target to an increased 25% damage from those sources.
+The magic resistance will be lowered by 75 points and the effects of the Slow spell will affect the creatures hit by Ego's frailty.
+A successful saving throw vs. spells (with penalty -2) completely negates the effects.~
+
+@28=~Summon Devil of Baator~
+@29=~Summon Devil of Baator (Conjuration)
+
+Level: Epic
+Range: 15m
+Duration: 1 turn and a half
+
+The magician that has specialized in the school of Conjuration and has achieved total mastery in this field, has access to this frightening ritual of evocation. He will create a dimensional rift between the First Material Plane and the Nine Hells of Baator, invoking a demon prince of immeasurable power.
+He will not obey blindly to the Evoker's command, but he will protect him whenever an enemy would come too close; as soon as the danger is averted, he will wander around the group, waiting for an enemy to devour.
+His attacks are deadly, causing 2d10 +5 slashing damage. His claws are considered as a +5 weapon, also causing an extra 1d6 damage from fire. The attack also has a 10% chance of tearing an enemy apart instantly if he fails a saving throw vs. death.
+In exchange for his services, the devil claims half of the Conjurer's current hit points.~
+
+@30=~Demonic Prince~
+@31=~Foreseeing the future~
+@32=~Foreseeing the future (Divination)
+
+Level: Epic
+Radius: self
+Duration: 1 hour
+
+The magician that has specialized in the school of Divination and has achieved total mastery in this field, has access to this wonderful spell. He starts to focus his mind in order to receive visions. He will be able to see, almost flawlessly, the events that will happen in the next coming hour, granting him a huge tactical advantage over the foes.
+The armor class of the Diviner increases by 5 points and his saving throws get a universal bonus of 4 points, he is also immune to the first 10 physical attacks that would otherwise normally hit him.
+The power of this spell has more to offer, infact the extraordinary gifts of divination, allow the caster to materialize the surrounding area in his mind, as well as to reveal the presence of useful magical objects hidden from the sight of normal people. The spell also grants the ability to see the reality with absolute clarity (True Sight).
+The protection lasts for one hour and cannot be dispelled.~
+
+@33=~Absolute abnegation~
+@34=~Absolute abnegation (Enchantment)
+
+Level: Epic
+Radius: 30m
+Duration: 1 turn and a half
+Target: multiple enemies
+Saving Throw: negates
+
+
+The magician that has specialized in the school of Enchantment and has achieved total mastery in this field, has access to this dreadful spell that completely disrupts the mind and body of the targets.
+They suffer the same effects of the spell "Dire Charme", but their body is hit by a powerful adrenaline rush that will unleash animalistic behaviors.
+They will try to protect the caster at the cost of their own lives, and they will never doubt any of the Enchanter's commands. They will also be faster, stronger and shall not be diverted in any way from their task.
+At the end of the effect of the spell, the body of the target's will suffer a strong shock due to stress, leading them to cardiac arrest and therefore, to instant death.
+A saving throw vs. spells with penalty -5 negates the effects.
+
+STATISTICS:
+Strength +3
+THAC0 +5
+Attacks per round : +1
+Doubled movement speed
+Immunity to charm and confusion~
+
+@35=~Legion of shadows~
+@36=~Legion of shadows (Illusion)
+
+Level: Epic
+Radius : party
+Duration: 1 turn
+
+The magician that has specialized in the school of Illusion and has achieved total mastery in this field, has access to this masterful illusion. He creates perfect clones of his party members, including their equipment.
+As soon as these replicants are created, the party members will be concealed and teleported to a close safe place. The enemies are totally unaware of the illusion, and shall not tell the difference between the party members and the replicants, thus attacking them instead of the Illusionist's group.
+Note that these shadows are not able to hurt the opponents, but they are totally under the influence of the caster, which is able to cast any other spell he desires.
+All party members under the effects of Legion of Shadows, cannot cast other illusions such as Simulacrum, Mislead and Project image.~
+
+@37=~Deathly Hallows~
+@38=~Deathly Hallows (Necromancy)
+
+Level: Epic
+Radius: Self
+Duration : About half an hour
+
+The magician that has specialized in the school of Necromancy and has achieved total mastery in this field, has access to this macabre ritual of transformation. He can now polymorph himself into a Lich.
+This spell is particularly brilliant due to the nature of its duration. In fact, it does not permanently turn the Necromancer into an undead creature, but bestows the exact same benefits for all the duration of the spell.
+In addition to being immune to effects such as fear, charm, poison, instant death, blindness, feeble mind, sickness, confusion, level drain, he can only be harmed by magic weapons greater than +2.
+He's also immune to frost damage and will suffer 75% less damage from electrical sources, but he strongly suffers from fire element attacks and his new body does not allow him to move easily.
+Its frightening appearance instills fear in all surrounding enemies.
+During the transformation, the Necromancer can use his Lich's touch as a weapon, inflicting 1d10 +5 piercing damage, and an additional 2d6 cold damage, also, if the target does not succeeds a saving throw vs. death, will be paralyzed for 10 seconds.
+The Lich's touch is to be considered as a +5 enchanted weapon, and it drains life on hit (1d6).
+
+Deathly Hallows cannot be dispelled and the Necromancer cannot use other polymorph spells while the spell is in effect.~
+
+@39=~Lich's touch~
+@40=~Magic, elemental and physical resistances have been lowered~
+@41=~Item created inside inventory~
+
+@42=~Knowledge of the Scholar~
+@43=~Knowledge of the Scholar (Generalist)
+
+Level: Epic
+Radius: Self
+Duration: 30 minutes
+
+The magician who has decided not to specialize in any specific magical school, has fully understood the energies that pervade Faerun and is able to channel and mold them more effectively. For the entire duration of the spell, the magician lowers the casting time of all of his spells by 1 and doubles their duration, he also expands his magical aura. The enemies hit by the aura will suffer an inevitable penalty of 3 points to all their saving throws. The resistance to elemental and magic damage is halved, and magic resistance is lowered by 25 points. The effects of the aura last for 30 seconds and can not be stacked. Any magic item equipped by the enemies or potions can still increase these resistances, same goes for protective spells.~
+
+@44=~Shroud of wild magic~
+@45=~Shroud of wild magic (Wild magic)
+
+Level: Epic
+Radius: 20m
+Target: Single
+Duration: 1 turn
+Saving Throw: negates effects
+
+The magician that has specialized in the school of Wild Magic and has reached the total mastery in this field, has access to this spell that has the power to wrap the enemy into a strong shroud of wild magic.
+If the enemy fails a saving throw vs Breath with a penalty -3, will be wrapped up in this energy for 1 turn. Every spell that he will try to cast will instead result in a burst of untamable wild magic, causing ill-omened effects on himself. The Wild Mage infact, makes sure of this by negatively altering the enemy's table of wild magic effects.
+This energy that envelops the enemy cannot be dispelled. One must also keep in mind that even a grand master shall never fully control this type of magical energy, therefore, positive effects for the enemy can not be completely excluded.~
+
+@46=~Wrapped in wild magical energy~
+@47=~Magic Aura~
+@48=~Dragonborn~
+@49=~Attack of the Dragon~
+@50=~Dragonborn (Dragon Disciple)
+
+Level: Epic
+Target: Self
+Length: 1 minute
+
+The Dragon Disciple has reached full self-awareness, <PRO_HESHE> can now truly feel the dragon's blood coursing through <PRO_HISHER> veins, thus controlling the power that comes with it.
+Thanks to this ability <PRO_HESHE>'s finally able to unleash the greatest power <PRO_HISHER> blood has to offer. <PRO_HESHE> can polymorph <PRO_HIMHER>self into a red dragon for the duration of the spell, obtaining the following bonuses:
+Immunity to fire and magic weapons +4 or lower; charm, fear, feeble mind, diseases and confusion.
+Doubled hit points and strength increased to 23;
+Ranged damage reduced by 75%;
+Bludgeoning damage reduced by 50%;
+Slashing Damage reduced by 75%;
+<PRO_HESHE> will cause fear every round to the surrounding enemies.
+<PRO_HISHER> claws are considered weapon +5, cause 2d10 +5 slashing damage and throw the enemies away.
+NOTES:
+<PRO_HESHE> cannot use other metamorphosis spells while Dragonborn effects are still active;
+The spell can only be cast outdoor.~
+
+@51=~Enchanted mask of King Strohm III~
+@52=~Saradas enchanted the mask of King Strohm III for you. The results are astonishing, the artifact now pulsates of magic energy and its properties have been enhanced. It not only is a magnificent ornated helm, but it grants some powers to its wearer. He can now identify magical artifacts more easily, and he can detect invisible creatures.
+
+STATISTICS:
+AC +2
+Saving Throws +2
+
+Can cast Detect Invisibility twice a day and True Seeing once a day.~
+
+
+@53=~Enchanted book of Kaza~
+@54=~Saradas helped you release the potential of this book, it is now readable by everyone. It contains secrets about life and death and whoever reads it, will surely comprehend the whole sense of existence better. This tome can only be read once, whereupon it will turn to ashes.
+
+STATISTICS:
+Maximum HP +5
+Saving Throws vs Death +1
+Resistance to Acid, Cold, Fire and Electricity +5%
+
+These bonuses are permanent.~
+
+@55=~Enchanted symbol of Amaunator~
+@56=~Saradas has inscribed magic runes all around the edge of this ancient symbol and has awoken its holy dormant powers. It now vibrates at touch and its surface emits a resplendent golden light, to the point you cannot look at it directly. It has now been modified to be an enchanted buckler, particularly repellent to the undead.
+
+STATISTICS:
+AC +2, additional +2 vs ranged weapons
+AC and saving throws +2 vs undead
+Resistance to Acid, Fire, Cold and Electricity +10%
+Wisdom +1 while equipped
+Can cast False Dawn once a day~
+
+@57=~Enchanted shaman's staff~
+@58=~This is the enchanted version of the shaman's staff. Saradas has enhanced its powers by ancient rituals. It is now a Staff +1 and enables the wielder to cast
+Mass Cure and Cure Disease twice a day and Magic Berries once a day.
+
+STATISTICS:
+Proficiency: Staffs
+Speed Factor: 4
+Damage type: Blunt
+Damage: 1d8+1~
+
+@59=~Enchanted Ioun shadow stone~
+@60=~Saradas has turned this stone into a Ioun Stone of great power. His spells have awokened the soul that has long inhabited the stone, granting its wielder
+very interesting abilities. The dark stone vibrates with dark energy and fluctuates around the head of its owner, making him more silent and nimble, at the cost of
+draining some vitality from him. It can also conceal its wearer from hostile creatures.
+
+STATISTICS:
+Hide in shadows: +25% 
+Stealth: +25%
+Dexterity: +2
+Undetectable
+Constitution: -1
+
+Can cast Sanctuary and Improved Invisibility once a day.~
+
+@61=~Enchanted mantle of Waukeen~
+@62=~Before Saradas had Enchanted the mantle of Waukeen for you, its sockets, once filled with marvelous gems, were empty. The mantle has passed from hand to hand for centuries, and the precious stones were stolen.
+This fine artifact was worn as a necklace by aristocrats women and the legend has it that the owner is blessed by Waukeen's influence. Luck will shine on its wearer, and commercial business will thrive.
+On top of that, the wearer looks irresistible and charming. The gems you gave to Saradas now adorn the necklace and restored its ancient magnificence.
+
+WHEN WORN:
+Charisma: +3
+Non-cumulative luck
++2 to all saving throws
+
+The wearer can increase his charisma to 25 for one hour, once per day.
+Can cast Waukeen's Wealth once per day, obtaining a precious gem.~
+
+@63=~Waukeen's Blessing~
+@64=~Waukeen's Wealth~

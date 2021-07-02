@@ -1,0 +1,42 @@
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SetGlobal("!Sconbalor","LOCALS",0)
+END
+
+IF
+  See(Nearestenemyof(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(Nearestenemyof(Myself))
+    Continue()
+END
+
+IF
+  AttackedBy([PC],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    SetGlobal("!Sconbalor","LOCALS",1)
+END
+
+IF
+  !See(Nearestenemyof(Myself))
+  Global("!Sconbalor","LOCALS",0)
+THEN
+  RESPONSE #100
+    RandomWalk()
+    Wait(5)
+    Continue()
+END
+
+IF
+  !See(Nearestenemyof(Myself))
+  Global("!Sconbalor","LOCALS",1)
+THEN
+  RESPONSE #100
+    MoveToObject(Protagonist)
+    Continue()
+END
+

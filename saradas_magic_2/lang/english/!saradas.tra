@@ -1,0 +1,123 @@
+@100=~Nice to see you again, <CHARNAME>. I should have known that you were involved in the scuffles at the Promenade...Looks like chaos follows you wherever you go, mh?~
+
+@101=~Saradas! It's good to see you here. All the Realms' psychopaths are chasing me, and I still don't know what they want from me...~
+@102=~Do I know you? I'm afraid you have mistaken me for somebody else.~
+@103=~YOU? Again?? Are you following me?~
+
+
+@104=~That's a quite predictable outcome, considering who you are. Fear not, all the answers shall be answered at the right time. Nobody can influence you destiny nor hinder it. Suffice to say you're the sole architect of your own destiny, <CHARNAME>. Enough with these grevious speeches, what can I do for you?~
+
+@105=~Why do all wizards have to be sooooo cryptic? Alright, show me your goods for now.~
+@106=~Nothing, for now. I'd better start investigating on Imoen's fate...~
+
+@107=~I agree. Something tells me that your friend is just a decoy to get to you. I'm certain that you will have news about her soon.~
+
+
+
+@108=~No mistakes, I know exactly who you are. I've been watching your progresses since the first time you arrived to the Friendly Arm Inn. Let me introduce myself, my name is Saradas, traveler and teacher of the arcane arts. For all my life I've wandered throughout Faerun in search of knowledge and lost artifacts. As you can see, my age forbids me to continue this pleasant activity. Now I spend my time giving advices and assistance to young adventurers in need, and sell some spells that I created. Feel free to take a look at my goods, if you're interested. ~
+@109=~I see. Show us what you have to offer, mage.~
+@110=~I'm not interested, I'd rather ask you some information about a friend of mine. She has been kidnapped by some crazy mages known as Cowled Wizards. Do you know anything about them?~
+@178=~Oh, you have already met them. They once were a secret organization born to preserve knowledge and order. Nowadays, they have become corrupted, and they are abusing their position to administer the use of magic. It's better if you don't mess with them.~
+@179=~Thank you, I will be careful, but I cannot stop my investigations. I need to know where they keep Imoen.~
+@180=~I am the danger here, not them. Now show me your goods.~
+
+@111=~I really don't care who you are or what you sell, old man. Besides, I have many doubts about your mysterious "powers".~
+@115=~You know, I do not like to give demonstrations of my powers, especially in public... but if that's really what you ask for, I shall please your request. You may even learn something new.~
+@116=~Alright oldie, come at me! I'll wipe the smile off your face!.~
+@117=~Mmm...maybe next time, mh? I...I'm veeeery busy right now, so...I'll teach you a lesson next time. yeah...~
+@118=~Wise choice, <GIRLBOY>. Go now, and try to learn some good manners while you are at it.~
+
+@119=~While your path is certainly interesting, your self-conceitedness is so unbearable...How can I help you, <CHARNAME>?~
+@120=~Ah! I guess it's true that old people loose their sense of humor, after all. Show me your stuff.~
+@121=~Nothing for now, Mr S. I'd better hurry now, riches and gorgeous women are waiting for me.~
+@122=~*facepalm*~
+
+
+@123=~Oh, you're back. Are you searching for a particular scroll, or perhaps you have brought me an artifact? Maybe you are looking for a friend...You cannot get enough of them in these harsh times.~
+@124=~Well met, Saradas. Show us what you have to sell today.~
+@125=~We were just passing by, we shall go now.~
+@126=~Neither the first, nor the second. Find yourself somebody else to bother, sticky old man. Umph!~
+
+
+@127=~Welcome back! <CHARNAME>, I have heard about your heroic accomplishment at Spellhold and then throughout the Underdark. I'm very impressed, well done! You saved Imoen and survived the wrath of the Spider Queen. Soon enough you'll make Drizzt look like a beginner!~
+@128=~Oh, looks like news walk faster than I do...That was the worst time of my life and we are very glad to be still alive. We just want to leave that experience behind as soon as possible.~
+@129=~That's none of your business, old wizard. Let me be, once and for all!~
+
+@130=~Come on, you know there is no need to be so humble with me. Be strong now, your journey is almost over and you have learned many things about your true nature, son of Bhaal. It's time to get back what is yours.~
+
+@131=~Thank you, Saradas, but there's still much to be done...Farewell.~
+
+@132=~You're very kind, but I'm so tired, it looks like perils will never end. I just want my soul back. Irenicus will pay for all his crimes against me!~
+
+@133=~Alright alright, I'd better go, but there's no need to be such a rude person. Don't forget that is important to have some trusted friends around, in life. Farewell, <CHARNAME>.~
+
+
+
+
+@134=~Some of us are badly injured, can you help us?~
+
+@135=~I'm not exactly a specialist in this field, but I know some basic heal spells. Well, let me take a look...~
+
+@136=~Your evil reputation is well renowned, I will not help criminals. Leave now.~
+
+@137=~I'm afraid I have already used all my healing spells, come back later and I shall help you.~
+
+
+
+
+
+@150=~Well, I might actually help you...I can see that you study the school of Conjuration. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@161=~I would have never imagined that such a complicated spell would exist and I would have never learned it without your help. My quest just seems much less impossible, now. Thank you, Saradas!~
+
+@151=~Well, I might actually help you...I can see that you study the Wild Magic. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@152=~Well, I might actually help you...I can see that you study the school of Abjuration. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@153=~Well, I might actually help you...I can see that you study the school of Divination. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@154=~Well, I might actually help you...I can see that you study the school of Enchantment. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@155=~Well, I might actually help you...I can see that you study the school of Illusion. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@156=~Well, I might actually help you...I can see that you study the school of Invocation. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@157=~Well, I might actually help you...I can see that you study the school of Necromancy. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@158=~Well, I might actually help you...I can see that you study the school of Alteration. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@159=~Well, I might actually help you...I can see that you are a Generalist, you study magic in each one of its forms. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+@160=~Well, I might actually help you...I can see that you are a Dragon Disciple. I will teach you this spell to aid you in your task, but don't use it without due attention, for its powers are truly amazing.~
+
+
+@162=~The final battle awaits, son of Bhaal. You must fulfil your destiny, or you shall perish and become dust in the wind.~
+@163=~I'm ready. Irenicus will face the true wrath of a son of Bhaal. I need your scrolls before I head to Suldanessellar.~
+@164=~I just want to live my life like any other creature of this world...Thank you for all your support, Saradas.~
+
+
+@165=~Oh! You have retrieved a wonderful specimen of Shadow Stone! It's a very rare kind of stone, it is said that it can conceal its owner from evil creatures. I can enchant this artifact for only 2500 gold coins.~
+@166=~Yes, enchant the stone for me!~
+@167=~Actually I prefer to keep it with me for now.~
+@181=~I cannot afford it for now...I will come back when I have enough gold.~
+
+@168=~As you prefer. Come back to me if you change your mind.~
+@169=~Excellent, I shall begin the process.~
+
+@170=~Oh! You have retrieved the Mask of King Strohm III! It was long believed lost, this is a great discovery. It is said that it can show the truth to whoever wears it. I can enchant this artifact for only 3500 gold coins.~
+@171=~Sounds promising, you can proceed. Here's the gold you requested.~
+
+@172=~The Book of Kaza! You never cease to amaze me. It contains secrets about life and death, though it cannot be read with mortal eyes. I can enchant this artifact for only 3500 gold coins.~
+@173=~Uhm...This is quite expensive, I hope the results will be amazing. Go on, Saradas.~
+
+@174=~I can see you bring the shining Symbol of Amaunator with you! It can dissipate any kind of darkness, no matter how deep, and instill courage to its owner's heart. I can enchant this artifact for only 4000 gold coins.~
+@175=~Even though I'm too old to be afraid of the dark, I'm interested in that trinket! Take my gold.~
+
+@176=~Uhm, that must be a Shamanic Staff. A very interesting and archaic artifact! Magic berries grow on it and they have the power to restore minor wounds to its wielder. I can enchant this artifact for only 2500 gold coins.~
+@177=~The clerics' labor unions will chase me to death for this...Alright, I'll take the risk, enchant it!~
+
+@182=~And it's done, I have just created a masterpiece. Use it wisely, <CHARNAME>.~
+
+@183=~I see you carry the wonderful Mantle of Waukeen with you! I could craft a fine artifact with that relic, if you only had the required materials. It will grant you good luck and all your business would thrive. I need 3500 gold coins, a perfect diamond, an emerald, a star sapphire and a Friend scroll. Come back to me when you have everything I asked.~
+@184=~You are back with the Mantle of Waukeen and all the required gems! I remind you the artifact will grant you good luck and all your business would thrive. It will cost you 3500 gold coins, a perfect diamond, an emerald, a star sapphire and a Friend scroll. If you agree with this I shall proceed immediately.~
+@185=~Who would turn his back to such wealths? You can proceed, Saradas.~

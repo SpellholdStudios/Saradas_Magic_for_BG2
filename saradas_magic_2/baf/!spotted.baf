@@ -1,0 +1,8 @@
+IF
+See([pc])
+THEN
+RESPONSE #100
+SmallWait(12)
+StartCutScene("!scut02")
+DestroySelf()
+END
