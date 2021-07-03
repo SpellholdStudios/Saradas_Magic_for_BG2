@@ -9,8 +9,7 @@
 
 <div align="center"><h1></a>Saradas Magic for BG2 (WIP)</h1>
 
-<h3>A Spellhold Studios mod for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
-Baldur's Gate Trilogy and EET<h3>
+<h3>A Spellhold Studios mod for Baldur's Gate II:ToB, Baldur's Gate Trilogy, BG2:EE and EET<h3>
 
 ## 
 
@@ -24,6 +23,74 @@ Baldur's Gate Trilogy and EET<h3>
 
 <img style="float: left;" src="saradas_magic_2/readme/images/sartobm.jpg"> 
 <div align="right"><a href="#top">Back to top</a></div>
+
+SARADAS MAGIC 2:SoA PART
+
+Saradas Magic 2 is a mod that introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
+- Identification at reduced price
+- Cure the party when one or more members of the group are seriously injured
+- An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him
+- A store with exclusive articles
+
+In the latter, you can find seven brand new arcane spells I created:
+- Flawless Teleport  https://www.youtube.com/watch?v=vm0m0YcFl20
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/vm0m0YcFl20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Lashing Wind      https://www.youtube.com/watch?v=Ve4__wlDBMI
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Ve4__wlDBMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Gravitational Field  https://www.youtube.com/watch?v=eHwCaTr5ABQ
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/eHwCaTr5ABQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Horrid transformation  https://www.youtube.com/watch?v=tdsylCxq-MI
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/tdsylCxq-MI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Drain Spell           https://www.youtube.com/watch?v=XK4DvrcsgIo
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/XK4DvrcsgIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Spectacular Combustion  https://www.youtube.com/watch?v=GXZsW9TzLdY
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/GXZsW9TzLdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Tenser's Supremacy    https://www.youtube.com/watch?v=kcuMWvShB1g
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/kcuMWvShB1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+(The prices are not very cheap but you can still try to steal from the store :]  )
+In addition to this, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose.The six artifacts are:
+- The Shaman's Staff
+- The Book of Kaza
+- The Mask of King Strohm III
+- The Shadow Dragon Wardstone
+- The Symbol of Amaunator
+- The Mantle of Waukeen
+
+[![Lashing Wind](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+
+[![Lashing Wind spell video](http://img.youtube.com/vi/vm0m0YcFl20/0.jpg)](https://www.youtube.com/embed/vm0m0YcFl20 "Lashing Wind spell video")
+
+Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class. All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
+- Spiritual Explosion (Invocation)
+- Impenetrable Defense (Abjuration)
+- Ego's Frailty (Alteration)
+- Summon Devil of Baator (Evocation)
+- Foreseeing the future (Divination)
+- Absolute abnegation (Enchantment)
+- Legion of shadows (Illusion)
+- Deathly Hallows (Necromancy)
+- Knowledge of the Scholar (Generalist)
+- Shroud of wild magic (Wild magic)
+- Dragonborn (Dragon Disciple)
+(work on pure mages, multi-classed mages, dual-classed mages)
+
+
+In Throne of Bhaal Saradas is finally a recruitable NPC!
+
+You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage. His stats are:STR 10DEX 13CON 14INT 18WIS 20CHA 15
+Background:
+Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the son of Bhaal grew stronger and decided to follow his path. Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way.He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.  
+Saradas Magic 2 features in Throne of Bhaal :
+- Banters and dialogues with many of the original BioWare NPCs
+- He expresses his thoughts regarding events and dialogues (interjections)
+- He has a custom ring
+- You can experience 6 different epilogues
+- 1 custom skill
+- Dialogues with the protagonist
+- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. (https://www.youtube.com/watch?v=NC6YPDjXcjg) The other one eventually triggers if you have both Saradas and Edwin inside your party.This time Edwin has really gone too far ;)
+
+([url=https://www.youtube.com/watch?v=kkoBmEKTCw8]https://www.youtube.com/watch?v=kkoBmEKTCw8[/url])
 
 
 <hr>
