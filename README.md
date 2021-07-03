@@ -57,9 +57,11 @@ In addition to this, Saradas is an artifact collector. If you find any ancient a
 - The Symbol of Amaunator
 - The Mantle of Waukeen
 
-[![Lashing Wind](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+[![Lashing Wind](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/embed/vm0m0YcFl20 "Everything Is AWESOME")
 
 [![Lashing Wind spell video](http://img.youtube.com/vi/vm0m0YcFl20/0.jpg)](https://www.youtube.com/embed/vm0m0YcFl20 "Lashing Wind spell video")
+
+[![Lashing Wind spell video](videos/lashing_wind2.png)](https://www.youtube.com/embed/vm0m0YcFl20 "Lashing Wind spell video")
 
 Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class. All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
 - Spiritual Explosion (Invocation)
