@@ -1,28 +1,28 @@
 IF
-  global("!SarafinTalked","GLOBAL",1)
+	Global("!SarafinTalked","GLOBAL",1)
 THEN
-  RESPONSE #100
-  DialogInterrupt(FALSE)
-  GiveItemCreate("potn52",protagonist,6,6,0)
-  GiveItemCreate("potn35",protagonist,2,2,0)
-  GiveItemCreate("potn43",protagonist,1,1,0)
-  GiveItemCreate("arow05",protagonist,25,25,0)
-  GiveItemCreate("dart03",protagonist,15,15,0)
-  GiveItemCreate("scrlb4",protagonist,1,1,0)
-  GiveItemCreate("scrl61",protagonist,6,6,0)
-  smallwait(8)
-  ForceSpell(Myself,WIZARD_DIMENSION_DOOR)
-  Wait(4)
-  DestroySelf()
-  DialogInterrupt(TRUE)
+	RESPONSE #100
+		DialogInterrupt(FALSE)
+		GiveItemCreate("potn52",Protagonist,6,6,0)
+		GiveItemCreate("potn35",Protagonist,2,2,0)
+		GiveItemCreate("potn43",Protagonist,1,1,0)
+		GiveItemCreate("arow05",Protagonist,25,25,0)
+		GiveItemCreate("dart03",Protagonist,15,15,0)
+		GiveItemCreate("scrlb4",Protagonist,1,1,0)
+		GiveItemCreate("scrl61",Protagonist,6,6,0)
+		SmallWait(8)
+		ForceSpell(Myself,WIZARD_DIMENSION_DOOR)
+		Wait(4)
+		DestroySelf()
+		DialogInterrupt(TRUE)
 END
 
 IF
-  See([PC])
-  NumTimesTalkedTo(0)
-  Allegiance(Myself,NEUTRAL)
+	See([PC])
+	NumTimesTalkedTo(0)
+	Allegiance(Myself,NEUTRAL)
 THEN
-  RESPONSE #100
-    MoveToObject("protagonist")
-    Dialogue([PC])
+	RESPONSE #100
+		MoveToObject("Protagonist")
+		Dialogue([PC])
 END

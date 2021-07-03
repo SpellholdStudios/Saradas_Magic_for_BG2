@@ -9,12 +9,12 @@ THEN
 		ApplySpell(Myself,WIZARD_SPELL_TRAP)
 		ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
 		ApplySpell(Myself,WIZARD_SPELL_SHIELD)
-                ApplySpell(Myself,WIZARD_STONE_SKIN)
+		ApplySpell(Myself,WIZARD_STONE_SKIN)
 		ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_CONJURATION)
 		ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_ABJURATION)
 		ApplySpell(Myself,WIZARD_MORDENKAINENS_SWORD)
 		ApplySpell(Myself,WIZARD_MORDENKAINENS_SWORD)
-		smallwait(7)
+		SmallWait(7)
 		DisplayStringWait(Myself,4478)
 		SetGlobal("!Sprotect","LOCALS",1)
 		Continue()
@@ -212,7 +212,7 @@ THEN
 	RESPONSE #100
 		ForceSpellRES("!Stelepo",nearestenemyof(myself))
 		wait(1)
-                Spell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
+				Spell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
 		Wait(4)
 		Continue()
 END
@@ -280,5 +280,3 @@ THEN
 		AttackOneRound(NearestEnemyOf(Myself))
 		Continue()
 END
-
-

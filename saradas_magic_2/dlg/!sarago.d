@@ -1,18 +1,11 @@
-// creator  : DLTCEP_enhanced_WeiDU (version 23100)
-// argument : SARAGO.DLG
-// game		 : .
-// source	 : ./override/SARAGO.DLG
-// dialog	 : d:\bgee\data\00766\dialog.tlk
-// dialogF  : (none)
-
 BEGIN ~!SARAGO~
 
-IF ~!global("!Sarago","locals",1) !global("!SaraSteal","GLOBAL",3)~ THEN BEGIN 0 // from:
-  SAY @200 /* ~Sono stanco di sprecare il mio tempo con voi. Spero solo che abbiate imparato la lezione e che in futuro non commettiate altri atti malvagi. Addio.~ */
+IF ~!Global("!Sarago","LOCALS",1) !global("!SaraSteal","GLOBAL",3)~ THEN BEGIN 0
+  SAY @200 /* ~I'm tired of wasting my time with you. My only hope is that you have learned the lesson and that you will not commit more evil deeds. Farewell.~ */
   IF ~~ THEN EXIT
 END
 
-IF ~global("!SaraSteal","GLOBAL",3)~ THEN BEGIN 1 // from:
-  SAY @201 /* ~Ecco fatto, spero vi piaccia la vostra nuova forma. Vi si addice moltissimo. Non temete, non e' permanente. Durera' quel tanto che basta a farvi passare la voglia di derubare il prossimo. Addio!~ */
+IF ~Global("!SaraSteal","GLOBAL",3)~ THEN BEGIN 1
+  SAY @201 /* ~There you go! I hope you feel comfortable in your new shape, it suits you very well, after all. Fear not, young ones, it's not permanent, it will last just enough to make you refrain from stealing again... And from eating chicken feed. Goodbye!~ */
   IF ~~ THEN DO ~ForceSpell(Myself,POOF_GONE)~ EXIT
 END
