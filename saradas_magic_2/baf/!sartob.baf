@@ -1,212 +1,207 @@
 // Reputation
 
 IF ReputationLT(Player1,5)
-Global("!SaradasLowRepLeaves","GLOBAL",0)
+	Global("!SaradasLowRepLeaves","GLOBAL",0)
 THEN
-RESPONSE #100
-wait(2)
-StartDialogNoSet(Player1)
+	RESPONSE #100
+		Wait(2)
+		StartDialogNoSet(Player1)
 END
 
 
 //////////////////////////////////
-/// Imoen 1st banter trigger   ///
+///  Imoen 1st banter trigger  ///
 /////////////////////////////////
 
 IF
-Global("!SImoenBanterTrigger","GLOBAL",0)
-InParty("!Sartob")
-InParty("imoen2")
+	Global("!SImoenBanterTrigger","GLOBAL",0)
+	InParty("!Sartob")
+	InParty("imoen2")
 THEN
-RESPONSE #100
-RealSetGlobalTimer("!SImoen1stBTimer","GLOBAL",2700)
-SetGlobal("!SImoenBanterTrigger","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("!SImoen1stBTimer","GLOBAL",2700)
+		SetGlobal("!SImoenBanterTrigger","GLOBAL",1)
 END
 
 IF
-Global("!SImoenBanter","GLOBAL",0)
-InParty("!Sartob")
-InParty("imoen2")
-RealGlobalTimerExpired("!SImoen1stBTimer","GLOBAL")
-!ActuallyInCombat()
+	Global("!SImoenBanter","GLOBAL",0)
+	InParty("!Sartob")
+	InParty("imoen2")
+	RealGlobalTimerExpired("!SImoen1stBTimer","GLOBAL")
+	!ActuallyInCombat()
 THEN
-RESPONSE #100
-StartDialogNoSet("imoen2")
+	RESPONSE #100
+		StartDialogNoSet("imoen2")
 END
 
 
 //////////////////////////////////
-/// Imoen 2nd banter trigger   ///
+///  Imoen 2nd banter trigger  ///
 /////////////////////////////////
 
 IF
-Global("!SImoenBanter","GLOBAL",1)
-RealGlobalTimerExpired("!SImoenFirstBanter","GLOBAL")
-InParty("!Sartob")
-InParty("imoen2")
-!ActuallyInCombat()
+	Global("!SImoenBanter","GLOBAL",1)
+	RealGlobalTimerExpired("!SImoenFirstBanter","GLOBAL")
+	InParty("!Sartob")
+	InParty("imoen2")
+	!ActuallyInCombat()
 THEN
-RESPONSE #100
-StartDialogNoSet("imoen2")
+	RESPONSE #100
+		StartDialogNoSet("imoen2")
 END
 
 
-
-
 //////////////////////////////////
-/// Imoen banter post dream   ///
+///  Imoen banter post dream  ///
 ////////////////////////////////
 
 IF
-Global("TalkedToSolar","GLOBAL",3)
-Global("!SGorionsPast","GLOBAL",0)
-Global("!SImoenBanter","GLOBAL",2)
-InParty("!Sartob")
-InParty("imoen2")
+	Global("TalkedToSolar","GLOBAL",3)
+	Global("!SGorionsPast","GLOBAL",0)
+	Global("!SImoenBanter","GLOBAL",2)
+	InParty("!Sartob")
+	InParty("imoen2")
 THEN
-RESPONSE #100
-RealSetGlobalTimer("!SGorionsPastTimer","GLOBAL",900)
-SetGlobal("!SGorionsPast","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("!SGorionsPastTimer","GLOBAL",900)
+		SetGlobal("!SGorionsPast","GLOBAL",1)
 END
 
 IF
-RealGlobalTimerExpired("!SGorionsPastTimer","GLOBAL")
-Global("!SImoenBanter","GLOBAL",2)
-!ActuallyInCombat()
-InParty("!Sartob")
-InParty("imoen2")
+	RealGlobalTimerExpired("!SGorionsPastTimer","GLOBAL")
+	Global("!SImoenBanter","GLOBAL",2)
+	!ActuallyInCombat()
+	InParty("!Sartob")
+	InParty("imoen2")
 THEN
-RESPONSE #100
-StartDialogNoSet("imoen2")
+	RESPONSE #100
+		StartDialogNoSet("imoen2")
 END
 
 
-
-
-//////////////////////////////////////
-///   Edwin becomes Edwina         ///
-//////////////////////////////////////
+//////////////////////////////
+///  Edwin becomes Edwina  ///
+//////////////////////////////
 
 IF
-Global("!SWeMetElminster","GLOBAL",1)
+	Global("!SWeMetElminster","GLOBAL",1)
 THEN
-RESPONSE #100
-SetGlobal("!SWeMetElminster","GLOBAL",2)
-SetGlobalTimer("!SWeMetElminsterTimerStarted","GLOBAL",50400)
-END
-
-
-IF
-Global("!SWeMetElminster","GLOBAL",2)
-GlobalTimerExpired("!SWeMetElminsterTimerStarted","GLOBAL")
-!ActuallyInCombat()
-InParty("!Sartob")
-InParty("Edwin")
-!AreaCheck("AR6200")
-!AreaCheck("AR4500")
-!AreaCheck("AR5505")
-!AreaCheck("AR5500")
-Range(Protagonist,7)
-Range("Edwin",7)
-THEN
-RESPONSE #100
-SetGlobal("!SWeMetElminster","GLOBAL",3)
-StartCutSceneMode()
-ClearAllActions()
-StartCutScene("!Selmcut")
+	RESPONSE #100
+		SetGlobal("!SWeMetElminster","GLOBAL",2)
+		SetGlobalTimer("!SWeMetElminsterTimerStarted","GLOBAL",50400)
 END
 
 
 IF
-Global("!SWeMetElminster","GLOBAL",4)
+	Global("!SWeMetElminster","GLOBAL",2)
+	GlobalTimerExpired("!SWeMetElminsterTimerStarted","GLOBAL")
+	!ActuallyInCombat()
+	InParty("!Sartob")
+	InParty("Edwin")
+	!AreaCheck("AR6200")
+	!AreaCheck("AR4500")
+	!AreaCheck("AR5505")
+	!AreaCheck("AR5500")
+	Range(Protagonist,7)
+	Range("Edwin",7)
 THEN
-RESPONSE #100
-SetGlobal("!SWeMetElminster","GLOBAL",5)
-SetGlobalTimer("!SWeMetElminsterTimerTaunt","GLOBAL",75)
-END
-
-IF
-Global("!SWeMetElminster","GLOBAL",5)
-GlobalTimerExpired("!SWeMetElminsterTimerTaunt","GLOBAL")
-!ActuallyInCombat()
-InParty("!Sartob")
-InParty("Edwin")
-!AreaCheck("AR6200")
-THEN
-RESPONSE #100
-SetGlobal("!SWeMetElminster","GLOBAL",6)
-StartDialogNoSet(Protagonist)
-END
-
-IF
-Global("!SEdwinChangeName","GLOBAL",1)
-THEN
-RESPONSE #100
-SetGlobal("!SEdwinChangeName","GLOBAL",2)
-ActionOverride("Edwin",SetName(~Edwina~))
-END
-
-
-
-//////////////////////////////////////
-///   Trigger Potere Crescente 1   ///
-//////////////////////////////////////
-
-IF
-DEAD("yaga01")
-DEAD("illasera")
-DEAD("gromnir")
-!DEAD("abazigal")
-!DEAD("sendai")
-Global("!Saradas3BSDTimerSet","GLOBAL",0)
-InParty("!Sartob")
-THEN
-RESPONSE #100
-RealSetGlobalTimer("!Saradas3BSDTimer","GLOBAL",900)
-SetGlobal("!Saradas3BSDTimerSet","GLOBAL",1)
+	RESPONSE #100
+		SetGlobal("!SWeMetElminster","GLOBAL",3)
+		StartCutSceneMode()
+		ClearAllActions()
+		StartCutScene("!Selmcut")
 END
 
 
 IF
-Global("!Saradas3BSDTimerSet","GLOBAL",1)
-RealGlobalTimerExpired("!Saradas3BSDTimer","GLOBAL")
-!ActuallyInCombat()
-InParty("!Sartob")
+	Global("!SWeMetElminster","GLOBAL",4)
 THEN
-RESPONSE #100
-StartDialogNoSet(Player1)
+	RESPONSE #100
+		SetGlobal("!SWeMetElminster","GLOBAL",5)
+		SetGlobalTimer("!SWeMetElminsterTimerTaunt","GLOBAL",75)
+END
+
+IF
+	Global("!SWeMetElminster","GLOBAL",5)
+	GlobalTimerExpired("!SWeMetElminsterTimerTaunt","GLOBAL")
+	!ActuallyInCombat()
+	InParty("!Sartob")
+	InParty("Edwin")
+	!AreaCheck("AR6200")
+THEN
+	RESPONSE #100
+		SetGlobal("!SWeMetElminster","GLOBAL",6)
+		StartDialogNoSet(Protagonist)
+END
+
+IF
+	Global("!SEdwinChangeName","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("!SEdwinChangeName","GLOBAL",2)
+		ActionOverride("Edwin",SetName(@100)) // ~Edwina~
 END
 
 
-//////////////////////////////////////
-///   Trigger Potere Crescente 2   ///
-//////////////////////////////////////
-
+////////////////////////////////////
+///  Trigger Potere Crescente 1  ///
+////////////////////////////////////
 
 IF
-DEAD("yaga01")
-DEAD("illasera") 
-DEAD("gromnir")
-DEAD("abazigal")
-DEAD("sendai")
-!DEAD("balth")
-Global("!Saradas5BSDTimerSet","GLOBAL",0)
-InParty("!Sartob")
+	DEAD("yaga01")
+	DEAD("illasera")
+	DEAD("gromnir")
+	!DEAD("abazigal")
+	!DEAD("sendai")
+	Global("!Saradas3BSDTimerSet","GLOBAL",0)
+	InParty("!Sartob")
 THEN
-RESPONSE #100
-RealSetGlobalTimer("!Saradas5BSDTimer","GLOBAL",960)
-SetGlobal("!Saradas5BSDTimerSet","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("!Saradas3BSDTimer","GLOBAL",900)
+		SetGlobal("!Saradas3BSDTimerSet","GLOBAL",1)
 END
 
 
 IF
-Global("!Saradas5BSDTimerSet","GLOBAL",1)
-RealGlobalTimerExpired("!Saradas5BSDTimer","GLOBAL")
-!ActuallyInCombat()
-InParty("!Sartob")
+	Global("!Saradas3BSDTimerSet","GLOBAL",1)
+	RealGlobalTimerExpired("!Saradas3BSDTimer","GLOBAL")
+	!ActuallyInCombat()
+	InParty("!Sartob")
 THEN
-RESPONSE #100
-StartDialogNoSet(Player1)
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+////////////////////////////////////
+///  Trigger Potere Crescente 2  ///
+////////////////////////////////////
+
+
+IF
+	DEAD("yaga01")
+	DEAD("illasera") 
+	DEAD("gromnir")
+	DEAD("abazigal")
+	DEAD("sendai")
+	!DEAD("balth")
+	Global("!Saradas5BSDTimerSet","GLOBAL",0)
+	InParty("!Sartob")
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("!Saradas5BSDTimer","GLOBAL",960)
+		SetGlobal("!Saradas5BSDTimerSet","GLOBAL",1)
+END
+
+
+IF
+	Global("!Saradas5BSDTimerSet","GLOBAL",1)
+	RealGlobalTimerExpired("!Saradas5BSDTimer","GLOBAL")
+	!ActuallyInCombat()
+	InParty("!Sartob")
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
 END
 
 
@@ -215,29 +210,29 @@ END
 //////////////////////////////////////
 
 IF
-DEAD("yaga01")
-DEAD("illasera") 
-DEAD("gromnir")
-DEAD("abazigal")
-DEAD("sendai")
-DEAD("balth")
-DEAD("CHALRV01")
-Global("!SaradasAllBSDTimerSet","GLOBAL",0)
-InParty("!Sartob")
+	DEAD("yaga01")
+	DEAD("illasera") 
+	DEAD("gromnir")
+	DEAD("abazigal")
+	DEAD("sendai")
+	DEAD("balth")
+	DEAD("CHALRV01")
+	Global("!SaradasAllBSDTimerSet","GLOBAL",0)
+	InParty("!Sartob")
 THEN
-RESPONSE #100
-RealSetGlobalTimer("!SaradasAllBSDTimer","GLOBAL",25)
-SetGlobal("!SaradasAllBSDTimerSet","GLOBAL",1)
+	RESPONSE #100
+		RealSetGlobalTimer("!SaradasAllBSDTimer","GLOBAL",25)
+		SetGlobal("!SaradasAllBSDTimerSet","GLOBAL",1)
 END
 
 
 IF
-Global("!SaradasAllBSDTimerSet","GLOBAL",1)
-RealGlobalTimerExpired("!SaradasAllBSDTimer","GLOBAL")
-!ActuallyInCombat()
-InParty("!Sartob")
-!AreaCheck("AR6200")
+	Global("!SaradasAllBSDTimerSet","GLOBAL",1)
+	RealGlobalTimerExpired("!SaradasAllBSDTimer","GLOBAL")
+	!ActuallyInCombat()
+	InParty("!Sartob")
+	!AreaCheck("AR6200")
 THEN
-RESPONSE #100
-StartDialogNoSet(Player1)
+	RESPONSE #100
+		StartDialogNoSet(Player1)
 END

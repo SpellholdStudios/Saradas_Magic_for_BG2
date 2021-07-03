@@ -9,10 +9,12 @@
 
 <div align="center"><h1></a>Saradas Magic for BG2 (WIP)</h1>
 
+<h3>A Spellhold Studios mod for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
+Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
-<div align="center">
+</div><br>
 
 
 <hr>

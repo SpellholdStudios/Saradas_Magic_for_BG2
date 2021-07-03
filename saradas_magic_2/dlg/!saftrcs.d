@@ -1,7 +1,6 @@
 BEGIN ~!Saftrcs~
 
-
-IF ~global("!SAfterCutScene","GLOBAL",1)~ THEN BEGIN DlgAfterCutScene
-  SAY @182 /* Ecco a te l'oggetto incantato */
-IF ~~ THEN DO ~setglobal("!SAfterCutScene","GLOBAL",0)~ EXIT
+IF ~Global("!SAfterCutScene","GLOBAL",1)~ THEN BEGIN DlgAfterCutScene
+  SAY @1 /* And it's done, I have just created a masterpiece. Use it wisely, <CHARNAME>. */
+	IF ~~ THEN DO ~SetGlobal("!SAfterCutScene","GLOBAL",0)~ EXIT
 END

@@ -1,16 +1,6 @@
-// creator  : DLTCEP_enhanced_WeiDU (version 23100)
-// argument : SARADAS.DLG
-// game		 : .
-// source	 : ./override/SARADAS.DLG
-// dialog	 : d:\bgee\data\00766\dialog.tlk
-// dialogF  : (none)
-
 BEGIN ~!SARADAS~
 
-
-
 /* ----------------BLOCCO PRIMO INCONTRO------------------------ */
-
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN Greetings0
   SAY @100 /* Dialogo di primo incontro */
@@ -65,28 +55,24 @@ END
 
 IF ~~ THEN BEGIN SaradasProvoked2
   SAY @118 /* ~Saggia decisione, ora va.*/
-IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 
 
-
-
 /* ---------------BLOCCO ARTEFATTI------------------------------ */
-
-
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenShadowStone","GLOBAL",0) partyhasitem("misc6p")~ THEN BEGIN ArtifactShadowStone
   SAY @165 /* avete la pietra ombra! */
   IF ~PartyGoldGT(2499)~ THEN REPLY @166  /* Incanta l'oggetto */ GOTO GiveRewardShadowStone
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(2500)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 END
 
 IF ~~ THEN BEGIN GiveRewardShadowStone
   SAY @169 /* bene, iniziamo */
-IF ~~ THEN DO ~setglobal("!SGivenShadowStone","GLOBAL",1) TakePartyItem("misc6p") DestroyItem("misc6p") TakePartyGold(2500) DestroyGold(2500) GiveItemCreate("!Shadow2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenShadowStone","GLOBAL",1) TakePartyItem("misc6p") DestroyItem("misc6p") TakePartyGold(2500) DestroyGold(2500) GiveItemCreate("!Shadow2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) PartyHasItem("misc8L") PartyHasItem("scrl72") PartyHasItem("misc42") PartyHasItem("misc43") PartyHasItem("misc41")~ THEN BEGIN WaukeenAndGems
@@ -94,26 +80,26 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) PartyHasItem("misc
   IF ~PartyGoldGT(3499)~ THEN REPLY @185  /* Incanta l'oggetto */ GOTO GiveRewardWaukeen
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(3500)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 
 END
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) partyhasitem("misc8L") OR(4) !partyhasitem("scrl72") !partyhasitem("misc42") !partyhasitem("misc43") !partyhasitem("misc41")~ THEN BEGIN WaukeenNoGems
   SAY @183 /* avete il mantello ma non le gemme */
-  IF ~~ THEN REPLY ~I will come back when I have all the components you require.~ EXIT
-  IF ~~ THEN REPLY ~I see...I'd like to take a look at your goods now.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~ EXIT
+  IF ~~ THEN REPLY @192 EXIT
+  IF ~~ THEN REPLY @193 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~ EXIT
 END
 
 
 IF ~~ THEN BEGIN GiveRewardWaukeen
   SAY @169 /* bene, iniziamo */
-IF ~~ THEN DO ~setglobal("!SGivenWaukeen","GLOBAL",1) TakePartyItem("misc8l") DestroyItem("misc8l") TakePartyItem("scrl72") DestroyItem("scrl72") TakePartyItem("misc41") DestroyItem("misc41") TakePartyItem("misc42") DestroyItem("misc42") TakePartyItem("misc43") DestroyItem("misc43") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Swaukn",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenWaukeen","GLOBAL",1) TakePartyItem("misc8l") DestroyItem("misc8l") TakePartyItem("scrl72") DestroyItem("scrl72") TakePartyItem("misc41") DestroyItem("misc41") TakePartyItem("misc42") DestroyItem("misc42") TakePartyItem("misc43") DestroyItem("misc43") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Swaukn",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
 
 
 IF ~~ THEN BEGIN AsYouPrefer
   SAY @168 /* come back if you change your mind */
-IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 
@@ -122,15 +108,14 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenMaskStrohm","GLOBAL",0) partyhasitem("k
   IF ~PartyGoldGT(3499)~ THEN REPLY @171  /* Incanta l'oggetto */ GOTO GiveRewardMaskStrohm
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(3500)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 
 END
 
 IF ~~ THEN BEGIN GiveRewardMaskStrohm
   SAY @169 /* a great addition to my collection */
-IF ~~ THEN DO ~setglobal("!SGivenMaskStrohm","GLOBAL",1) TakePartyItem("key20") DestroyItem("key20") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Strohm2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01")~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenMaskStrohm","GLOBAL",1) TakePartyItem("key20") DestroyItem("key20") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Strohm2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01")~ EXIT
 END
-
 
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenKazaBook","GLOBAL",0) partyhasitem("book89")~ THEN BEGIN ArtifactKazaBook
@@ -138,14 +123,13 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenKazaBook","GLOBAL",0) partyhasitem("boo
   IF ~PartyGoldGT(3499)~ THEN REPLY @173  /* Incanta l'oggetto */ GOTO GiveRewardKazaBook
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(3500)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 END
 
 IF ~~ THEN BEGIN GiveRewardKazaBook
   SAY @169 /* a great addition to my collection */
-IF ~~ THEN DO ~setglobal("!SGivenKazaBook","GLOBAL",1) TakePartyItem("book89") DestroyItem("book89") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Skaza2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenKazaBook","GLOBAL",1) TakePartyItem("book89") DestroyItem("book89") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Skaza2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
-
 
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenAmaunator","GLOBAL",0) partyhasitem("key23")~ THEN BEGIN ArtifactAmaunator
@@ -153,15 +137,13 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenAmaunator","GLOBAL",0) partyhasitem("ke
   IF ~PartyGoldGT(3999)~ THEN REPLY @175  /* ecco a te l'oggetto */ GOTO GiveRewardAmaunator
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(4000)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 END
-
 
 IF ~~ THEN BEGIN GiveRewardAmaunator
   SAY @169 /* a great addition to my collection */
-IF ~~ THEN DO ~setglobal("!SGivenAmaunator","GLOBAL",1) TakePartyItem("key23") DestroyItem("key23") TakePartyGold(4000) DestroyGold(4000) GiveItemCreate("!Samauna",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
+ IF ~~ THEN DO ~setglobal("!SGivenAmaunator","GLOBAL",1) TakePartyItem("key23") DestroyItem("key23") TakePartyGold(4000) DestroyGold(4000) GiveItemCreate("!Samauna",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
-
 
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenShaman","GLOBAL",0) partyhasitem("misc5t")~ THEN BEGIN ArtifactShaman
@@ -169,22 +151,17 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenShaman","GLOBAL",0) partyhasitem("misc5
   IF ~PartyGoldGT(2499)~ THEN REPLY @177  /* ecco a te l'oggetto */ GOTO GiveRewardShaman
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(2500)~ THEN REPLY @181  /* Non ho oro */  EXIT
-  IF ~~ THEN REPLY ~I'm not interested. Show me your goods instead, please.~  DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
+  IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 END
 
 IF ~~ THEN BEGIN GiveRewardShaman
   SAY @169 /* a great addition to my collection */
-IF ~~ THEN DO ~setglobal("!SGivenShaman","GLOBAL",1) TakePartyItem("misc5t") DestroyItem("misc5t") TakePartyGold(2500) DestroyGold(2500) GiveItemCreate("!Shaman2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01")~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenShaman","GLOBAL",1) TakePartyItem("misc5t") DestroyItem("misc5t") TakePartyGold(2500) DestroyGold(2500) GiveItemCreate("!Shaman2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01")~ EXIT
 END
 
 
 
-
-
 /* ---------------BLOCCO SECONDO INCONTRO------------------------------ */
-
-
-
 
 IF ~NumTimesTalkedToGT(0) GlobalLT("Chapter","GLOBAL",5)~ THEN BEGIN SaradasSecondDialog
   SAY @123 /* Oh, siete tornati.*/
@@ -245,10 +222,7 @@ END
 
 
 
-
 /* ---------------BLOCCO DOPO SPELLHOLD-UNDERDARK E ASSEGNAZIONE SKILLS EPICHE------------------------------ */
-
-
 
 IF ~NumTimesTalkedToGT(0) Global("Chapter","GLOBAL",6) global("!SaradasTalkAfterUnderdark","GLOBAL",0)~ THEN BEGIN SaradasAfterUnderdark
   SAY @127               /* Bentornati! ho saputo della vostra eroica impresa a Spellhold e Underdark */
@@ -258,116 +232,108 @@ END
 
 IF ~~ THEN BEGIN SaradasTeachesEpic
   SAY @130 /* non c'e' ragione di essere modesti con me*/
-IF ~Kit(protagonist,MAGESCHOOL_ABJURER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveAbjurerSpell
-IF ~Kit(protagonist,MAGESCHOOL_DIVINER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDivinerSpell
-IF ~Kit(protagonist,MAGESCHOOL_ENCHANTER)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveEnchanterSpell
-IF ~Kit(protagonist,MAGESCHOOL_CONJURER)~                  THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveConjurerSpell
-IF ~Kit(protagonist,MAGESCHOOL_ILLUSIONIST)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveIllusionistSpell
-IF ~Kit(protagonist,MAGESCHOOL_INVOKER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveInvokerSpell
-IF ~Kit(protagonist,MAGESCHOOL_NECROMANCER)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveNecromancerSpell
-IF ~Kit(protagonist,MAGESCHOOL_TRANSMUTER)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveTransmuterSpell
-IF ~Class(protagonist,MAGE)
-    !Kit(protagonist,MAGESCHOOL_ABJURER)
-    !Kit(protagonist,MAGESCHOOL_DIVINER)
-    !Kit(protagonist,MAGESCHOOL_ENCHANTER)
-    !Kit(protagonist,MAGESCHOOL_CONJURER)
-    !Kit(protagonist,MAGESCHOOL_ILLUSIONIST)
-    !Kit(protagonist,MAGESCHOOL_INVOKER)
-    !Kit(protagonist,MAGESCHOOL_NECROMANCER)
-    !Kit(protagonist,MAGESCHOOL_TRANSMUTER)
-    !Kit(protagonist,WILDMAGE)
-    !Kit(protagonist,DRAGON_DISCIPLE)~                     THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
-
-IF ~!Kit(protagonist,MAGESCHOOL_ABJURER)
-    !Kit(protagonist,MAGESCHOOL_DIVINER)
-    !Kit(protagonist,MAGESCHOOL_ENCHANTER)
-    !Kit(protagonist,MAGESCHOOL_CONJURER)
-    !Kit(protagonist,MAGESCHOOL_ILLUSIONIST)
-    !Kit(protagonist,MAGESCHOOL_INVOKER)
-    !Kit(protagonist,MAGESCHOOL_NECROMANCER)
-    !Kit(protagonist,MAGESCHOOL_TRANSMUTER)
+IF ~Kit(Protagonist,MAGESCHOOL_ABJURER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveAbjurerSpell
+IF ~Kit(Protagonist,MAGESCHOOL_DIVINER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDivinerSpell
+IF ~Kit(Protagonist,MAGESCHOOL_ENCHANTER)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveEnchanterSpell
+IF ~Kit(Protagonist,MAGESCHOOL_CONJURER)~                  THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveConjurerSpell
+IF ~Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveIllusionistSpell
+IF ~Kit(Protagonist,MAGESCHOOL_INVOKER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveInvokerSpell
+IF ~Kit(Protagonist,MAGESCHOOL_NECROMANCER)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveNecromancerSpell
+IF ~Kit(Protagonist,MAGESCHOOL_TRANSMUTER)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveTransmuterSpell
+IF ~Class(Protagonist,MAGE)
+    !Kit(Protagonist,MAGESCHOOL_ABJURER)
+    !Kit(Protagonist,MAGESCHOOL_DIVINER)
+    !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
+    !Kit(Protagonist,MAGESCHOOL_CONJURER)
+    !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
+    !Kit(Protagonist,MAGESCHOOL_INVOKER)
+    !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
+    !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
+    !Kit(Protagonist,WILDMAGE)
+    !Kit(Protagonist,DRAGON_DISCIPLE)~                     THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
+IF ~!Kit(Protagonist,MAGESCHOOL_ABJURER)
+    !Kit(Protagonist,MAGESCHOOL_DIVINER)
+    !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
+    !Kit(Protagonist,MAGESCHOOL_CONJURER)
+    !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
+    !Kit(Protagonist,MAGESCHOOL_INVOKER)
+    !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
+    !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
     OR(5)
-    Class(protagonist,FIGHTER_MAGE)
-    Class(protagonist,FIGHTER_MAGE_THIEF)
-    Class(protagonist,MAGE_THIEF)
-    Class(protagonist,CLERIC_MAGE)
-    Class(protagonist,FIGHTER_MAGE_CLERIC)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
-
-IF ~Kit(protagonist,WILDMAGE)~                             THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveWildSpell
-IF ~Kit(protagonist,DRAGON_DISCIPLE)~                      THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
+    Class(Protagonist,FIGHTER_MAGE)
+    Class(Protagonist,FIGHTER_MAGE_THIEF)
+    Class(Protagonist,MAGE_THIEF)
+    Class(Protagonist,CLERIC_MAGE)
+    Class(Protagonist,FIGHTER_MAGE_CLERIC)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
+IF ~Kit(Protagonist,WILDMAGE)~                             THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveWildSpell
+IF ~Kit(Protagonist,DRAGON_DISCIPLE)~                      THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
 IF ~~ THEN REPLY @131 /*Grazie Saradas, ma c'e' ancora molto da fare*/ DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1)~ EXIT
 END
 
-
 IF ~~ THEN BEGIN GiveConjurerSpell
   SAY @150
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassCON","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassCON","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveWildSpell
   SAY @151
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassWIL","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassWIL","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveAbjurerSpell
   SAY @152
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassABJ","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassABJ","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveDivinerSpell
   SAY @153
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassDIV","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassDIV","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveEnchanterSpell
   SAY @154
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassENC","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassENC","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveIllusionistSpell
   SAY @155
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassILL","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassILL","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveInvokerSpell
   SAY @156
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassINV","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassINV","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveNecromancerSpell
   SAY @157
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassNEC","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassNEC","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveTransmuterSpell
   SAY @158
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassALT","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassALT","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveGeneralistSpell
   SAY @159
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassGEN","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassGEN","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveDragonSpell
   SAY @160
-IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassDRA","GLOBAL",1)~ EXIT
+  IF ~~ THEN REPLY @161 DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1) SetGlobal("!SaradasGaveSpellClassDRA","GLOBAL",1)~ EXIT
 END
-
-
 
 
 IF ~~ THEN BEGIN SaradasLeaves
   SAY @133  /* Va bene va bene, me ne vado */
-IF ~~ THEN DO ~ForceSpell(Myself,POOF_GONE)~ EXIT
+  IF ~~ THEN DO ~ForceSpell(Myself,POOF_GONE)~ EXIT
 END
 
 
 
-
 /* -----------------BLOCCO ULTIMO CAPITOLO--------------------------------  */
-
-
 
 IF ~NumTimesTalkedToGT(0) global("!SaradasTalkAfterUnderdark","GLOBAL",1) GlobalGT("Chapter","GLOBAL",5)~ THEN BEGIN SaradasFinalChapter
   SAY @162 /* The final battle awaits, son of Bhaal. */
