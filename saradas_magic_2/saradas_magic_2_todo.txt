@@ -27,6 +27,16 @@ Videos links:
 
 TODO : fix items and spells
 
+- Tenser's supremacy: Create weapon (111) durations.
+
+- Impenetrable Defense: missing effects.
+
+- Summon Devil of Baator thunder4 thunder2 wav.
+
+- Legion of shadows spell: Type: Modify proficiencies (233).
+
+- Deathly Hallows Remove Immunity to effect (101),Target: Self (1),Power: 0,Unused: 0,Effect: Dispel effects (58) + spcnec3 25817 Disable display string (267) String: MY MOTHER SAYS THAT ELVES SHOULD GO CLIMB A TREE SOMEWHERE!.
+
 - Enchanted Mask of King Strohm III (!strohm2.itm)
 	+ Add tooltip :12095 12096
 

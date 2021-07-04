@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style_shs.css" type="text/css">
+
+	<title>
+		Spellhold Studios - Saradas Magic for BG2
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link href="images/shsweb.ico" rel="icon" type="image/bmp" />
+
+  </head>
+
+  <body>
+
+	<script type="module">
+		document.getElementById("latestVersion").innerText = document.getElementById('versionHistory').getElementsByTagName("h6")[0].innerText
+	</script>
+
+	<div id="wrap">
+	<a name="top" id="top"></a>
+	  <div id="header">
+
+		<h1 style="color: #781808;text-shadow: 0.1rem 0.1rem 0.25rem #807559;">Saradas Magic for BG2</h1>
+
+		<span style="font-style: italic;"><strong>A Spellhold Studios mod for Baldur's Gate II:<acronym title="Throne of Bhaal">ToB</acronym>, Baldur's Gate Trilogy, Baldur's Gate II: Enhanced Edition and EET.</strong></span>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
+
+		<p class="about">
+			Author: Saradas
+		</p>
+		<p class="about">
+			<a href="">Mod Website</a> &#8226; <a href="">Mod Forum</a> &#8226; <a href="">Download</a> &#8226; <a href="https://github.com/SpellholdStudios/Saradas_Magic_for_BG2/releases/latest">GitHub</a> &#8226; <span id="latestVersion"></span>
+		</p>
+		<hr style="margin: 10px 0 10px 0; padding: 0; height: 1px; border: 0; color: #aaa; background-color: #aaa;" />
+
+		<p class="menu">
+			<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#compon">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#version">Version History</a>
+		</p>
+	  </div>
+
+	 <div id="maindiv">
+<!-- ================== I n t r o d u c t i o n ================== -->
+	  <a name="intro" id="intro"></a>
+	  <div class="content">
+
+		<h2>Overview</h2><br>
+
+		<p>
+		  <table cellpadding=0 cellspacing=0 style="margin-left: 80px; margin-right: 70px">
+			<tr>
+			  <td><img src="images/sartobm.jpg" title="Saradas Portrait"></td>
+			  <td width=20 style="border:none"></td>
+			  <td style="border:none; width: 90%; line-height: 150%;">
+				This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit.<br><br>
+				In addition, Saradas is an artifacts collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item.<br><br>
+				In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
+			  </td>
+			</tr>
+		  </table>
+		</p><br>
+
+		<hr style="width: 90%; "/><br>
+
+		<p>
+			<strong>Flirts</strong>
+		</p>
+		<p>
+			Once you've had your first lovetalk with Neera, a flirt menu becomes available via force-talk. An additional number of flirts become available after you've completed the BG:EE portion of her romance as well.
+		</p><br>
+
+		<p>
+			<span style="color: #781808;">&#10173;</span> Visit the <a href="http://www.spellholdstudios.net/ie/neera">website</a> or <a href="http://www.shsforums.net/forum/636-neera-expansion-ee/">forum</a> for all the latest updates.
+		</p><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Overview</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================= C o m p a t i b i l i t y ================= -->
+	  <a name="compat" id="compat"></a>
+	  <div class="content">
+
+		<h2>Compatibility</h2><br>
+
+		<h3>Games supported</h3>
+
+		<p style="margin-top:2%;">
+			Saradas Magic for BGII is designed to work on the following Infinity Engine games:
+		</p>
+		<ul>
+			<li>Baldur's Gate II: Enhanced Edition (BG2:EE).</li>
+			<li>The original Baldur's Gate II (BG2, or just SoA) with the Throne of Bhaal (ToB) expansion. <strong>Make sure you have Throne of Bhaal patched to version 26498.</strong> Check the ReadMe files related to your patch in your game folder and the <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a> website if necessary.</li>
+			<li>The conversion projects based on <acronym title="Throne of Bhaal">ToB</acronym>, <a href="http://www.shsforums.net/forum/261-bgt-weidu/"><strong>Baldur's Gate Trilogy (BGT)</strong></a> and <a href="https://github.com/Gibberlings3/EET/releases"><strong>Enhanced Edition Trilogy (EET)</strong></a>.</li>
+		</ul></br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>Other Mods Compatibility</h3>
+
+		<p style="margin-top:2%;">
+			This mod is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mods.
+		</p>
+		<p>
+			Though we are striving to make Saradas Magic for BG2 compatible with as many other mods as possible, there is always a chance that incompatibilities will arise. If you encounter any bugs, please <a href="">report them on the forum!</a>
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>Installation Order</h3>
+
+		<p style="margin-top:2%;">
+		<ul>
+			<li>Please install Saradas Magic for BG2 after EET.</li>
+			<li>Please install Saradas Magic for BG2 before EET_End, and any final "biffing" routines.</li>
+		</ul>
+		</p><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Compatibility</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================== I n s t a l l a t i o n ================== -->
+	  <a name="installation" id="installation"></a>
+	  <div class="content">
+
+		<h2>Installation</h2><br>
+
+		<h3>Notes</h3>
+
+		<p style="margin-top:2%;">
+			<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong><span class="weidu">&nbsp;setup-saradas_magic_2.exe&nbsp;</span></strong>, un-install all previously installed components and delete the &#x1F4C1; saradas_magic_2 folder.</em>
+		</p>
+		<p>
+			<em>When installing or un-installing, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+		</p>
+		<p>
+			<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
+		</p>
+		<p>
+			You can extract files from the archive using <a href="https://www.7-zip.org/download.html">7zip</a>, <a href="https://www.rarlab.com/download.htm">WinRAR</a>, <a href="https://zipgenius.com/">ZipGenius</a>, or another file compression utility that handles .zip files.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h3>Enhanced Editions Note</h3>
+
+		<p style="margin-top:2%;">
+			The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h3>Windows</h3>
+
+		<p style="margin-top:2%;">
+			Saradas Magic for BG2 for Windows is distributed as an extractable compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			Extract the contents of the mod to the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>). On successful extraction, there should be a &#x1F4C1; saradas_magic_2 folder and a setup-saradas_magic_2.exe file in your game folder. To install, simply double-click <strong><span class="weidu">&nbsp;setup-saradas_magic_2.exe&nbsp;</span></strong> and follow the instructions on screen.
+		</p>
+		<p>
+			Run <strong><span class="weidu">&nbsp;setup-saradas_magic_2.exe&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise change components.
+		</p></br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h3>Mac OS</h3>
+
+		<p style="margin-top:2%;">
+			Saradas Magic for BG2 for Mac OS is distributed in the same compressed archive and includes a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			First, extract the files of the archive into your game directory. On successful extraction, there should be a &#x1F4C1; saradas_magic_2 folder, setup-saradas_magic_2 and setup-saradas_magic_2.command files in your game folder. To install, double-click <strong><span class="weidu">&nbsp;setup-saradas_magic_2.command&nbsp;</span></strong> and follow the instructions on screen.
+		</p>
+		<p>
+			You can run <strong><span class="weidu">&nbsp;setup-saradas_magic_2.command&nbsp;</span></strong> in your game folder to reinstall, un-install or otherwise the components settings.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h3>Linux</h3>
+
+		<p style="margin-top:2%;">
+			Saradas Magic for BG2 for Linux is distributed in the same compressed archive and does not include a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer.
+		</p>
+		<p>
+			Extract the contents of the mod to the folder of the game you wish to modify.
+		</p>
+		<p>
+			Download the latest Linux version of <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> and copy weidu, weinstall and tolower to /usr/bin. Then open a terminal and <strong><span class="weidu">&nbsp;cd&nbsp;</span></strong> to your game installation directory.
+		</p>
+		<p>
+			<em>Optional: run 'tolower' and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either, if you've extracted only this mod since the last time you lowercased file names. If unsure, running tolower and choosing both options is the safe bet.</em>
+		</p>
+		<p>
+			Run <strong><span class="weidu">&nbsp;weinstall setup-saradas_magic_2&nbsp;</span></strong> in your game folder to install the mod. Then run <strong><span class="weidu">&nbsp;wine bgmain.exe&nbsp;</span></strong> (or <strong><span class="weidu">&nbsp;wine baldur.exe&nbsp;</span></strong> for EE games), and start playing.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h3>Note for Complete Un-installation</h3>
+
+		<p style="margin-top:2%;">
+			In addition to the methods above for removing individual components, you can completely un-install the mod using <strong><span class="weidu">&nbsp;setup-saradas_magic_2 --uninstall&nbsp;</span></strong> at the command line to remove all components without wading through prompts.
+		</p><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Installation</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ================== D e t a i l s ================== -->
+	  <a name="details" id="details"></a>
+	  <div class="content">
+
+		<h2>Details</h2><br>
+
+		<p>
+			Saradas can be found in the temple of Lathander of Athkatla. In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>Statistics and Biography</h3>
+
+		<p style="margin-top:2%;">
+		  <table cellpadding=0 cellspacing=0  style="margin-left: 80px; width: 90%; padding: 10px;" summary="Saradas statistics">
+			<tr style="font-size: 125%; line-height: 300%;">
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-right: 1px solid #e5e5e5;">Portrait</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Strength</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Dexterity</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Constitution</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Intelligence</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Wisdom</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0;">Charisma</th>
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><img src="images/sartobm.jpg" title="Saradas Portrait"></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">10</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">13</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">14</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">18</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">20</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">15</td>
+			<tr>
+				<td colspan="7" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;"><strong>Biography:</strong><br><br>
+			  You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.</td>
+			</tr>
+		  </table>
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>Background</h3>
+
+		<p style="margin-top:2%;">
+			Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
+		</p>
+		<p>
+			Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way. He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>SoA content</h3>
+
+		<p style="margin-top:2%;">
+			In addition to having several exclusive dialogues that take place as the plot takes shape, Saradas offers:
+		</p>
+		  <ul>
+			<li>Identification at reduced price.</li>
+			<li>Cure the party when one or more members of the group are seriously injured.</li>
+			<li>An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him.</li>
+			<li>A store with exclusive articles.</li>
+		  </ul><br>
+
+		<p>
+			In the store, you can find seven brand new arcane spells I created:
+		</p>
+
+		  <table cellpadding=0 cellspacing=0  style="margin-left: 80px; width: 90%; padding: 10px;" summary="Saradas statistics">
+			<tr style="font-size: 125%; line-height: 300%;">
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-right: 1px solid #e5e5e5;">Spell</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">School</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Level</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Range</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Duration</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">Casting Time</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 1px solid #e5e5e5;">AoE</th>
+				<th style="border: 1px solid #781808; text-align: center; background-color: #781808; color: #e5e5e5; border-left: 0; border-right: 2px solid #781808;">ST</th>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Flawless Teleport</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Illusion</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">3</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">30 ft.</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Instant</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">3</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">The caster</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">None</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">This prodigious spell allows the caster to teleport without error within 30 meters in &lt;PRO_HISHER&gt; range of vision, also, as soon as &lt;PRO_HESHE&gt; arrives to the chosen destination, &lt;PRO_HESHE&gt; will turn invisible as for the spell of invisibility, getting a considerable tactical advantage over &lt;PRO_HISHER&gt; foes. The wizard will remain in this state for 2 rounds, unless &lt;PRO_HESHE&gt starts an offensive action during this period.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/vm0m0YcFl20" title="Flawless Teleport spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Lashing Wind</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Evocation</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">6</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Visual range</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Instant</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">6</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">15-ft. radius</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">1/2</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">With a single gesture of his hand the magician conjures a powerful gust of wind capable of knocking out an entire group of enemies. All creatures affected in the area of effect are thrown 20 meters away from the mage. Those failing their Saving Throws vs Breath (with a -2 penalty) take 1d6 points of bludgeoning damage for every 5 level of experience of the caster (up to a maximum of 8d6 at level 36), lose their grip on their weapons and fall to the ground for 2 rounds because of the strong impact with the ground or other obstacles met on their way. Those who roll successful Saving Throws vs. Breath with a -2 penalty manage to dodge, fall flat, or roll aside, each receiving half damage, don't faint and don't lose their weapons.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/Ve4__wlDBMI" title="Lashing Wind< spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Gravitational Field</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Alteration</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">5</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Visual range</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">15 seconds</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">5</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">15-ft. radius</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">Neg.</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">This spell increases the force of gravity in a small area decided by the enchanter. All creatures in the area of effect must succeed a Saving Throw vs. Spell with a +2 bonus, or be overwhelmed by a sudden increase in gravity, thus dropping their weapons on the ground, because of their unsustainable weight. In addition, they are slowed down and their dexterity score is halved. The effects can be dispelled.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/eHwCaTr5ABQ" title="Gravitational Field spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Horrid transformation</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Necromancy</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">5 m</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Permanent</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">1 creature</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">Neg.</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">The target afflicted by this terrible curse must roll a successful Saving Throw vs. Polymorph (with a -2 penalty) or suffer a horrid and nauseating transformation. His limbs begin to rot quickly, losing most of their strength. He will become so repellent to cause nausea and disgust in anyone standing less than a few feet away from him. He also suffers a serious motor impairment that will halve his movement speed.<br>
+				Even the lucidity disappears, making the target completely unable to think and undertake any action, even the most basic one. The Intelligence, Strength and Charisma suffer the heaviest penalty. The only action available to the target is the use of potions and equipped items.<br>
+				The effects are permanent unless a Remove Curse spell is casted on the victim of this curse.<br>
+				NOTE: It only affects humanoid creatures, therefore animals, undead or giant humanoids are not affected by this spell.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/tdsylCxq-MI" title="Horrid transformation spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Tenser's supremacy</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Alteration</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">9</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">0</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">1 minute</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">9</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">The caster</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">None</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">This spell is the terror of every fool in the Realms. Many warriors bullies the magicians for their lack of athleticism, but the magician under the effect of this spell will no doubt wipe the smiles from their faces. His body is transformed, becoming impressively strong. The magician leaves &lt;PRO_HISHER&gt; old nature, believing that &lt;PRO_HESHE&gt; has always been a warrior and becoming very skilled in combat. As if that was not enough, the sorcerer summons a magical sword +5, with base damage 1d8+5, that &lt;PRO_HESHE&gt; can brandish perfectly. The magician can maintain this status only for a minute, during which &lt;PRO_HESHE&gt; cannot cast spells. At the end of the effects, &lt;PRO_HESHE&gt;'ll be fatigued for trauma suffered and will experience severe difficulty in spell casting. The effects can be dispelled.<br><br>
+				Bonus:<br>
+				<ul>
+					<li>Armor Class: +5</li>
+					<li>THAC0 set to -3</li>
+					<li>Strength raised to 25</li>
+					<li>HP and movement rate doubled</li>
+				</ul>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/kcuMWvShB1g" title="Tenser's supremacy spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Spectacular Combustion</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Invocation</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">30 ft.</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">4 rounds</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">1 creature</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">1/2</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">The wizard creates a small luminescent sphere into its hands, ready to be thrown at the target. When it touches the target, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not roll a successful Saving Throw vs. Spells, it must let it fall to the ground to avoid being burned. The initial fire damage is 5d10 points, plus an extra 3d10 if the target fails a saving throw. The target also continues to burn for the next three rounds, suffering 10 points of fire damage every round.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/GXZsW9TzLdY" title="Spectacular Combustion spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+			</tr>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-bottom: 0; border-left: 2px solid #781808;"><span style="color: #781808;"><strong>Drain spell</strong></span></td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Enchantment/Charm</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7 ft.</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">Instant</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">7</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0;">1 creature</td>
+				<td style="border: 1px solid #781808; text-align: center; padding-top:20px; padding-bottom:20px; border-left: 0; border-bottom: 0; border-right: 2px solid #781808;">Neg.</td>
+			</tr>
+			<tr>
+				<td colspan="8" style="border: 1px solid #781808; padding-left:20px; padding-right:5px; padding-top:20px; padding-bottom:20px; border-left: 2px solid #781808; border-right: 2px solid #781808; border-bottom: 2px solid #781808;">This spell is quite famous among sorcerers. It was used many time in the past in the settling of scores between magicians, with the intent to ridicule the opponent. It's definitely one of the most devastating spells to use against a magician. Saradas was one of the most powerful and renowned masters in Faerûn and he used to entertain himself to use this spell, which he invented, on unsuspecting students, to make the exams much more difficult. When this spell is cast, the wizard attacks &lt;PRO_HISHER&gt; opponent's mind. If the target fails a Saving Throw vs. Spell with a -5 penalty, 2 spells are drained from his/her memory, and the caster brings back to memory 1 spell that have been previously cast. This effect always drains the highest level possible spell first (9), but the caster can not restore a spell higher than 8th level.<br>
+				NOTE: This spell affects only sorcerers and wizards (including dual-, and multi-classed). If the target is not a magician, nothing will happen and the spell will be wasted.<br><br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/XK4DvrcsgIo" title="Drain spell spell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				</td>
+			</tr>
+
+		  </table><br>
+
+		<p>
+			The prices are not very cheap, but you can still try to steal from the store. &#128578;
+		</p><br>
+
+		<p>
+		<strong><span style="color: #781808;">&#9755;</span></strong> In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
+		<ul>
+			<li>The Shaman's Staff</li>
+			<li>The Book of Kaza</li>
+			<li>The Mask of King Strohm III</li>
+			<li>The Shadow Dragon Wardstone</li>
+			<li>The Symbol of Amaunator</li>
+			<li>The Mantle of Waukeen</li>
+		</ul><br>
+
+		<p>
+			<strong><span style="color: #781808;">&#9755;</span></strong> Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class. All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
+		  <ul>
+			<li>Ego's Frailty (Alteration)</li>
+			<li>Impenetrable Defense (Abjuration)</li>
+			<li>Foreseeing the future (Divination)</li>
+			<li>Dragonborn (Dragon Disciple)</li>
+			<li>Absolute abnegation (Enchantment)</li>
+			<li>Summon Devil of Baator (Evocation)</li>
+			<li>Knowledge of the Scholar (Generalist)</li>
+			<li>Legion of shadows (Illusion)</li>
+			<li>Deathly Hallows (Necromancy)</li>
+			<li>Shroud of wild magic (Wild magic)</li>
+			<li>Spiritual Explosion (Invocation)</li>
+		  </ul>
+		</p><br>
+		<p>
+			All are available for pure mages, multi-classed mages, and dual-classed mages.
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>ToB content</h3>
+
+		<ul style="margin-top:2%;">
+			<li>Banters and dialogues with many of the original BioWare NPCs.</li>
+			<li>He expresses his thoughts regarding events and dialogues (interjections).</li>
+			<li>He has a custom ring.</li>
+			<li>You can experience 6 different epilogues.</li>
+			<li>1 custom skill.</li>
+			<li>Dialogues with the protagonist.</li>
+			<li>Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin in your party. This time Edwin has really gone too far. &#128578;<br>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Sendai's enclave video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/NC6YPDjXcjg" title="Easter Egg: Saradas and the Balrog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Banters and Edwin-Elminster duel video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/kkoBmEKTCw8" title="banters_and_edwin_vs_elminster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+
+		<h3>NPC Relationships</h3>
+
+		<p style="margin-top:2%;">
+			In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
+		</p>
+		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 32px; padding: 6px;">
+			<div class="quotetitle">
+				<strong>&nbsp;&nbsp;&#x25BA; spoiler:</strong>
+				<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none; ">
+				<p style="width:96%; color:#5f5f5f;">
+					<em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.</em>
+				</p>
+				</div>
+			</div>
+		</div><br>
+
+		<p>
+			Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
+		</p>
+		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 32px; padding: 6px;">
+			<div class="quotetitle">
+				<strong>&nbsp;&nbsp;&#x25BA; Below is a short conversation between the two of them:</strong>
+				<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+				onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+			</div>
+			<div class="quotecontent">
+				<div style="display: none; ">
+				<p style="width:96%; color:#5f5f5f;">
+					Keldorn: "<em>What will you do when our journey is over, Saradas?</em>"
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Saradas: "<em>I think I will finally come back to my house, in Sembia. My hometown is Yhaunn, a quiet coastal city. There I will finally rest after my long travels.</em>"
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Keldorn: "<em>Sounds like a good place to rest after retiring from adventure.</em>"
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Saradas: "<em>It really is, and you will always be welcome there, if you plan to visit me in Sembia, Lord Keldorn.</em>"
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Keldorn: "<em>I surely will. Oh and by the way there's no need of such titles between friends, Saradas. Just call me Keldorn.</em>
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Saradas: <em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
+					But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>"
+				</p>
+				<p style="width:96%; color:#5f5f5f;">
+					Keldorn: "<em>You are wise as always. Let's continue our path.</em>"
+				</p>
+				</div>
+			</div>
+		</div><br>
+
+		<p>
+			Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his/her future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
+		</p><br>
+
+		<p>
+			Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
+		</p><br>
+
+
+		<hr style="width: 90%; "/><br>
+
+<center>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Ve4__wlDBMI" style="border: 2px solid #781808;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="960" height="520" src="https://www.youtube.com/embed/Ve4__wlDBMI" style="border: 2px solid #781808;" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/kkoBmEKTCw8" style="border: 1px solid #781808; padding:1px 1px 1px 1px;" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Details</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- =================== C o m p o n e n t s ==================== -->
+	  <a name="compon" id="compon"></a>
+	  <div class="content">
+
+		<h2>Components</h2><br>
+
+		<p>
+			The installer includes the following components. All optional components require the main component to be installed.
+		</p><br>
+
+		<hr style="width: 90%"><br>
+
+		<h3>Saradas Magic for BG2 group</h3><br>
+
+		<p><strong>[0] Saradas Magic for BG2</strong> (Main component)
+		</p>
+
+		<p>
+			&#10173; This is the main component.
+		</p><br>
+
+
+		<hr style="width: 90%; height: 1px; border: 0;" /><br>
+
+		<p><strong>[1-5] How much time would you like between talks (approximately)?
+		</p>
+		  <ul style="margin-left: 4%;">
+			[1] 15 Minutes<br>
+			[2] 30 Minutes<br>
+			[3] 1 Hour<br>
+			[4] 1.5 Hours</strong> (default)<br>
+			<strong>[5] 2 Hours</strong><br>
+		  </ul>
+
+		<p>
+			&#10173; This optional component defines talks intervals frequency.
+		</p><br>
+
+		<hr style="width: 90%"><br>
+
+		<h3>BG:EE Game romance tweaks group</h3><br>
+
+		<p>
+			One of the most-requested tweaks is to make Neera and Rasaad same-sex romanceable, so with Jalily's help I created two components to do so. Their dialogue will be appropriately altered to suit either gender, and the romance should begin as normal. There are two optional components:
+		</p><br>
+
+		<p><strong>[6] Make Neera romanceable by women</strong><br>
+		</p><br>
+
+		<hr style="width: 90%; height: 1px; border: 0;" /><br>
+
+		<p><strong>[7] Make Rasaad romanceable by men</strong><br>
+		</p><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Components</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ======================= C r e d i t s ====================== -->
+	  <a name="credits" id="credits"></a>
+	  <div class="content">
+
+		<h2>Credits</h2><br>
+
+			<span class="t1">Author:</span> <span class="t2"><a href="http://www.shsforums.net/user/40868-saradas">Saradas</a></span><br>
+
+		<hr style="clear: both; width: 90%; color: transparent; background-color: transparent; " /><br>
+
+		<p>
+			<span style="color: #781808;">&#9755;</span> For support or questions, please visit the <a href="">mod forum</a>.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h5>Special Acknowledgements to:</h5>
+
+ 		  <ul class="version-list c1">
+			<li><a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).</li>
+			<li>Austin: Russian translation and traification.</li>
+			<li>K4thos for providing EET compatibility.</li>
+			<li>Everyone else from the <a href="http://www.shsforums.net/">Spellhold Studios</a> and IE games forums for testing and giving feedback!</li>
+		  </ul><br>
+
+		<p>
+			If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="">mod forum</a>.
+		</p><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h5>Programs/tools used in creation:</h5>
+
+		  <ul class="version-list c1">
+			<li><a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.</li>
+			<li><a href="https://github.com/Argent77/NearInfinity/releases">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.</li>
+			<li><a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>, maintained by igi and lynx.</li>
+			<li><a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.</li>
+			<li><a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.</li>
+			<li><a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a>, by AL|EN.</li>
+		  </ul><br>
+
+
+		<hr style="width: 90%;"/><br>
+
+
+		<h5>Copyrights</h5>
+
+		  <div class="important">
+			<p style ="width: 100%;">The Saradas Magic for BG2 is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Saradas, based on material from the game Baldur's Gate: Enhanced Edition.</p>
+			<p style ="width: 100%;">All mod content is &copy;Saradas.</p>
+			<p style ="width: 100%;">Baldur's Gate, Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.</p><br>
+			<p style ="width: 100%;">This mod was created to be freely enjoyed by all Baldur's Gate II players, and its content is free of rights. However, it should not be sold, published, compiled or redistributed in any form without the consent of its author.</p>
+		  </div><br>
+
+		<p>
+			The modding community for the Infinity Engine has been going strong for more than 10 years now, and is the culmination of thousands of unpaid modding hours by fellow fans of the game. Modders produce their best work and players get the best, well-supported mods when we all work together.
+		</p>
+		<p>
+			There are two big ways to upset this harmony. One is to claim someone else's work as your own. The second is to host and redistribute a mod without permission from the author(s).
+		</p>
+		<p>
+			Be kind to your fellow players and modders. Don't do either.
+		</p><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Credits</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+<!-- ============== V e r s i o n   H i s t o r y =============== -->
+	  <a name="version" id="version"></a>
+	  <div class="content" id="versionHistory">
+
+		<h2>Version History</h2><br>
+
+		<h6>Version 2.0.0 &nbsp;(July, 2021)</h6>
+
+		<h5>&nbsp;<span style="color: #781808;">&#9755;</span>&nbsp;&nbsp; Major updates:</h5>
+
+		  <ul style="width: 90%">
+			<li>Added <em>saradas_magic_2.ini</em> metadata file (including Dynamic Install Syntax and global <span class="tp2" style="color: purple;">LABELS</span>) to support AL|EN's "Project Infinity"</li>
+			<li>Replaced <span class="tp2" style="color: purple;">AUTHOR</span> keyword with <span class="tp2" style="color: purple;">SUPPORT</span>.</li>
+			<li>Added <span class="tp2" style="color: purple;">VERSION</span> and <span class="tp2" style="color: purple;">EZADME</span> keywords.</li>
+			<li>.</li>
+
+			<li>Added <span class="tp2" style="color: purple;">REQUIRE_PREDICATE</span> conditions to avoid installing components in inaccurate games.</li>
+			<li>.</li>
+
+			<li>Externalized tp2 code into <em>main_component.tpa</em> library for more comfortable readability and maintenance.</li>
+			<li>Commented code as much as possible</li>
+			<li>.</li>
+			<li>.</li>
+
+			<li>Replaced old-school <span class="tp2" style="color: red;">DECOMPILE_DLG_TO_D</span> plus <span class="tp2" style="color: red;">COMPILE_D_TO_DLG</span> and destructive <span class="tp2" style="color: red;">REPLACE_SAY</span> processes with more accurate <span class="tp2" style="color: red;">DECOMPILE_AND_PATCH</span> command and <acronym title="Weimer Dialogue Utility">WeiDU</acronym> homemade <span class="tp2" style="color: #C00040;">gw_dlg_functions.tpa</span> library which dynamically modifies response transitions without overwriting dialog.tlk. Moreover, the two "<em>Game romance tweaks</em>" components work now in foreign languages! &#128521;</li>
+			<li>Replaced old-school <span class="tp2" style="color: red;">DECOMPILE_BCS_TO_BAF</span> plus <span class="tp2" style="color: red;">COMPILE_BAF_TO_BCS</span> process with more accurate <span class="tp2" style="color: red;">DECOMPILE_AND_PATCH</span> command.</li>
+			<li>.</li>
+			<li>Added native EET compatibility (thanks Austin).</li>
+
+			  <ul>
+				<li style="margin-left:-6%; margin-right:-6%;">Added <acronym title="Weimer Dialogue Utility">WeiDU</acronym>'s built-in <span class="tp2" style="color: purple;">HANDLE_CHARSETS</span> function to convert string entries for EE games.</li>
+
+				<li style="margin-left:-6%; margin-right:-6%;">Added <span class="tp2" style="color: green;">ADD_JOURNAL</span> function.</li>
+			  </ul>
+			<li>.</li>
+			<li>Added native original BG2:ToB compatibility (thanks Austin and Gwendolyne!).</li>
+
+			  <ul>
+				<li style="margin-left:-6%; margin-right:-6%;">Provided NPCs portraits for original games.</li>
+			  </ul>
+			<li>.</li>
+			<li>Proofread English strrefs (Gwendolyne).</li>
+			<li>Fully TRAified the mod (some lines were not traified in .d and tp2 file).</li>
+			<li>Added a brand new <em>saradas_magic_2-readme-english.html</em> file.</li>
+			<li>Reorganized mod architecture tree: created folders to sort files according to their types.</li>
+			<li>Lower cased files.</li>
+			<li>Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).</li>
+			<li>Added archive libiconv-1.9.2-1-src.7z with iconv licence info.</li>
+			<li>Updated <acronym title="Weimer Dialogue Utility">WeiDU</acronym> installer to v247.</li>
+			<li>Uploaded mod to official <a href="https://github.com/SpellholdStudios">Spellhold Studios GitHub mirror account</a>.</li>
+		  </ul><br>
+
+		<h5>&nbsp;<span style="color: #781808;">&#9755;</span>&nbsp;&nbsp; Items and spells updates:</h5>
+
+		  <ul style="width: 90%">
+		  </ul><br>
+
+		<h6>Version 1.7 &nbsp;(January 24, 2016)</h6>
+
+		  <ul>
+			<li>Fixed <em>Spectacular combustion</em> spell: replaced SPCOMEX visual effet with FLMSTRK, and 10 additional points of fire damage instead of 5.</li>
+			<li>Nerved <em>Drain spell</em> spell to 8 the highest spell level the mage can restore.</li>
+			<li>Balanced <em>Lashing Wind</em> spell's effects.</li>
+		  </ul><br>
+
+		<h6>Version 1.6 &nbsp;(April 21, 2014)</h6>
+
+		  <ul>
+			<li>New banters between Saradas and Edwin (in ToB) leading to a funny cutscene.</li>
+		  </ul><br>
+
+		<h6>Version 1.5 &nbsp;(Unknown)</h6>
+
+		  <ul>
+			<li>The final encounter with Saradas can no longer occur if he was previously killed in Athkatla.</li>
+			<li>The final encounter with Saradas in Suldanesselar has been revisited.</li>
+			<li>Saradas now gives a Wish scroll in the final encounter, rather than a Limited Wish scroll.</li>
+			<li>Fixed some dialogues.</li>
+		  </ul><br>
+
+		<h6>Version 1.4 &nbsp;(Unknown)</h6>
+
+		  <ul>
+			<li>Fixed a bug that prevented dual-classed or multi-classed generalist mage to obtain their epic spell.</li>
+			<li>Fixed an exploit that allowed the player to obtain multiple rewards from Saradas in Suldanesselar.</li>
+		  </ul><br>
+
+		<h6>Version 1.3 &nbsp;(Unknown)</h6>
+
+		  <ul>
+			<li>Some balance improvements to the artifacts.</li>
+			<li>Minor fixes.</li>
+			<li>Added a new artifact, the <em>Enchanted Mantle of Waukeen</em>.</li>
+		  </ul><br>
+
+		<h6>Version 1.1 &nbsp;(November 14, 2013)</h6>
+
+		  <ul>
+			<li>Helm artifacts can now only be equipped by proper classes</li>
+			<li>Fixed some erroneous strref showing up in custom spells.</li>
+		  </ul><br>
+
+		<h6>Version 1.0 &nbsp;(Unknown)</h6>
+
+		  <ul>
+			<li>Initial beta release.</li>
+		  </ul><br><br>
+
+		<address>
+			<span class="footer">Saradas Magic for BG2 &gt; Version History</span> &#8226;<a href="#top">BACK TO TOP</a>
+		</address>
+	  </div>
+
+	 </div>
+	</div>
+  </body>
+</html>

@@ -15,6 +15,17 @@
 
 </div><br>
 
+**Author:** <a href="">Saradas</a>  
+**Mod Website:** <a href="">Spellhold Studios</a>  
+**Mod Forum:** <a href="">TODO</a>
+
+## 
+
+## 
+
+<div align="center">
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#details">Details</a> &#8226; <a href="#components">Components</a> <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a></br>
+</div>
 
 <hr>
 
@@ -23,8 +34,6 @@
 
 <img style="float: left;" src="saradas_magic_2/readme/images/sartobm.jpg"> This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit.
 
-
-<div align="right"><a href="#top">Back to top</a></div>
 
 SARADAS MAGIC 2:SoA PART
 
@@ -119,6 +128,14 @@ Saradas Magic 2 features in Throne of Bhaal :
 - 1 custom skill
 - Dialogues with the protagonist
 - Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin in your party. This time Edwin has really gone too far. :wink:
+<div align="right"><a href="#top">Back to top</a></div>
+
+<hr>
+
+
+## <a name="compat" id="compat"></a>Compatibility
+
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -132,7 +149,7 @@ Saradas Magic 2 features in Throne of Bhaal :
 <hr>
 
 
-## <a name="compat" id="compat"></a>Compatibility
+## <a name="details" id="details"></a>Details
 
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -159,11 +176,6 @@ The installer includes the following components. All optional components require
 
 ## <a name="versions" id="versions"></a>Version History
 
-- TODO Tenser's supremacy: Create weapon (111) durations.
-- TODO Impenetrable Defense: missing effects.
-- Summon Devil of Baator thunder4 thunder2 wav.
-- Legion of shadows spell: Type: Modify proficiencies (233).
-- Deathly Hallows Remove Immunity to effect (101),Target: Self (1),Power: 0,Unused: 0,Effect: Dispel effects (58) + spcnec3 25817 Disable display string (267) String: MY MOTHER SAYS THAT ELVES SHOULD GO CLIMB A TREE SOMEWHERE!.
 
 ##### Version 2.0 &nbsp;(July, 2021)
 
