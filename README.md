@@ -26,30 +26,24 @@
 
 SARADAS MAGIC 2:SoA PART
 
-Saradas Magic 2 is a mod that introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
+This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
 - Identification at reduced price
 - Cure the party when one or more members of the group are seriously injured
 - An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him
 - A store with exclusive articles
 
 In the latter, you can find seven brand new arcane spells I created:
-- Flawless Teleport  https://www.youtube.com/watch?v=vm0m0YcFl20
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/vm0m0YcFl20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Flawless Teleport
+- Lashing Wind
+- Gravitational Field
+- Horrid transformation
+- Drain Spell
+- Spectacular Combustion
+- Tenser's Supremacy
 
-- Lashing Wind      https://www.youtube.com/watch?v=Ve4__wlDBMI
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/Ve4__wlDBMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Gravitational Field  https://www.youtube.com/watch?v=eHwCaTr5ABQ
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/eHwCaTr5ABQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Horrid transformation  https://www.youtube.com/watch?v=tdsylCxq-MI
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/tdsylCxq-MI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Drain Spell           https://www.youtube.com/watch?v=XK4DvrcsgIo
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/XK4DvrcsgIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Spectacular Combustion  https://www.youtube.com/watch?v=GXZsW9TzLdY
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/GXZsW9TzLdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-- Tenser's Supremacy    https://www.youtube.com/watch?v=kcuMWvShB1g
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/kcuMWvShB1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-(The prices are not very cheap but you can still try to steal from the store :]  )
-In addition to this, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose.The six artifacts are:
+The prices are not very cheap, but you can still try to steal from the store :]
+
+In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
 - The Shaman's Staff
 - The Book of Kaza
 - The Mask of King Strohm III
@@ -57,11 +51,11 @@ In addition to this, Saradas is an artifact collector. If you find any ancient a
 - The Symbol of Amaunator
 - The Mantle of Waukeen
 
-[![Lashing Wind](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/embed/vm0m0YcFl20 "Everything Is AWESOME")
+[![Lashing Wind]videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
 
-[![Lashing Wind spell video](http://img.youtube.com/vi/vm0m0YcFl20/0.jpg)](https://www.youtube.com/embed/vm0m0YcFl20 "Lashing Wind spell video")
+[![Lashing Wind spell video](http://img.youtube.com/vi/Ve4__wlDBMI/0.jpg)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
 
-[![Lashing Wind spell video](videos/lashing_wind2.png)](https://www.youtube.com/embed/vm0m0YcFl20 "Lashing Wind spell video")
+[![Lashing Wind spell video](videos/lashing_wind.png)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
 
 Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class. All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
 - Spiritual Explosion (Invocation)
@@ -75,14 +69,29 @@ Saradas Magic 2 aims to improve the tactical approach to the game as a magician,
 - Knowledge of the Scholar (Generalist)
 - Shroud of wild magic (Wild magic)
 - Dragonborn (Dragon Disciple)
+
 (work on pure mages, multi-classed mages, dual-classed mages)
 
 
-In Throne of Bhaal Saradas is finally a recruitable NPC!
+In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage. 
 
-You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage. His stats are:STR 10DEX 13CON 14INT 18WIS 20CHA 15
-Background:
-Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the son of Bhaal grew stronger and decided to follow his path. Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way.He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.  
+Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
+
+Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way. He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.
+
+In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
+
+In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.
+
+Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
+
+Below is a short conversation between the two of them:
+
+
+Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
+
+Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
+
 Saradas Magic 2 features in Throne of Bhaal :
 - Banters and dialogues with many of the original BioWare NPCs
 - He expresses his thoughts regarding events and dialogues (interjections)
@@ -90,9 +99,7 @@ Saradas Magic 2 features in Throne of Bhaal :
 - You can experience 6 different epilogues
 - 1 custom skill
 - Dialogues with the protagonist
-- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. (https://www.youtube.com/watch?v=NC6YPDjXcjg) The other one eventually triggers if you have both Saradas and Edwin inside your party.This time Edwin has really gone too far ;)
-
-([url=https://www.youtube.com/watch?v=kkoBmEKTCw8]https://www.youtube.com/watch?v=kkoBmEKTCw8[/url])
+- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin in your party. This time Edwin has really gone too far. :wink:
 
 
 <hr>
@@ -141,35 +148,32 @@ The installer includes the following components. All optional components require
 
 ##### Version 2.0 &nbsp;(July, 2021)
 
+&#9755; <ins>Major updates</ins>
 - Added *saradas_magic_2.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
-- Added `VERSION` keyword.
-- Added `README` keyword.
+- Added `VERSION` and `README` keywords.
 - Added `REQUIRE_PREDICATE` condition to avoid installing the mod in inaccurate games.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
-- Added native EE and EET compatibility:
+- Added native EET compatibility (thanks Austin!):
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
-    - Added `ADD_JOURNAL` entries.
-    - Provided NPC portraits for EE games.
-    - `ADD_KIT` process: fixed lower kit strref, and added WeiDU `fl#add_kit_ee` function for EE games.
-- *starhl.2da*: Removed one extra column entry.
-- *d#silver.baf*: fixed wrong hard-coded strref entries and merged *difix#1.baf* into it instead of extending it after compilation.
-- Decompiled bcs files and compiled scripts with their appropriated tra file when relevant. Removed useless duplicated script files.
-- Included all BWP Fixpack fixes:
-    - Patched "*shape.cre*" instead of overwriting it to solve the <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/page-14#entry566376">micbaldur Silverstar NPC - Frennedan NPC compatibility issue</a>.
-    - Completed dialogues traification, and added the <a href="http://www.shsforums.net/topic/13501-updated-silverstar-released/page-2?p=533395#entry533395">Escaped clone Silver Star dialog bug fix by Lollorian</a>.
-    - Added a more robust workaround than <a href="https://www.gibberlings3.net/forums/topic/21964-add_kit-and-tobex/?do=findComment&comment=183270">BWP Fixpack cmorgan's ToBEx compatible ADD_KIT fix</a> to fix Sebastian creature file installation issue with classic games if TobEx is not installed and more than 256 kits are installed. I know, pretty rare case, but who knows... :wink:
+- Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
+    - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
-- Proofread Russian translation (Austin).
-- Fully TRAified the mod (some lines were not traified in tp2 file).
-- Re-formated, updated, renamed readme file to *star-readme-english.html*, then moved it into new :file_folder: "*readme*" folder.
+- Fully TRAified the mod (some lines were not traified in .d and tp2 file).
+- Added a brand new *saradas_magic_2-readme-english.html* file.
 - Lower cased files.
 - Reorganized mod architecture tree: created folders to sort files according to their types.
 - Included Linux and Mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Added archive libiconv-1.9.2-1-src.7z with iconv licence info.
 - Updated WeiDU installer to v247.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
+
+&#9755; <ins>a. Items and spells updates</ins>
+- Fixed classes and kits restriction flags and appended tooltip.2da whenever relevant.
+- Added 1PP compatibility to harmonize colors item with EE games and classical 1PP modded games.
+- Added *Break Sanctuary* flag whenever relevant for EE games.
+- Added Detectable Spells variables whenever relevant.
 
 ## 
 
@@ -179,7 +183,6 @@ The installer includes the following components. All optional components require
 
  CHANGELOG: v_1.8
 
-- Fully TRAified the mod.
 - Added EET-compatibility:
  added adaptation of «chapter» variables in TP2 in case of installation on EET
  added the EET_TRANSITION function
@@ -203,31 +206,30 @@ The installer includes the following components. All optional components require
 
 ## 
 
-##### Version 1.6 &nbsp;(Unknown4)
+##### Version 1.6 &nbsp;(April 21, 2014)
 
 - Minor fixes.
 - New banters between Saradas and Edwin (in ToB) leading to a funny cutscene.
 
 ## 
 
-##### Version 1.5 &nbsp;(Unknown4)
+##### Version 1.5 &nbsp;(Unknown)
 
 - The final encounter with Saradas can no longer occur if he was previously killed in Athkatla.
 - The final encounter with Saradas in Suldanesselar has been revisited.
 - Saradas now gives a Wish scroll in the final encounter, rather than a Limited Wish scroll.
 - Fixed some dialogues.
-- Fixed some dialogues.
 
 ## 
 
-##### Version 1.4 &nbsp;(Unknown4)
+##### Version 1.4 &nbsp;(Unknown)
 
-- Fixed a bug that prevented dual-classed or multiclassed generalist mage to obtain their epic spell.
+- Fixed a bug that prevented dual-classed or multi-classed generalist mage to obtain their epic spell.
 - Fixed an exploit that allowed the player to obtain multiple rewards from Saradas in Suldanesselar.
 
 ## 
 
-##### Version 1.3 &nbsp;(Unknown4)
+##### Version 1.3 &nbsp;(Unknown)
 
 - Some balance improvements to the artifacts.
 - Minor fixes.
@@ -235,13 +237,13 @@ The installer includes the following components. All optional components require
 
 ## 
 
-##### Version 1.2 &nbsp;(Unknown4)
+##### Version 1.2 &nbsp;(Unknown)
 
 - Minor balance fixes and artifact color restyling.
 
 ## 
 
-##### Version 1.1 &nbsp;(Unknown4)
+##### Version 1.1 &nbsp;(Unknown)
 
 - Helm artifacts can now only be equipped by proper classes.
 - Fixed some erroneous strref showing up in custom spells.
