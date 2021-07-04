@@ -51,7 +51,7 @@ In addition, Saradas is an artifact collector. If you find any ancient artifact,
 - The Symbol of Amaunator
 - The Mantle of Waukeen
 
-[![Lashing Wind]videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
+[![Lashing Wind](videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
 
 [![Lashing Wind spell video](http://img.youtube.com/vi/Ve4__wlDBMI/0.jpg)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
 
