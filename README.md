@@ -21,12 +21,14 @@
 
 ## <a name="intro" id="intro"></a>Overview
 
-<img style="float: left;" src="saradas_magic_2/readme/images/sartobm.jpg"> 
+<img style="float: left;" src="saradas_magic_2/readme/images/sartobm.jpg"> This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit.
+
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 SARADAS MAGIC 2:SoA PART
 
-This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
+In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
 - Identification at reduced price
 - Cure the party when one or more members of the group are seriously injured
 - An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him
@@ -41,9 +43,9 @@ In the latter, you can find seven brand new arcane spells I created:
 - Spectacular Combustion
 - Tenser's Supremacy
 
-The prices are not very cheap, but you can still try to steal from the store :]
+The prices are not very cheap, but you can still try to steal from the store. :wink:
 
-In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
+In addition, Saradas is an artifacts collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
 - The Shaman's Staff
 - The Book of Kaza
 - The Mask of King Strohm III
@@ -81,11 +83,28 @@ Saradas is a very wise man indeed and he always tries to share his knowledge wit
 
 In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
 
+<details><summary>DEPRECATED as of v 6.0.0</summary>
+<p></br>
+<strong>Important:</strong> Download all content you may require from the Infinity Animations download category at <a href="http://www.shsforums.net/files/category/98-infinity-animations/">Spellhold Studios</a>. If in doubt, download them all (most mega-mod installs will need all archives). Extract all archives using the "<em>Do not extract paths</em>" option on the <strong>Advanced</strong> tab in WinRAR. Also, make sure the "Destination path" on the <strong>General</strong> tab terminates in <strong>/content</strong> or <strong>/restore</strong> after <strong>infinityanimations</strong> (there should be no sub-folders beyond that).
+
+<p>Extract all archives to the :file_folder: /content folder except IA_BG2_Restores.rar, which should go in the :file_folder: /restore folder. If you extract IA_Wh_Dr_Wyv_LoP.rar (currently only needed for the Planar Sphere mod), you can delete the sub-archive The_Lady's_Shadow.rar after extraction, as it is currently unused due to animation size limitations.</p>
+
+For WinZip, make sure the "Use folder names" box is *unselected*.
+
+You should end up with a bunch of .bam files and no sub-folders in your :file_folder: "content" and/or "restore" folders. The installer will warn you if you're missing anything you need, at which point you can exit it, download missing content, extract it and rerun the installer.
+</p>
+</details>
+
 In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.
 
 Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
 
 Below is a short conversation between the two of them:
+
+<details><summary>DEPRECATED as of v 6.0.0</summary>
+<p></br>
+</p>
+</details>
 
 
 Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.

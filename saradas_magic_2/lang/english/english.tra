@@ -1,339 +1,565 @@
-@1=~Scroll~
-@2=~Spectacular combustion~
-@3=~Mysterious scroll~
-@4=~Spectacular combustion (Invocation)
+/* -------------------- *
+ *  Installer messages  *
+ * -------------------- */
+@0   = ~Saradas Magic NPC Mod for BGII~
 
+
+/* ----------- *
+ *  Creatures  *
+ * ----------- */
+@21  = ~Saradas~
+@22  = ~Balrog~
+
+// Saradas soundset
+// ----------------
+@31  = ~You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.~
+@32  = ~I... I'm too old for this.~
+@33  = ~The gods smile upon our path, I'm glad I joined this group.~
+@34  = ~I don't think Gorion taught you such things... You'd better reconsider the path you're following.~
+@35  = ~I will not tolerate such behaviour any longer. Change your ways, for I'm growing tired of you.~
+@36  = ~I suppose I could lead the way for a while, but your destiny is yours to make.~
+@37  = ~This old body demands rest, <CHARNAME>. I suggest we rest for a while and start arranging a campfire for the night.~
+@38  = ~I'd rather spend my time in a more productive way, if you don't mind.~
+@39  = ~You are no match for my magic.~
+@40  = ~Face the destiny you deserve!~
+@41  = ~The brute force will lead you nowhere.~
+@42  = ~You can't hide from Lathander's light!~
+@43  = ~Ohf... I... I am bleeding...~
+@44  = ~Merciful Morninglord... Accept this servant in your holy light.~
+@45  = ~Protect me while I cast my healing spells!~
+@46  = ~Oh, the peaceful atmosphere of the forest. Reminds me of good memories of a past long gone.~
+@47  = ~The threads of fate of countless people cross in the city's din.~
+@48  = ~Every step could be our last in a place like this. Be prepared for everything.~
+@49  = ~The sun truly does justice to the Morninglord's glory.~
+@50  = ~My thoughts find peace when the calmness of evening enfolds the land.~
+@51  = ~Do you need my guidance, young one?~
+@52  = ~Speak louder son, my hearing is no longer what it used to be.~
+@53  = ~Mh? What do you need?~
+@54  = ~I'm still here, don't worry for me.~
+@55  = ~Don't abuse my patience.~
+@56  = ~You can't keep up with this old man?~
+@57  = ~In the blink of an eye.~
+@58  = ~You take pleasure in commanding, don't you?~
+@59  = ~I'm going I'm going, I'm not completely deaf yet.~
+@60  = ~I will do as you ask.~
+@61  = ~Nothing to worry about, young one.~
+@62  = ~Not my highest aspiration, but I'll will do it nonetheless.~
+@63  = ~Such an ungrateful task.~
+@64  = ~Wisdom can improve your overall vision of life.~
+@65  = ~Have you forgotten the good manners, <PRO_GIRLBOY>?~
+@66  = ~I'm not that senile, after all mh?~
+@67  = ~... Not even close...~
+@68  = ~My efforts are vain! We must change strategy.~
+@69  = ~Do I look like a pack mule?~
+@70  = ~Acc! My spell was almost complete!~
+
+
+/* -------- *
+ *  Spells  *
+ * -------- */
+@101 = ~Scroll~
+@102 = ~Mysterious scroll~
+
+@103 = ~Spectacular combustion~
+@104 = ~Spectacular combustion
+(Invocation)
 
 Level: 7
-Radius: 30m
-Target: Single
+Range: 30 m
+Duration: 4 rounds
 Casting Time: 7
-Saving throw: halves damage spells
+Area of effect: 1 creature
+Saving throw: 1/2
 
-The wizard creates a small luminescent sphere into its hands, ready to be thrown at the target. When it touches the target creature, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not succeed a saving throw vs. spells, must let it fall to the ground to avoid being burned. The initial fire damage is 5d10, and 3d10 more if target fails a saving throw. The target also continues to burn for the next three rounds, taking 10 fire damage for each one of them.~
+The wizard creates a small luminescent sphere into its hands, ready to be thrown at the target. When it touches the target, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not roll a successful Saving Throw vs. Spells, it must let it fall to the ground to avoid being burned. The initial fire damage is 5d10 points, plus an extra 3d10 if the target fails a saving throw. The target also continues to burn for the next three rounds, suffering 10 points of fire damage every round.~
 
-@5 = ~Drain spell~
-@6 = ~Drain spell (Enchantment)
-
+@105 = ~Drain spell~
+@106 = ~Drain spell
+(Enchantment/Charm)
 
 Level: 7
-Target: Single
-Radius: 7m
-Duration : Instantaneous
-Casting Time : 7
-Saving Throw: spells -5 denies
+Range: 7 m
+Duration: Instant
+Casting Time: 7
+Area of effect: 1 creature
+Saving Throw: Neg.
 
-This spell is quite famous among sorcerers. It was used many time in the past in the settling of scores between magicians, with the intent to ridicule the opponent. It's definitely one of the most devastating spells to use against a magician. Saradas was one of the most powerful and reknowned masters in Faerun and he used to entertain himself to use this spell, which he invented, on unsuspecting students, to make the exams much more difficult. EFFECT : The caster attacks the opponent's mind to make him forget two memorized spell if he fails a saving throw vs. spells ( -5), restoring one of his own. It affects spells from level 1 to 9, but it will try to start from the highest level available. The caster of this spell can restore a spell not higher than level 8. NOTE: This spell affects only sorcerers and wizards (including dual-class and multiclass). If the target is not a magician, nothing would happen and the spell would be wasted.~
+This spell is quite famous among sorcerers. It was used many time in the past in the settling of scores between magicians, with the intent to ridicule the opponent. It's definitely one of the most devastating spells to use against a magician. Saradas was one of the most powerful and renowned masters in Faerûn and he used to entertain himself to use this spell, which he invented, on unsuspecting students, to make the exams much more difficult. When this spell is cast, the wizard attacks <PRO_HISHER> opponent's mind. If the target fails a Saving Throw vs. Spell with a -5 penalty, 2 spells are drained from his/her memory, and the caster brings back to memory 1 spell that have been previously cast. This effect always drains the highest level possible spell first (9), but the caster can not restore a spell higher than 8th level.
+NOTE: This spell affects only sorcerers and wizards (including dual-, and multi-classed). If the target is not a magician, nothing will happen and the spell will be wasted.~
+@107 = ~Spells have been drained~
+@108 = ~The target is not affected by this spell~
+@109 = ~Spell restored~
 
-@7=~Spell recovered~
-@8=~Lashing Wind~
-@9=~Lashing Wind (Evocation)
+@111 = ~Lashing Wind~
+@112 = ~Lashing Wind
+(Evocation)
 
 Level: 6
+Range: Visual range of the caster 
+Duration: Instant
 Casting Time: 6
-Radius: 15m
-Area of Effect: front of magician
-Saving Throw: breath (-2) reduces the effects
+Area of Effect: 15-ft. radius
+Saving Throw: 1/2
 
-With a single gesture of his hand the magician conjures a powerful gust of wind capable of knocking out an entire group of enemies. They are thrown 20 meters away from the mage, suffering 1d6 bludgeoning damage every 5 levels of the caster (for a maximum of 8d6 at level 36), they will also lose their grip on their weapons and faint for 2 rounds because of the strong impact with the ground or other obstacles met on their way. If they succeed a saving throw, the damage will be halved and they will not faint nor lose their weapons.~
+With a single gesture of his hand the magician conjures a powerful gust of wind capable of knocking out an entire group of enemies. All creatures affected in the area of effect are thrown 20 meters away from the mage. Those failing their Saving Throws vs Breath (with a -2 penalty) take 1d6 points of bludgeoning damage for every 5 level of experience of the caster (up to a maximum of 8d6 at level 36), lose their grip on their weapons and fall to the ground for 2 rounds because of the strong impact with the ground or other obstacles met on their way. Those who roll successful Saving Throws vs. Breath with a -2 penalty manage to dodge, fall flat, or roll aside, each receiving half damage, don't faint and don't lose their weapons.~
 
-@10=~Gravitational Field~
-@11=~Gravitational Field (Alteration)
+@113 = ~Gravitational Field~
+@114 = ~Gravitational Field
+(Alteration)
 
 Level: 5
-Time to cast: 5
-Range: 20 meters
-Target: Area
-Duration: the effects last for 15 seconds
-Saving Throw: vs Spell (+2) negates
+Range: Visual range of the caster 
+Duration: 15 seconds
+Casting Time: 5
+Area of Effect: 15-ft. radius
+Saving Throw: Neg.
 
-This spell increases the force of gravity in a small area decided by the enchanter. All creatures in the area of effect must succeed a saving throw vs spell, or be overwhelmed by a sudden increase in gravity, thus dropping their weapons on the ground, because of their unsustainable weight. In addition, they are slowed down and their dexterity value is halved. The effects can be dispelled.~
+This spell increases the force of gravity in a small area decided by the enchanter. All creatures in the area of effect must succeed a Saving Throw vs. Spell with a +2 bonus, or be overwhelmed by a sudden increase in gravity, thus dropping their weapons on the ground, because of their unsustainable weight. In addition, they are slowed down and their dexterity score is halved. The effects can be dispelled.~
 
-@12=~Spiritual explosion~
-@13=~Spiritual explosion (Invocation)
+@115 = ~Spiritual explosion~
+@116 = ~Spiritual explosion
+(Invocation)
 
 Level: Epic
-Range: 75m
-Target: 1 creature
-Duration: Instantaneous
-Saving Throw: vs spells (-7)
+Range: Visual range of the caster
+Duration: Instant
+Casting Time: 9
+Area of Effect: 1 creature
+Saving Throw: Special
 
-This is the final offensive spell, plasmed for the first time by Saradas, the Blue Wizard. The caster focuses an immense energy in <PRO_HISHER> hands, including a fraction of <PRO_HISHER> spirit.
-The base damage is 1d10 per level of the wizard (up to a maximum of 10) and cannot be avoided with a saving throw, although the magic resistance helps to prevent the effects. The other component of the damage comes from the spirit of the sorcerer, which inflicts 20D10.
-If the target succeeds against a saving throw vs. spells with penalty -7, will avoid the spiritual damage. The magic resistance cannot stop the spiritual damage.
+This is the final offensive spell, psalmed for the first time by Saradas, the Blue Wizard. The caster focuses an immense energy in <PRO_HISHER> hands, including a fraction of <PRO_HISHER> spirit.
+The base damage is 1d10 points of magic damage for level of the wizard (up to a maximum of 10d10) and cannot be avoided with a Saving Throw, although the magic resistance helps to prevent the effects. The other component of the damage comes from the spirit of the sorcerer, which inflicts 20d10 points of magic damage.
+A successful Saving Throws vs. Spells with a -7 penalty avoid the spiritual damage. The magic resistance cannot stop the spiritual damage.
 Exhausted by the casting, the Invoker will loose 3d10 hit points and will be fatigued for the next hour.
 Note that the sphere can overcome the effects of protective barriers.~
 
-@14=~Flawless Teleport~
-@15=~Flawless Teleport (Illusion)
+@117 = ~Flawless Teleport~
+@118 = ~Flawless Teleport
+(Illusion)
 
 Level: 3
-Radius: 30m
-Duration: Instantaneous
+Range: 30m
+Duration: Instant
 Casting Time: 3
-Area of Effect: Caster
+Area of Effect: The caster
+Saving Throw: None
 
-This prodigious spell allows the caster to teleport without error within 30 meters in his range of vision, also, as soon as he arrives to the chosen destination, he will turn invisible as for the spell of invisibility, getting a considerable tactical advantage over is foes. The wizard will remain in this state for 2 rounds, unless he starts an offensive action during this period.~
+This prodigious spell allows the caster to teleport without error within 30 meters in <PRO_HISHER> range of vision, also, as soon as <PRO_HESHE> arrives to the chosen destination, <PRO_HESHE> will turn invisible as for the spell of invisibility, getting a considerable tactical advantage over <PRO_HISHER> foes. The wizard will remain in this state for 2 rounds, unless <PRO_HESHE> starts an offensive action during this period.~
 
-
-@16=~Tenser's supremacy~
-@17=~Tenser's supremacy (Alteration)
+@119 = ~Tenser's supremacy~
+@120 = ~Tenser's supremacy
+(Alteration)
 
 Level: 9
+Range: 0
 Duration: 1 minute
-Area of Effect: Caster
 Casting Time: 9
+Area of Effect: The caster
+Saving Throw: None
 
 This spell is the terror of every fool in the Realms. Many warriors bullies the magicians for their lack of athleticism, but the magician under the effect of this spell will no doubt wipe the smiles from their faces. His body is transformed, becoming impressively strong. The magician leaves <PRO_HISHER> old nature, believing that <PRO_HESHE> has always been a warrior and becoming very skilled in combat. As if that was not enough, the sorcerer summons a magical sword +5, with base damage 1d8+5, that <PRO_HESHE> can brandish perfectly. The magician can maintain this status only for a minute, during which <PRO_HESHE> cannot cast spells. At the end of the effects, <PRO_HESHE>'ll be fatigued for trauma suffered and will experience severe difficulty in spell casting. The effects can be dispelled.
 
-BONUS:
-CA +5
-TACH0 set to -3
-Strength rised to 25
-HP and movement speed doubled.~
+Bonus:
+- Armor Class: +5
+- THAC0 set to -3
+- Strength raised to 25
+- HP and movement rate doubled.~
+@121 = ~Tenser's enchanted sword +5~
 
-@18=~Tenser's enchanted sword +5~
-@19=~Horrid transformation~
-@20=~Horrid transformation (Necromancy)
+@123 = ~Horrid transformation~
+@124 = ~Horrid transformation
+(Necromancy)
 
 Level: 7
-Range: 5m
-Target: 1 creature
+Range: 5 m
 Duration: Permanent
-Saving throw: negates the effects
+Casting Time: 7
+Area of Effect: 1 creature
+Saving throw: Neg.
 
-The target reached by this terrible curse must succeed a saving throw vs. Polymorph (-2 penalty) or suffer a horrid and nauseating transformation. His limbs begin to rot quickly, losing most of their strength. He will become so repellent to cause nausea and disgust in anyone standing less than a few feet away from him. He also suffers a serious motor impairment that will halve his movement speed.
+The target afflicted by this terrible curse must roll a successful Saving Throw vs. Polymorph (with a -2 penalty) or suffer a horrid and nauseating transformation. His limbs begin to rot quickly, losing most of their strength. He will become so repellent to cause nausea and disgust in anyone standing less than a few feet away from him. He also suffers a serious motor impairment that will halve his movement speed.
 Even the lucidity disappears, making the target completely unable to think and undertake any action, even the most basic one.
-The intelligence, strength and charisma suffer the heaviest penalty.
+The Intelligence, Strength and Charisma suffer the heaviest penalty.
 The only action available to the target is the use of potions and equipped items.
-The effects are permanent unless a "remove curse" spell is casted on the victim of this curse.
-NOTE:
-It only affects humanoid creatures, therefore animals, undead or giant humanoids are not affected by this spell.~
+The effects are permanent unless a Remove Curse spell is casted on the victim of this curse.
+NOTE: It only affects humanoid creatures, therefore animals, undead or giant humanoids are not affected by this spell.~
 
-@21=~Spells have been drained~
-@22=~The target is not affected by this spell~
-@23=~Saradas~
-@24=~Impenetrable defense~
-@25=~Impenetrable defense (Abjuration)
+@125 = ~Impenetrable Defense~
+@126 = ~Impenetrable Defense
+(Abjuration)
 
 Level: Epic
-Range: Allies within 10m
+Range: 40 ft.
 Duration: 1 turn
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving throw: None
 
-The magician that has specialized in the school of Abjuration and has achieved total mastery in this field, has access to this barrier of magical nature of incomparable power.
-All of the elemental defenses are raised up to 75%, also resistance to bludgeoning, slashing, piercing and ranged damage, are raised to 33%.
-The saving throws receive a universal bonus of +2 and +3 to armor class, the barrier also prevents 7th level spells to penetrate it.
-Note that the creatures protected by Impenetrable Defense are also immune to the effects of level drain, instant death, disintegration and petrification.
+The mage who has specialized in the Abjuration school and has achieved total mastery in this matter, gains access to this barrier of magical nature of incomparable power.
+All the elemental defenses of <PRO_HISHER> fellow party members affected in the area of effect are raised up to 75%. Their resistance to crushing, slashing, piercing, and missile damage are also raised to 33%. They gain a +2 bonus to saving throws rolls and a +3 bonus to Armor Class. The barrier also prevents 7th level spells to penetrate it. Note that the creatures protected by Impenetrable Defense are also immune to level drain, instant death, disintegration and petrification effects.
 The abjurer can cast this spell only once a day and its great effectiveness makes it relatively short in duration. Also for the entire duration of the spell, the caster cannot cast other spells because he must focus to maintain the barrier active.
 It cannot be dispelled by Dispel Magic.~
 
-@26=~Ego's frailty ~
-@27=~Ego's frailty (Alteration)
+@127 = ~Ego's frailty~
+@128 = ~Ego's frailty
+(Alteration)
 
 Level: Epic
-Range: 20m
-Target: multiple enemies
-Duration: 1 turn and a half
-Saving Throw: Negates effects
+Range: 40 ft.
+Duration: 15 rounds
+Casting Time: 
+Area of Effect: 15-ft. radius
+Saving Throw: Neg.
 
-The magician that has specialized in the school of Alteration and has achieved total mastery in this field, has access to this spell that allows him to destabilize not only the matter of the target, but also its soul.
-When the spell hits the target he will feel the weight of the whole universe on his shoulders, leaving him heavily weakened and dismayed.
-All his elemental resistances, magic damage resistance, and physical resistance will be brought to a flat value of -25, thus exposing the target to an increased 25% damage from those sources.
-The magic resistance will be lowered by 75 points and the effects of the Slow spell will affect the creatures hit by Ego's frailty.
-A successful saving throw vs. spells (with penalty -2) completely negates the effects.~
+The mage who has specialized in the Alteration school and has achieved total mastery in this matter, gains access to this spell that allows him to destabilize not only the matter of the target, but also its soul.
+The targets affected in the area of effect feel the weight of the whole universe on their shoulders, leaving them heavily weakened and dismayed. All their elemental, magic damage, and physical resistances are brought to a flat value of -25, thus exposing them to an increased 25% damage from those sources. Their magic resistance is also be lowered by 75 points and they will suffer the effects of a Slow spell.
+A successful Saving Throw vs. Spells (with a -2 penalty) completely negates the effects.~
+@129 = ~Magic, elemental and physical resistances have been lowered~
 
-@28=~Summon Devil of Baator~
-@29=~Summon Devil of Baator (Conjuration)
+@131 = ~Summon Devil of Baator~
+@132 = ~Summon Devil of Baator
+(Conjuration/Summoning)
 
 Level: Epic
-Range: 15m
-Duration: 1 turn and a half
+Range: 15 ft.
+Duration: 15 rounds
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
 
-The magician that has specialized in the school of Conjuration and has achieved total mastery in this field, has access to this frightening ritual of evocation. He will create a dimensional rift between the First Material Plane and the Nine Hells of Baator, invoking a demon prince of immeasurable power.
-He will not obey blindly to the Evoker's command, but he will protect him whenever an enemy would come too close; as soon as the danger is averted, he will wander around the group, waiting for an enemy to devour.
-His attacks are deadly, causing 2d10 +5 slashing damage. His claws are considered as a +5 weapon, also causing an extra 1d6 damage from fire. The attack also has a 10% chance of tearing an enemy apart instantly if he fails a saving throw vs. death.
+The mage who has specialized in the Conjuration school and has achieved total mastery in this matter, gains access to this frightening ritual of evocation. He will create a dimensional rift between the First Material Plane and the Nine Hells of Baator, invoking a demon prince of immeasurable power.
+He will not obey blindly to the Invoker's command, but he will protect <PRO_HIMHER> whenever an enemy would come too close; as soon as the danger is averted, he will wander around the group, waiting for an enemy to devour.
+His attacks are deadly, causing 2d10+5 points of slashing damage. His claws are considered as a +5 weapon, also causing an extra 1d6 points of fire damage. The attack also has a 10% chance of tearing an enemy apart instantly if he fails a Saving Throw vs. Death.
 In exchange for his services, the devil claims half of the Conjurer's current hit points.~
+@133 = ~Demonic Prince~
 
-@30=~Demonic Prince~
-@31=~Foreseeing the future~
-@32=~Foreseeing the future (Divination)
+@135 = ~Foreseeing the future~
+@136 = ~Foreseeing the future
+(Divination)
 
 Level: Epic
-Radius: self
+Range: Special
 Duration: 1 hour
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
 
-The magician that has specialized in the school of Divination and has achieved total mastery in this field, has access to this wonderful spell. He starts to focus his mind in order to receive visions. He will be able to see, almost flawlessly, the events that will happen in the next coming hour, granting him a huge tactical advantage over the foes.
-The armor class of the Diviner increases by 5 points and his saving throws get a universal bonus of 4 points, he is also immune to the first 10 physical attacks that would otherwise normally hit him.
-The power of this spell has more to offer, infact the extraordinary gifts of divination, allow the caster to materialize the surrounding area in his mind, as well as to reveal the presence of useful magical objects hidden from the sight of normal people. The spell also grants the ability to see the reality with absolute clarity (True Sight).
+The mage who has specialized in the Divination school and has achieved total mastery in this matter, gains access to this wonderful spell. He starts to focus his mind in order to receive visions. He will be able to see, almost flawlessly, the events that will happen in the next coming hour, granting him a huge tactical advantage over the foes.
+The Diviner gains a +4 bonus to Saving Throws, a +5 bonus to Armor Class, and is protected from the first 10 attacks made against <PRO_HIMHER> that would otherwise normally hit <PRO_HIMHER>.
+The power of this spell has more to offer. In fact, the extraordinary gifts of divination allow the caster to materialize the surrounding area in <PRO_HESHE> mind, as well as to reveal the presence of useful magical objects hidden from the sight of normal people. The spell also grants the ability to see the reality with absolute clarity (True Sight).
 The protection lasts for one hour and cannot be dispelled.~
+@137 = ~Items created inside inventory~
 
-@33=~Absolute abnegation~
-@34=~Absolute abnegation (Enchantment)
+@139 = ~Absolute abnegation~
+@140 = ~Absolute abnegation
+(Enchantment/Charm)
 
 Level: Epic
-Radius: 30m
-Duration: 1 turn and a half
-Target: multiple enemies
-Saving Throw: negates
+Range: 30 ft.
+Duration: 15 rounds
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Saving Throw: Neg.
 
-
-The magician that has specialized in the school of Enchantment and has achieved total mastery in this field, has access to this dreadful spell that completely disrupts the mind and body of the targets.
+The mage who has specialized in the Enchantment school and has achieved total mastery in this matter, gains access to this dreadful spell that completely disrupts the mind and body of the targets.
 They suffer the same effects of the spell "Dire Charme", but their body is hit by a powerful adrenaline rush that will unleash animalistic behaviors.
 They will try to protect the caster at the cost of their own lives, and they will never doubt any of the Enchanter's commands. They will also be faster, stronger and shall not be diverted in any way from their task.
-At the end of the effect of the spell, the body of the target's will suffer a strong shock due to stress, leading them to cardiac arrest and therefore, to instant death.
-A saving throw vs. spells with penalty -5 negates the effects.
+At the end of the effects of the spell, the body of the targets will suffer a strong shock due to stress, leading them to cardiac arrest and therefore, to instant death.
+A Saving Throw vs. Spells with a -5 penalty negates the effects.
 
 STATISTICS:
-Strength +3
-THAC0 +5
-Attacks per round : +1
-Doubled movement speed
-Immunity to charm and confusion~
+- Strength: +3
+- THAC0: +5
+- Attacks per round: +1
+- Doubled movement speed
+- Immunity to charm and confusion~
 
-@35=~Legion of shadows~
-@36=~Legion of shadows (Illusion)
+@141 = ~Knowledge of the Scholar~
+@142 = ~Knowledge of the Scholar
+(Generalist)
 
 Level: Epic
-Radius : party
+Range: 0
+Duration: 30 minutes
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+The mage who has decided not to specialize in any specific magical school has fully understood the energies that pervade Faerûn, and is able to channel and mold them more effectively. For the entire duration of the spell, the mage lowers the casting time of all his spells by 1 and doubles their duration. He also expands his magical aura. The enemies hit by the aura suffer an inevitable penalty of 3 points to all their saving throws. Their resistance to elemental and magic damage is halved, and their magic resistance is lowered by 25 points. The effects of the aura last for 30 seconds and can not be stacked. Any magic item equipped by the enemies or potions can still increase these resistances, same goes for protective spells.~
+@143 = ~Magic Aura~
+
+@145 = ~Legion of shadows~
+@146 = ~Legion of shadows
+(Illusion)
+
+Level: Epic
+Range: 0
 Duration: 1 turn
+Casting Time: 0
+Area of Effect: 15-ft. radius
+Saving Throw: None
 
-The magician that has specialized in the school of Illusion and has achieved total mastery in this field, has access to this masterful illusion. He creates perfect clones of his party members, including their equipment.
-As soon as these replicants are created, the party members will be concealed and teleported to a close safe place. The enemies are totally unaware of the illusion, and shall not tell the difference between the party members and the replicants, thus attacking them instead of the Illusionist's group.
-Note that these shadows are not able to hurt the opponents, but they are totally under the influence of the caster, which is able to cast any other spell he desires.
-All party members under the effects of Legion of Shadows, cannot cast other illusions such as Simulacrum, Mislead and Project image.~
+The mage who has specialized in the Illusion school and has achieved total mastery in this matter, gains access to this masterful illusion. The caster creates perfect clones of <PRO_HISHER> party members standing within a 15-ft. radius, including their equipment.
+As soon as these replicates are created, the party members will be concealed and teleported to a close safe place. The enemies are totally unaware of the illusion, and shall not tell the difference between the party members and the replicates, thus attacking them instead of the Illusionist's group.
+Note that these shadows are not able to hurt the opponents, but they are totally under the influence of the caster, which is able to cast any other spell <PRO_HESHE> desires.
+All party members under the effects of Legion of Shadows cannot cast other illusions such as Simulacrum, Mislead and Project image.~
 
-@37=~Deathly Hallows~
-@38=~Deathly Hallows (Necromancy)
+@147 = ~Deathly Hallows~
+@148 = ~Deathly Hallows
+(Necromancy)
 
 Level: Epic
-Radius: Self
+Range: 0
 Duration : About half an hour
+Casting Time: 9
+Area of Effect: The caster
+Saving Throw: 
 
-The magician that has specialized in the school of Necromancy and has achieved total mastery in this field, has access to this macabre ritual of transformation. He can now polymorph himself into a Lich.
-This spell is particularly brilliant due to the nature of its duration. In fact, it does not permanently turn the Necromancer into an undead creature, but bestows the exact same benefits for all the duration of the spell.
-In addition to being immune to effects such as fear, charm, poison, instant death, blindness, feeble mind, sickness, confusion, level drain, he can only be harmed by magic weapons greater than +2.
-He's also immune to frost damage and will suffer 75% less damage from electrical sources, but he strongly suffers from fire element attacks and his new body does not allow him to move easily.
-Its frightening appearance instills fear in all surrounding enemies.
-During the transformation, the Necromancer can use his Lich's touch as a weapon, inflicting 1d10 +5 piercing damage, and an additional 2d6 cold damage, also, if the target does not succeeds a saving throw vs. death, will be paralyzed for 10 seconds.
-The Lich's touch is to be considered as a +5 enchanted weapon, and it drains life on hit (1d6).
+The mage who has specialized in the Necromancy school and has achieved total mastery in this matter, gains access to this macabre ritual of transformation; and <PRO_HESHE> can now polymorph himself into a Lich.
+This spell is particularly brilliant due to the nature of its duration. In fact, it does not permanently turn the Necromancer into an undead creature, but bestows the exact same benefits for all the duration of the spell. In addition to being immune to effects such as fear, charm, poison, instant death, blindness, feeble mind, sickness, confusion, level drain, <PRO_HESHE> can only be harmed by magic weapons greater than +2, is also immune to frost damage and will suffer 75% less damage from electrical sources, but <PRO_HESHE> strongly suffers from base fire element attacks, and <PRO_HISHER> new body does not allow <PRO_HIMHER> to move easily.
+This frightening appearance instills fear in all surrounding enemies.
+During the transformation, the Necromancer can use <PRO_HISHER> Lich Touch as a weapon, inflicting 1d10+5 points of piercing damage, and additional 2d6 points of cold damage. In addition, if the target does not roll a successful Saving Throw vs. Death, it will be paralyzed for 10 seconds.
+The Lich Touch is to be considered as a +5 enchanted weapon, and it drains life on successful hit (1d6 HP).
 
 Deathly Hallows cannot be dispelled and the Necromancer cannot use other polymorph spells while the spell is in effect.~
+@149 = ~Lich Touch~
 
-@39=~Lich's touch~
-@40=~Magic, elemental and physical resistances have been lowered~
-@41=~Item created inside inventory~
-
-@42=~Knowledge of the Scholar~
-@43=~Knowledge of the Scholar (Generalist)
+@151 = ~Shroud of wild magic~
+@152 = ~Shroud of wild magic
+(Wild magic)
 
 Level: Epic
-Radius: Self
-Duration: 30 minutes
-
-The magician who has decided not to specialize in any specific magical school, has fully understood the energies that pervade Faerun and is able to channel and mold them more effectively. For the entire duration of the spell, the magician lowers the casting time of all of his spells by 1 and doubles their duration, he also expands his magical aura. The enemies hit by the aura will suffer an inevitable penalty of 3 points to all their saving throws. The resistance to elemental and magic damage is halved, and magic resistance is lowered by 25 points. The effects of the aura last for 30 seconds and can not be stacked. Any magic item equipped by the enemies or potions can still increase these resistances, same goes for protective spells.~
-
-@44=~Shroud of wild magic~
-@45=~Shroud of wild magic (Wild magic)
-
-Level: Epic
-Radius: 20m
-Target: Single
+Range: 20 ft.
 Duration: 1 turn
-Saving Throw: negates effects
+Casting Time: 9
+Area of Effect: 1 creature
+Saving Throw: Neg.
 
-The magician that has specialized in the school of Wild Magic and has reached the total mastery in this field, has access to this spell that has the power to wrap the enemy into a strong shroud of wild magic.
-If the enemy fails a saving throw vs Breath with a penalty -3, will be wrapped up in this energy for 1 turn. Every spell that he will try to cast will instead result in a burst of untamable wild magic, causing ill-omened effects on himself. The Wild Mage infact, makes sure of this by negatively altering the enemy's table of wild magic effects.
-This energy that envelops the enemy cannot be dispelled. One must also keep in mind that even a grand master shall never fully control this type of magical energy, therefore, positive effects for the enemy can not be completely excluded.~
+The mage who has specialized in the Wild Magic school and has reached the total mastery in this matter, gains access to this spell that has the power to wrap the enemy into a strong shroud of wild magical energy.
+If the target fails a Saving Throw vs Breath with a -3 penalty, will be wrapped up in this energy for 1 turn. Every time the creature attempts to cast a spell will result in a burst of untameable wild magic, causing ill-omened effects on itself. In fact, the Wild Mage makes sure of this by negatively altering the creature's Wild Surge Table of wild magic effects.
+The energy that envelops the enemy cannot be dispelled. One must also keep in mind that even a grand master shall never fully control this type of magical energy. Therefore, positive effects for the enemy can not be completely excluded.~
+@153 = ~Wrapped in wild magical energy~
 
-@46=~Wrapped in wild magical energy~
-@47=~Magic Aura~
-@48=~Dragonborn~
-@49=~Attack of the Dragon~
-@50=~Dragonborn (Dragon Disciple)
+@155 = ~Dragonborn~
+@156 = ~Dragonborn
+(Dragon Disciple)
 
 Level: Epic
-Target: Self
-Length: 1 minute
+Range: 0
+Duration: 1 turn
+Casting Time: 9
+Area of Effect: The caster
+Saving Throw: None
 
 The Dragon Disciple has reached full self-awareness, <PRO_HESHE> can now truly feel the dragon's blood coursing through <PRO_HISHER> veins, thus controlling the power that comes with it.
-Thanks to this ability <PRO_HESHE>'s finally able to unleash the greatest power <PRO_HISHER> blood has to offer. <PRO_HESHE> can polymorph <PRO_HIMHER>self into a red dragon for the duration of the spell, obtaining the following bonuses:
-Immunity to fire and magic weapons +4 or lower; charm, fear, feeble mind, diseases and confusion.
-Doubled hit points and strength increased to 23;
-Ranged damage reduced by 75%;
-Bludgeoning damage reduced by 50%;
-Slashing Damage reduced by 75%;
-<PRO_HESHE> will cause fear every round to the surrounding enemies.
-<PRO_HISHER> claws are considered weapon +5, cause 2d10 +5 slashing damage and throw the enemies away.
-NOTES:
-<PRO_HESHE> cannot use other metamorphosis spells while Dragonborn effects are still active;
-The spell can only be cast outdoor.~
+Thanks to this ability, <PRO_HESHE>'s finally able to unleash the greatest power <PRO_HISHER> blood has to offer and can polymorph <PRO_HIMHER>self into a red dragon for the duration of the spell, obtaining the following bonuses:
+- Immunity to fire and magic weapons +4 or lower; charm, fear, feeble mind, diseases and confusion.
+- Doubled hit points
+- Strength increased to 23
+- Missile damage reduced by 75%
+- Crushing damage reduced by 50%
+- Slashing damage reduced by 75%
+- Like a dragon, <PRO_HESHE> radiates a personal aura of fear that will frighten the surrounding enemies.
+- <PRO_HISHER> claws are considered weapon +5, inflict 2d10+5 points of slashing damage and throw the enemies away.
 
-@51=~Enchanted mask of King Strohm III~
-@52=~Saradas enchanted the mask of King Strohm III for you. The results are astonishing, the artifact now pulsates of magic energy and its properties have been enhanced. It not only is a magnificent ornated helm, but it grants some powers to its wearer. He can now identify magical artifacts more easily, and he can detect invisible creatures.
-
-STATISTICS:
-AC +2
-Saving Throws +2
-
-Can cast Detect Invisibility twice a day and True Seeing once a day.~
+NOTES: The Dragon Disciple cannot use other metamorphosis spells while Dragonborn effects are still active. The spell can only be cast outdoors.~
+@157 = ~Attack of the Dragon~
 
 
-@53=~Enchanted book of Kaza~
-@54=~Saradas helped you release the potential of this book, it is now readable by everyone. It contains secrets about life and death and whoever reads it, will surely comprehend the whole sense of existence better. This tome can only be read once, whereupon it will turn to ashes.
+/* ------- *
+ *  Items  *
+ * ------- */
+@201 = ~Enchanted Mask of King Strohm III~
+@202 = ~Saradas enchanted the mask of King Strohm III for you. The results are astonishing, the artifact now pulsates of magic energy and its properties have been enhanced. It not only is a magnificent ornate helm, but it grants some powers to its wearer. He can now identify magical artifacts more easily, and he can detect invisible creatures.
 
 STATISTICS:
-Maximum HP +5
-Saving Throws vs Death +1
-Resistance to Acid, Cold, Fire and Electricity +5%
 
-These bonuses are permanent.~
+Equipped abilities:
+- Armor Class: +2
+- Saving Throws: +2
+- Lore bonus: +15
+- Protects against critical hits
 
-@55=~Enchanted symbol of Amaunator~
-@56=~Saradas has inscribed magic runes all around the edge of this ancient symbol and has awoken its holy dormant powers. It now vibrates at touch and its surface emits a resplendent golden light, to the point you cannot look at it directly. It has now been modified to be an enchanted buckler, particularly repellent to the undead.
+Charge abilities:
+- Invisibility Purge twice per day
+- True Seeing once per day
+
+Weight: 1
+
+Not usable by:
+ Bard
+ Mage
+ Thief
+ Monk
+ Wizard Slayer
+ Kensai~
+
+@203 = ~Enchanted Book of Kaza~
+@204 = ~Saradas helped you release the potential of this book, which is now readable by everyone. It contains secrets about life and death and whoever reads it will surely comprehend the whole sense of existence better. This tome can only be read once, whereupon it will turn to ashes.
 
 STATISTICS:
-AC +2, additional +2 vs ranged weapons
-AC and saving throws +2 vs undead
-Resistance to Acid, Fire, Cold and Electricity +10%
-Wisdom +1 while equipped
-Can cast False Dawn once a day~
 
-@57=~Enchanted shaman's staff~
-@58=~This is the enchanted version of the shaman's staff. Saradas has enhanced its powers by ancient rituals. It is now a Staff +1 and enables the wielder to cast
-Mass Cure and Cure Disease twice a day and Magic Berries once a day.
+Maximum Hit Points: +5
+Saving Throws vs Death :+1
+Acid, Cold, Fire and Electricity Resistances: +5%
+
+These bonuses are permanent.
+
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25
+
+Not usable by:
+ Wizard Slayer~
+
+@205 = ~Enchanted Symbol of Amaunator~
+@206 = ~Saradas has inscribed magic runes all around the edge of this ancient symbol and has awaken its holy sleeping powers. It now vibrates at touch and its surface emits a resplendent golden light, to the point you cannot look at it directly. It has now been modified to be an enchanted buckler, particularly repellent to the undead.
 
 STATISTICS:
-Proficiency: Staffs
+
+Equipped abilities:
+- Armor Class: +2, an extra +2 vs. missile attacks
+- +2 Bonus to AC and Saving Throws vs. undead
+- Immunity to blindness
+- Acid Resistance: +10%
+- Cold Resistance: +10%
+- Electricity Resistance: +10%
+- Fire Resistance: +10%
+- Wisdom: +1
+
+Charge abilities:
+- False Dawn once per day
+
+Weight: 1
+
+Not usable by:
+ Mage
+ Monk
+ Wizard Slayer
+ Kensai~
+
+@207 = ~Shaman's Staff +1~
+@208 = ~This is the enchanted version of the Staff of Goodberries that belonged to the kobold shaman in the sewers below Athkatla slums. Saradas has enhanced its powers by ancient rituals. It is now a Staff +1 and enables the wielder to cast Mass Cure and Cure Disease twice per day and Magic Berries once per day.
+
+STATISTICS:
+
+Charge abilities:
+- Goodberry once per day
+- Mass Cure twice per day
+- Cure Disease twice per day
+
+THAC0: +1
+Damage: 1d8+1
+Damage type: crushing
 Speed Factor: 4
-Damage type: Blunt
-Damage: 1d8+1~
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
 
-@59=~Enchanted Ioun shadow stone~
-@60=~Saradas has turned this stone into a Ioun Stone of great power. His spells have awokened the soul that has long inhabited the stone, granting its wielder
-very interesting abilities. The dark stone vibrates with dark energy and fluctuates around the head of its owner, making him more silent and nimble, at the cost of
-draining some vitality from him. It can also conceal its wearer from hostile creatures.
+Weight: 4
+
+Not usable by:
+ Monk~
+
+@209 = ~Shadow Ioun Stone~
+@210 = ~Saradas has turned this stone into a ioun stone of great power. His spells have awakened the soul that has long inhabited the stone, granting its wielder very interesting abilities. The dark stone vibrates with dark energy and fluctuates around the head of its owner, making him more silent and nimble, at the cost of draining some vitality from him. It can also conceal its wearer from hostile creatures.
 
 STATISTICS:
-Hide in shadows: +25% 
-Stealth: +25%
-Dexterity: +2
-Undetectable
-Constitution: -1
 
-Can cast Sanctuary and Improved Invisibility once a day.~
+Equipped abilities:
+- Hide in shadows: +25% 
+- Stealth: +25%
+- Dexterity: +2
+- Non Detection
+- Constitution: -1
 
-@61=~Enchanted mantle of Waukeen~
-@62=~Before Saradas had Enchanted the mantle of Waukeen for you, its sockets, once filled with marvelous gems, were empty. The mantle has passed from hand to hand for centuries, and the precious stones were stolen.
-This fine artifact was worn as a necklace by aristocrats women and the legend has it that the owner is blessed by Waukeen's influence. Luck will shine on its wearer, and commercial business will thrive.
-On top of that, the wearer looks irresistible and charming. The gems you gave to Saradas now adorn the necklace and restored its ancient magnificence.
+Charge abilities:
+- Sanctuary once per day
+- Improved Invisibility once per day
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+
+@211 = ~Enchanted Mantle of Waukeen~
+@212 = ~Before Saradas had enchanted the Mantle of Waukeen for you, its sockets, once filled with marvelous gems, were empty. The mantle has passed from hand to hand for centuries, and the precious stones were stolen.
+This fine artifact was worn as a necklace by aristocrat women and the legend has it that the owner is blessed by Waukeen's influence. Luck will shine on its wearer, and commercial business will thrive. On top of that, the wearer looks irresistible and charming.
+The gems you gave to Saradas now adorn the necklace and restored its ancient magnificence.
 
 WHEN WORN:
-Charisma: +3
-Non-cumulative luck
-+2 to all saving throws
 
-The wearer can increase his charisma to 25 for one hour, once per day.
-Can cast Waukeen's Wealth once per day, obtaining a precious gem.~
+Equipped abilities:
+- Charisma: +3
+- Non-cumulative luck: +2
+- Saving Throws: +2
 
-@63=~Waukeen's Blessing~
-@64=~Waukeen's Wealth~
+Charge abilities:
+- Waukeen's Blessing once per day: Charisma set to 25 for one hour
+- Waukeen's Wealth once per day: create one precious gem
+
+Weight: 1
+
+Not usable by:
+ Wizard Slayer~
+@213 = ~Waukeen's Blessing~
+@214 = ~Waukeen's Wealth~
+@215 = ~Item created inside inventory~
+
+@217 = ~Saradas' Ring~
+@218 = ~Saradas never parts from his finely chiseled ring. Its creator is unknown to you, but the special blue alloy suggests that it was crafted by a very skilled artisan. An exceptionally pure moonstone was socketed on top of the band, and it pulsates of a bright white light during a full moon. The ring has been enchanted, though only Saradas would know its powers.~
+
+
+/* ----------- *
+ *  Epilogues  *
+ * ----------- */
+
+// Epilogue as a deity and Keldorn is a friend - Finale divinità Keldorn amico (F-G-KF)
+// ------------------------------------------------------------------------------------
+@301 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually accepted <PRO_HISHER> father's essence and became a god. Without <CHARNAME>'s guidance, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerûn. He felt that his days as a pilgrim were finally over, and wished to set in his old house in Yhaunn for his last years.
+He kept in contact with his good friend, Lord Keldorn Firecam, who visited him from time to time. The tale of <CHARNAME> though, had reached the Realm's farthest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas' door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+// Epilogue as a deity and Keldorn is not a friend - Finale divinità Keldorn non amico (F-G-KNF)
+// ---------------------------------------------------------------------------------------------
+@302 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually accepted <PRO_HISHER> father's essence and became a god. Without <CHARNAME>'s guidance, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerûn. He felt that his days as a pilgrim were finally over, and wished to set in his old house in Yhaunn for his last years.
+The tale of <CHARNAME> though, had reached the Realm's farthest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas' door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+// Epilogue as no deity and Keldorn is a friend - Finale non divinità Keldorn amico (F-NG-KF)
+// ------------------------------------------------------------------------------------------
+@303 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually rejected <PRO_HISHER> father's essence and purified <PRO_HISHER> soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerûn. He felt that his days as a pilgrim were finally over; and wished to set in his old house in Yhaunn for his last years.
+He kept in contact with his good friend, Lord Keldorn Firecam, who visited him from time to time. The tale of <CHARNAME> though, had reached the Realm's farthest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas' door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+// Epilogue as a deity and Keldorn is a friend - Finale divinità Keldorn amico (F-G-KF)
+// ------------------------------------------------------------------------------------
+@304 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually rejected <PRO_HISHER> father's essence and purified <PRO_HISHER> soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. Saradas decided to come back to his beloved homeland, after all his travels throughout Faerûn. He felt that his days as a pilgrim were finally over, and wished to set in his old house in Yhaunn for his last years.
+The tale of <CHARNAME> though, had reached the Realm's farthest borders, and Sembia made no exception. As a result, people in Yhaunn often knocked on Saradas' door seeking for his wise advices and asking for epic stories.
+He enjoyed a peaceful life and his mind often indulged on his last adventure and on <CHARNAME>'s destiny.
+After five years he eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun, for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+// Epilogue: no deity with CHARNAME as a mage and Keldorn is not a friend - Finale non divinità protagonista mago Keldorn non amico (F-M-KNF)
+// ------------------------------------------------------------------------------------------------------------------------------------------
+@305 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually rejected <PRO_HISHER> father's essence and purified <PRO_HISHER> soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. With the essence of Bhaal gone, <CHARNAME> lost some of <PRO_HISHER> powers as a mage. Saradas offered his guidance once again, to make <PRO_HIMHER> recover them.
+They went to Saradas's beloved homeland, Sembia, and after one year, <CHARNAME> recovered <PRO_HISHER> previously lost abilities and incremented them even further, becoming an arch wizard of incomparable power. <PRO_HESHE> eventually parted from <PRO_HISHER> old mentor and started a new life, but <PRO_HESHE> kept visiting him from time to time. With his apprentice gone, Saradas enjoyed a calm life in his old house, but his mind often indulged on his last adventure and on <CHARNAME>'s future.
+After five years, Saradas eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar and Khelben Arunsun, for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
+// Epilogue as a deity and Keldorn is a friend - Finale divinità Keldorn amico (F-G-KF)
+// ------------------------------------------------------------------------------------
+@306 = ~After the epic battle that took place at the Throne of Bhaal, <CHARNAME> eventually rejected <PRO_HISHER> father's essence and purified <PRO_HISHER> soul by its taint. With the prophecy finally fulfilled, <PRO_HISHER> brave party members split up and took their own way. With the essence of Bhaal gone, <CHARNAME> lost some of <PRO_HISHER> powers as a mage. Saradas offered his guidance once again, to make <PRO_HIMHER> recover them.
+They went to Saradas's beloved homeland, Sembia, and after one year, <CHARNAME> recovered <PRO_HISHER> previously lost abilities and incremented them even further, becoming an arch wizard of incomparable power. <PRO_HESHE> eventually parted from <PRO_HISHER> old mentor and started a new life, but <PRO_HESHE> kept visiting him from time to time. With his apprentice gone, Saradas enjoyed a calm life in his old house, but his mind often indulged on his last adventure and on <CHARNAME>'s future.
+He kept in contact with another of his good friends, Lord Keldorn Firecam, who visited him from time to time.
+After five years, Saradas eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
+Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
+
