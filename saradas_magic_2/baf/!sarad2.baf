@@ -58,11 +58,11 @@ END
 
 IF
 	See(NearestEnemyOf(Myself))
-	HaveSpellRES("!SFORCE") // Vento sferzante
+	HaveSpellRES("!SFORCE") // Lashing Wind - Vento sferzante
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		SpellRES("!SFORCE",[PC]) // Vento sferzante
+		SpellRES("!SFORCE",[PC])
 		Wait(4)
 		Continue()
 END
@@ -150,33 +150,33 @@ END
 
 IF
 	See(NearestEnemyOf(Myself))
-	HaveSpellRES("!SPCINV") // Esplosione Spirituale
+	HaveSpellRES("!SPCINV") // Spiritual explosion - Esplosione Spirituale
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		SpellRES("!SPCINV",[PC]) // Esplosione Spirituale
+		SpellRES("!SPCINV",[PC])
 		Wait(4)
 		Continue()
 END
 
 IF
 	See(NearestEnemyOf(Myself))
-	HaveSpellRES("!STELEPO") // Teletrasporto
+	HaveSpellRES("!STELEPO") // Flawless Teleport - Teletrasporto
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		SpellRES("!STELEPO",[PC]) // Teletrasporto
+		SpellRES("!STELEPO",[PC])
 		Wait(2)
 		Continue()
 END
 
 IF
 	See(NearestEnemyOf(Myself))
-	HaveSpellRES("!SZOM") // Orrida Trasformazione
+	HaveSpellRES("!SZOM") // Horrid transformation - Orrida Trasformazione
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		SpellRES("!SZOM",NearestEnemyOf(Myself)) // Orrida Trasformazione
+		SpellRES("!SZOM",NearestEnemyOf(Myself))
 		Wait(4)
 		Continue()
 END
@@ -210,7 +210,7 @@ IF
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		ForceSpellRES("!Stelepo",nearestenemyof(myself))
+		ForceSpellRES("!Stelepo",NearestEnemyOf(Myself))
 		wait(1)
 				Spell(Myself,WIZARD_WAIL_OF_THE_BANSHEE)
 		Wait(4)
@@ -230,11 +230,11 @@ END
 
 IF
 	See(NearestEnemyOf(Myself))
-	HaveSpellRES("!STENS") // Supremazia di Tenser
+	HaveSpellRES("!STENS") // Tenser's supremacy - Supremazia di Tenser
 	GlobalTimerExpired("!Stimer2","LOCALS")
 THEN
 	RESPONSE #100
-		SpellRES("!STENS",Myself) // Supremazia di Tenser
+		SpellRES("!STENS",Myself)
 		Continue()
 END
 
