@@ -30,9 +30,23 @@ ALWAYS
 		END
 
 		OUTER_PATCH 0 BEGIN
+			// Solved the wrong `WIZARD_IMPROVED_ALACRITY` entry in classic spells.ids (`WIZARD_IMPROVED_ALUCRITY`) that was crashing installation in a way that does not break other mods compatibility.
 			LOOKUP_IDS_SYMBOL_OF_INT improved_alacrity ~spell~ 2921
-			// PATCH_PRINT "CONTROL DEBUGGING improved_alacrity variable = %improved_alacrity%"
+			SET is_dragon_disciple_kit = IDS_OF_SYMBOL (~kit~ ~DRAGON_DISCIPLE~) // 0x4023 DRAGON_DISCIPLE
 		END
+
+		// Solved missing `DRAGON_DISCIPLE` entry in classic ids.ids that was crashing installation in a way that does not break other mods compatibility (in case they restore this kit).
+		ACTION_IF (is_dragon_disciple_kit > "-1") BEGIN
+			OUTER_SPRINT no_dragon_disciple_kit    "!Kit(Protagonist,DRAGON_DISCIPLE)"
+			OUTER_SPRINT dragon_disciple_kit_trans "Kit(Protagonist,DRAGON_DISCIPLE)~                      THEN REPLY @132 GOTO GiveDragonSpell"
+		END ELSE BEGIN
+			OUTER_SPRINT no_dragon_disciple_kit    ""
+			OUTER_SPRINT dragon_disciple_kit_trans ""
+		END
+/*		PRINT "CONTROL DEBUGGING VARIABLES
+improved_alacrity variable = %improved_alacrity%
+is_dragon_disciple = %is_dragon_disciple% ==> no_dragon_disciple_kit = %no_dragon_disciple_kit%
+dragon_disciple_kit_trans = %dragon_disciple_kit_trans%"*/
 
 		/* ------------------------------------------- *
 		 *    EET chapters continuity compatibility    *

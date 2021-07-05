@@ -108,7 +108,6 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenMaskStrohm","GLOBAL",0) partyhasitem("k
   IF ~~ THEN REPLY @167  /* preferisco tenerlo */  GOTO AsYouPrefer
   IF ~PartyGoldLT(3500)~ THEN REPLY @181  /* Non ho oro */  EXIT
   IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
-
 END
 
 IF ~~ THEN BEGIN GiveRewardMaskStrohm
@@ -249,7 +248,7 @@ IF ~~ THEN BEGIN SaradasTeachesEpic
       !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
       !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
       !Kit(Protagonist,WILDMAGE)
-      !Kit(Protagonist,DRAGON_DISCIPLE)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
+      %no_dragon_disciple_kit%~                           THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell // Kit(Protagonist,DRAGON_DISCIPLE)
   IF ~!Kit(Protagonist,MAGESCHOOL_ABJURER)
       !Kit(Protagonist,MAGESCHOOL_DIVINER)
       !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
@@ -265,7 +264,7 @@ IF ~~ THEN BEGIN SaradasTeachesEpic
       Class(Protagonist,CLERIC_MAGE)
       Class(Protagonist,FIGHTER_MAGE_CLERIC)~           THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
   IF ~Kit(Protagonist,WILDMAGE)~                        THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveWildSpell
-  IF ~Kit(Protagonist,DRAGON_DISCIPLE)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
+  %dragon_disciple_kit_trans% //IF ~Kit(Protagonist,DRAGON_DISCIPLE)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
   IF ~~ THEN REPLY @131 /*Grazie Saradas, ma c'e' ancora molto da fare*/ DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1)~ EXIT
 END
 
