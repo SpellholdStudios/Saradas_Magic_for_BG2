@@ -171,6 +171,7 @@ The installer includes the following components. All optional components require
 
 <div align="right"><a href="#top">Back to top</a></div>
 
+
 <hr>
 
 
@@ -187,12 +188,13 @@ The installer includes the following components. All optional components require
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 - Added native EET compatibility (thanks Austin!):
-    - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
+    - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games. added adaptation of «chapter» variables in TP2 in case of installation on EET
+    - Added chapters continuity for EET games.
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
-- Fully TRAified the mod (some lines were not traified in .d and tp2 file).
+- Fully TRAified the mod (some lines in tp2 ans some .d files were not traified).
 - Added a brand new *saradas_magic_2-readme-english.html* file.
 - Lower cased files.
 - Reorganized mod architecture tree: created folders to sort files according to their types.
@@ -202,24 +204,40 @@ The installer includes the following components. All optional components require
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 &#9755; <ins>a. Items and spells updates</ins>
-- Fixed classes and kits restriction flags and appended tooltip.2da whenever relevant.
-- Added 1PP compatibility to harmonize colors item with EE games and classical 1PP modded games.
-- Added *Break Sanctuary* flag whenever relevant for EE games.
-- Added Detectable Spells variables whenever relevant.
-
-## 
-
-    !stun.eff (added)
+- Fixed items classes and kits restriction flags, and appended tooltip.2da whenever relevant.
+- .
+- .
+- .
+- <ins>Enchanted Mask of King Strohm III</ins> (!strohm2.itm):
+    - Fixed item description: Added missing +15 Lore bonus.
+    - Removed Wizard Slayer restriction flag.
+    - Appended tooltip.2da: *Invisibility Purge, True Seeing*.
+- <ins>Enchanted Book of Kaza</ins> (!skaza2.itm):
+    - Removed Wizard Slayer restriction flag.
+- <ins>Enchanted Symbol of Amaunator</ins> (!samauna.itm):
+    - Fixed item description: Added missing immunity to blindness.
+    - Removed Wizard Slayer restriction flag.
+    - Appended tooltip.2da: *False Dawn*.
+- <ins>Shaman's Staff +1</ins> (!shaman2.itm):
+    - Fixed item description: Added missing THAC0 bonus.
+    - Appended tooltip.2da: *Goodberry, Mass Cure, Cure Disease*.
+- <ins>Shadow Ioun Stone</ins> (!shadow2.itm):
+    - Fixed item description: Renamed *Enchanted Ioun shadow stone* to *Shadow Ioun Stone*.
+    - Removed Wizard Slayer restriction flag, and added Magical item flag.
+    - Appended tooltip.2da: *Sanctuary, Improved Invisibility*.
+- <ins>Enchanted Mantle of Waukeen</ins> (!swaukn.itm):
+    - Appended tooltip.2da: *Waukeen's Blessing, Waukeen's Wealth*.
+- <ins>Saradas' Ring</ins> (!sarring.itm):
+    - Appended tooltip.2da: *Improved Invisibility, Lesser Restoration*.
 
 ## 
 
  CHANGELOG: v_1.8
 
 - Added EET-compatibility:
- added adaptation of «chapter» variables in TP2 in case of installation on EET
+ 
  added the EET_TRANSITION function
 - Added iconv-transcoder for installation on different versions of the game with different languages (in case of future translation), the LAF HANDLE_CHARSETS function was added to TP2 to launch it
-- The «COPY ~saradas_magic_2\eff\!Stun.eff~ ~override~» command has been added to the TP2 file, which allows you to add the !Stun.eff file to the game, which was added in version 1.7
 - Added an option to set an alternate appearance for Saradas (as a mage, not a monk). Added due to the fact that the monk does not have a paperdoll on the inventory screen and some players asked to add this option
 - Added full compatibility with "vanilla" (non-EE) version of the game: 
     - Added adaptation of WILDMAGE and DRAGON_DISCIPLE kits, as well as WIZARD_IMPROVED_ALACRITY spell for the vanilla version of the game. Corresponding changes have been made to the TP2-file and the !SARADAS.d and !Scut01.baf files
@@ -231,8 +249,6 @@ The installer includes the following components. All optional components require
 - Fixed *Spectacular combustion* spell: replaced SPCOMEX visual effet with FLMSTRK, and 10 additional points of fire damage instead of 5.
 - Nerved *Drain spell* spell to 8 the highest spell level the mage can restore.
 - Balanced *Lashing Wind* spell's effects. TODO effect #206 icons.
-- .
-- .
 - .
 - .
 
