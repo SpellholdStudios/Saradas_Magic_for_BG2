@@ -66,8 +66,9 @@ LANGUAGE ~English~
 /* ====================================================== *
  *    Saradas Magic NPC Mod for BGII  (main component)    *
  * ====================================================== */
-
-BEGIN ~saradas_magic_2~
+ 
+BEGIN @0                                          // ~Saradas Magic NPC Mod for BGII~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @10 // ~You must have ToB, BGT, BG2:EE or EET installed to install the Saradas Magic mod.~
 
 
 /* -------------------------------- *
@@ -503,7 +504,7 @@ COPY ~saradas_magic_2\!sedwina.bmp~ ~override~
  * ----------------- */
 APPEND ~interdia.2da~ ~!Sartob !SarB !Sar25B~ UNLESS ~!Sartob~
 
-APPEND ~pdialog.2da~ ~!SARTOB !SARP !SARJ !SARD !SAR25P !SAR25J !SAR25D !SARTOB~ UNLESS ~!SARTOB~
+APPEND ~pdialog.2da~  ~!SARTOB !SARP !SARJ !SARD !SAR25P !SAR25J !SAR25D !SARTOB~ UNLESS ~!SARTOB~
 
 
 /* ----------- *

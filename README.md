@@ -238,12 +238,13 @@ The installer includes the following components. All optional components require
 - Added EET-compatibility:
  
  added the EET_TRANSITION function
-- Added iconv-transcoder for installation on different versions of the game with different languages (in case of future translation), the LAF HANDLE_CHARSETS function was added to TP2 to launch it
 - Added an option to set an alternate appearance for Saradas (as a mage, not a monk). Added due to the fact that the monk does not have a paperdoll on the inventory screen and some players asked to add this option
 - Added full compatibility with "vanilla" (non-EE) version of the game: 
     - Added adaptation of WILDMAGE and DRAGON_DISCIPLE kits, as well as WIZARD_IMPROVED_ALACRITY spell for the vanilla version of the game. Corresponding changes have been made to the TP2-file and the !SARADAS.d and !Scut01.baf files
     - Added a command to TP2 that adds the dir.ids file to the game when a vanilla version of the game is found (since it is absent in it, and the mod will not be installed without it)
     - Added different size options for portraits (for the EE version of the game and for the classic version of the game) 
+
+## 
 
 ##### Version Beta 1.7 &nbsp;(January 24, 2016)
 
