@@ -188,7 +188,7 @@ The installer includes the following components. All optional components require
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 - Added native EET compatibility (thanks Austin!):
-    - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games. added adaptation of «chapter» variables in TP2 in case of installation on EET
+    - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added chapters continuity for EET games.
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.

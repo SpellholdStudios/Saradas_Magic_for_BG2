@@ -32,6 +32,24 @@ ALWAYS
 			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 		END
 
+		/* --------------------------------------------------------------------------------------------- *
+		 *    Convert strings to UTF-8 for BGEE/BG2EE                                                    *
+		 *    No exception, everything needs to be converted                                             *
+		 *    setup.tra contains in game texts as well as installation texts and needs to be converted   *
+		 * --------------------------------------------------------------------------------------------- */
+		ACTION_DEFINE_ARRAY sar#noconvert BEGIN END
+		// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+		ACTION_DEFINE_ARRAY sar#reload BEGIN setup END
+
+		LAF HANDLE_CHARSETS
+			INT_VAR
+				infer_charsets = 1
+			STR_VAR
+				tra_path = EVAL ~%MOD_FOLDER%/lang~
+				noconvert_array = sar#noconvert
+				reload_array = sar#reload
+		END
+
 	END
 
 END
@@ -39,18 +57,17 @@ END
 
 AUTO_TRA ~saradas_magic_2/lang/%s~
 
+// Languages
+LANGUAGE ~English~
+         ~english~
+         ~saradas_magic_2/lang/english/setup.tra~
+
 
 /* ====================================================== *
  *    Saradas Magic NPC Mod for BGII  (main component)    *
  * ====================================================== */
 
 BEGIN ~saradas_magic_2~
-
-LOAD_TRA ~saradas_magic_2\english\english.tra~
-LOAD_TRA ~saradas_magic_2\english\!saradas.tra~
-LOAD_TRA ~saradas_magic_2\english\!sarago.tra~
-LOAD_TRA ~saradas_magic_2\english\!sarangr.tra~
-LOAD_TRA ~saradas_magic_2\english\!sarafin.tra~
 
 
 /* -------------------------------- *
