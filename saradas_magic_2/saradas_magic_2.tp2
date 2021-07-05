@@ -18,6 +18,17 @@ ALWAYS
 		OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0                         // eet
 		OUTER_SET is_ee    = (GAME_IS ~bg2ee eet~) ? 1 : 0                   // EE game
 
+		/* ------------------------------------------------------- *
+		 *    Sets default variables if they're not set already    *
+		 * ------------------------------------------------------- */
+
+		// Variables used to properly install specific EE games ressources and ...
+		ACTION_IF (is_ee) BEGIN
+			OUTER_SPRINT ee_file "_ee"
+		END ELSE BEGIN
+			OUTER_SPRINT ee_file ""
+		END
+
 		/* ------------------------------------------- *
 		 *    EET chapters continuity compatibility    *
 		 * ------------------------------------------- */
@@ -66,7 +77,7 @@ LANGUAGE ~English~
 /* ====================================================== *
  *    Saradas Magic NPC Mod for BGII  (main component)    *
  * ====================================================== */
- 
+
 BEGIN @0                                          // ~Saradas Magic NPC Mod for BGII~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @10 // ~You must have ToB, BGT, BG2:EE or EET installed to install the Saradas Magic mod.~
 
@@ -79,6 +90,13 @@ INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~ // Loads macros and functions librar
 
 
 /* ---------------------- *
+ *  Installing portraits  *
+ * ---------------------- */
+
+COPY ~%MOD_FOLDER%/portraits%ee_file%~ ~override~
+
+
+/* ---------------------- *
  *  Installing Creatures  *
  * ---------------------- */
 
@@ -87,10 +105,25 @@ COPY ~saradas_magic_2/cre/!saradas.cre~ ~override~
      ~saradas_magic_2/cre/!sarafin.cre~ ~override~
 	SAY NAME1 @21
 	SAY NAME2 @21
+	PATCH_IF is_ee BEGIN
+		WRITE_ASCII 0x34 ~!sartobm~ #8   // small portrait
+		WRITE_ASCII 0x3c ~!sartobl~ #8   // medium portrait
+	END ELSE BEGIN
+		WRITE_ASCII 0x34 ~!sartobs~ #8   //small portrait
+		WRITE_ASCII 0x3c ~!sartobm~ #8   //medium portrait
+	END
+BUT_ONLY
 
 COPY ~saradas_magic_2/cre/!sartob.cre~ ~override~
 	SAY NAME1 @21
 	SAY NAME2 @21
+	PATCH_IF is_ee BEGIN
+		WRITE_ASCII 0x34 ~!sartobm~ #8   // small portrait
+		WRITE_ASCII 0x3c ~!sartobl~ #8   // medium portrait
+	END ELSE BEGIN
+		WRITE_ASCII 0x34 ~!sartobs~ #8   //small portrait
+		WRITE_ASCII 0x3c ~!sartobm~ #8   //medium portrait
+	END
 	SAY BIO @31                     // ~You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.~
 	SAY MORALE @32                  // ~I... I'm too old for this.~
 	SAY HAPPY @33                   // ~The gods smile upon our path, I'm glad I joined this group.~
@@ -131,6 +164,7 @@ COPY ~saradas_magic_2/cre/!sartob.cre~ ~override~
 	SAY TARGET_IMMUNE @68           // ~My efforts are vain! We must change strategy.~
 	SAY INVENTORY_FULL @69          // ~Do I look like a pack mule?~
 	SAY SPELL_DISRUPTED @70         // ~Acc! My spell was almost complete!~
+BUT_ONLY
 
 // Invisible creature
 COPY ~saradas_magic_2/cre/!spotted.cre~ ~override~
@@ -485,18 +519,6 @@ COMPILE ~saradas_magic_2/dlg/!sar25b.d~
 COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
 COMPILE ~saradas_magic_2/dlg/!sartob.d~
 COMPILE ~saradas_magic_2/dlg/edwin25j.d~
-
-
-////////////////////////////////////////////////////////////////////
-/////              SARADAS ToB                                 /////
-/////                                                          /////
-////////////////////////////////////////////////////////////////////
-
-COPY ~saradas_magic_2\!sartobm.bmp~ ~override~
-COPY ~saradas_magic_2\!sartobs.bmp~ ~override~
-COPY ~saradas_magic_2\!sedwina.bmp~ ~override~
-
-
 
 
 /* ----------------- *
