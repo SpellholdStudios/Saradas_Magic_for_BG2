@@ -1,0 +1,536 @@
+/* ============================================================================================ *
+ *  v2.0.0                                                                                      *
+ *                                                                                              *
+ *    S A R A D A S    M A G I C    N P C   f o r   B G 2   ( m a i n    c o m p o n e n t )    *
+ *                                                                                              *
+ * ============================================================================================ */
+
+SILENT
+
+/* -------------------------------------------------------------------------------------------------- *
+ *     Adds CamDawg's custom IsValidForPartyDialogue state used throughout the mod. Thanks Cam!       *
+ * -------------------------------------------------------------------------------------------------- *
+ *  covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH,          *
+ *  STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS,  *
+ *  STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING                                         *
+ * -------------------------------------------------------------------------------------------------- */
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+
+/* -------------------------------- *
+ *    Loads macros and functions    *
+ * -------------------------------- */
+
+INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~ // Loads macros and functions library dealing with tooltip appending, specific EE items descriptions, and more...
+
+
+/* ---------------------- *
+ *  Installing portraits  *
+ * ---------------------- */
+
+COPY ~%MOD_FOLDER%/portraits%ee_file%~ ~override~
+
+
+/* ---------------------- *
+ *  Installing Creatures  *
+ * ---------------------- */
+
+// Saradas
+// -------
+COPY ~saradas_magic_2/cre/!saradas.cre~ ~override~
+     ~saradas_magic_2/cre/!sarafin.cre~ ~override~
+	SAY NAME1 @21
+	SAY NAME2 @21
+	PATCH_IF is_ee BEGIN
+		WRITE_ASCII 0x34 ~!sartobm~ #8   // small portrait
+		WRITE_ASCII 0x3c ~!sartobl~ #8   // medium portrait
+	END ELSE BEGIN
+		WRITE_ASCII 0x34 ~!sartobs~ #8   //small portrait
+		WRITE_ASCII 0x3c ~!sartobm~ #8   //medium portrait
+	END
+BUT_ONLY
+
+COPY ~saradas_magic_2/cre/!sartob.cre~ ~override~
+	SAY NAME1 @21
+	SAY NAME2 @21
+	PATCH_IF is_ee BEGIN
+		WRITE_ASCII 0x34 ~!sartobm~ #8   // small portrait
+		WRITE_ASCII 0x3c ~!sartobl~ #8   // medium portrait
+	END ELSE BEGIN
+		WRITE_ASCII 0x34 ~!sartobs~ #8   //small portrait
+		WRITE_ASCII 0x3c ~!sartobm~ #8   //medium portrait
+	END
+	SAY BIO @31                     // ~You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.~
+	SAY MORALE @32                  // ~I... I'm too old for this.~
+	SAY HAPPY @33                   // ~The gods smile upon our path, I'm glad I joined this group.~
+	SAY UNHAPPY_ANNOYED @34         // ~I don't think Gorion taught you such things... You'd better reconsider the path you're following.~
+	SAY UNHAPPY_SERIOUS @35         // ~I will not tolerate such behaviour any longer. Change your ways, for I'm growing tired of you.~
+	SAY LEADER @36                  // ~I suppose I could lead the way for a while, but your destiny is yours to make.~
+	SAY TIRED @37                   // ~This old body demands rest, <CHARNAME>. I suggest we rest for a while and start arranging a campfire for the night.~
+	SAY BORED @38                   // ~I'd rather spend my time in a more productive way, if you don't mind.~
+	SAY BATTLE_CRY1 @39             // ~You are no match for my magic.~
+	SAY BATTLE_CRY2 @40             // ~Face the destiny you deserve!~
+	SAY BATTLE_CRY3 @41             // ~The brute force will lead you nowhere.~
+	SAY BATTLE_CRY4 @42             // ~You can't hide from Lathander's light!~
+	SAY DAMAGE @43                  // ~Ohf... I... I am bleeding...~
+	SAY DYING @44                   // ~Merciful Morninglord... Accept this servant in your holy light.~
+	SAY HURT @45                    // ~Protect me while I cast my healing spells!~
+	SAY AREA_FOREST @46             // ~Oh, the peaceful atmosphere of the forest. Reminds me of good memories of a past long gone.~
+	SAY AREA_CITY @47               // ~The threads of fate of countless people cross in the city's din.~
+	SAY AREA_DUNGEON @48            // ~Every step could be our last in a place like this. Be prepared for everything.~
+	SAY AREA_DAY @49                // ~The sun truly does justice to the Morninglord's glory.~
+	SAY AREA_NIGHT @50              // ~My thoughts find peace when the calmness of evening enfolds the land.~
+	SAY SELECT_COMMON1 @51          // ~Do you need my guidance, young one?~
+	SAY SELECT_COMMON2 @52          // ~Speak louder son, my hearing is no longer what it used to be.~
+	SAY SELECT_COMMON3 @53          // ~Mh? What do you need?~
+	SAY SELECT_COMMON4 @54          // ~I'm still here, don't worry for me.~
+	SAY SELECT_COMMON5 @55          // ~Don't abuse my patience.~
+	SAY SELECT_COMMON6 @56          // ~You can't keep up with this old man?~
+	SAY SELECT_ACTION1 @57          // ~In the blink of an eye.~
+	SAY SELECT_ACTION2 @58          //  ~You take pleasure in commanding, don't you?~
+	SAY SELECT_ACTION3 @59          // ~I'm going I'm going, I'm not completely deaf yet.~
+	SAY SELECT_ACTION4 @60          // ~I will do as you ask.~
+	SAY SELECT_ACTION5 @61          // ~Nothing to worry about, young one.~
+	SAY SELECT_ACTION6 @62          // ~Not my highest aspiration, but I'll will do it nonetheless.~
+	SAY SELECT_ACTION7 @63          // ~Such an ungrateful task.~
+	SAY SELECT_RARE1 @64            // ~Wisdom can improve your overall vision of life.~
+	SAY SELECT_RARE2 @65            // ~Have you forgotten the good manners, <PRO_GIRLBOY>?~
+	SAY CRITICAL_HIT @66            // ~I'm not that senile, after all mh?~
+	SAY CRITICAL_MISS @67           // ~... Not even close...~
+	SAY TARGET_IMMUNE @68           // ~My efforts are vain! We must change strategy.~
+	SAY INVENTORY_FULL @69          // ~Do I look like a pack mule?~
+	SAY SPELL_DISRUPTED @70         // ~Acc! My spell was almost complete!~
+BUT_ONLY
+
+// Invisible creature
+// -------
+COPY ~saradas_magic_2/cre/!spotted.cre~ ~override~
+
+// Balrog (ToB)
+// ------------
+COPY ~saradas_magic_2/cre/!sbalcut.cre~ ~override~
+	SAY NAME1 @22
+	SAY NAME2 @22
+
+// Invisible creature (ToB)
+// ------------------------
+COPY ~saradas_magic_2/cre/!spot2.cre~ ~override~
+
+// Elminster (ToB)
+// ---------------
+COPY ~saradas_magic_2/cre/!selmcut.cre~ ~override~
+
+
+/* -------------------------- *
+ *  Installing Saradas Store  *
+ * -------------------------- */
+
+COPY ~saradas_magic_2/store/!saradas.sto~ ~override~
+	SAY NAME2 @21
+
+
+/* ------------------- *
+ *  Installing Spells  *
+ * ------------------- */
+
+// Spectacular combustion
+// ----------------------
+COPY ~saradas_magic_2/spl/!scombus.spl~ ~override~
+	SAY NAME1 @103
+	SAY UNIDENTIFIED_DESC @104
+
+COPY ~saradas_magic_2/itm/!scombus.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @103
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @104
+
+// Drain spell
+// -----------
+COPY ~saradas_magic_2/itm/!sdrains.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @105
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @106
+
+COPY ~saradas_magic_2/spl/!sdrains.spl~ ~override~
+	SAY NAME1 @105
+	SAY UNIDENTIFIED_DESC @106
+
+COPY ~saradas_magic_2/eff/!sdrain1.eff~ ~override~
+     ~saradas_magic_2/eff/!sdrain2.eff~ ~override~
+     ~saradas_magic_2/eff/!sdrain3.eff~ ~override~
+     ~saradas_magic_2/eff/!sdrain4.eff~ ~override~
+     ~saradas_magic_2/eff/!sdrain5.eff~ ~override~
+
+COPY ~saradas_magic_2/eff/!sdrain6.eff~ ~override~
+	SAY 0x1c @107 // ~Spells have been drained~
+
+COPY ~saradas_magic_2/eff/!swrngtr.eff~ ~override~
+	SAY 0x1c @108 // ~The target is not affected by this spell~
+
+COPY ~saradas_magic_2/spl/!sdrainr.spl~ ~override~
+	SAY 0x12e @109 // ~Spell recovered~
+
+// Lashing Wind
+// ------------
+COPY ~saradas_magic_2/itm/!sforce.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @111
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @112
+
+COPY ~saradas_magic_2/spl/!sforce.spl~ ~override~
+	SAY NAME1 @111
+	SAY UNIDENTIFIED_DESC @112
+
+// Gravitational Field
+// -------------------
+COPY ~saradas_magic_2/itm/!sgravit.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @113
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @114
+
+COPY ~saradas_magic_2/spl/!sgravit.spl~ ~override~
+	SAY NAME1 @113
+	SAY UNIDENTIFIED_DESC @114
+
+// Spiritual explosion
+// -------------------
+COPY ~saradas_magic_2/spl/!spcinv.spl~ ~override~
+	SAY NAME1 @115
+	SAY UNIDENTIFIED_DESC @116
+
+// Flawless Teleport
+// -----------------
+COPY ~saradas_magic_2/itm/!stelepo.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @117
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @118
+
+COPY ~saradas_magic_2/spl/!stelepo.spl~ ~override~
+	SAY NAME1 @117
+	SAY UNIDENTIFIED_DESC @118
+
+// Tenser's supremacy
+// ------------------
+COPY ~saradas_magic_2/itm/!stenscr.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @119
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @120
+
+COPY ~saradas_magic_2/spl/!stens.spl~ ~override~
+	SAY NAME1 @119
+	SAY UNIDENTIFIED_DESC @120
+
+COPY ~saradas_magic_2/itm/!stenssw.itm~ ~override~
+	SAY NAME2 @121 // ~Tenser's enchanted sword +5~
+
+// Horrid transformation
+// ---------------------
+COPY ~saradas_magic_2/itm/!szomscr.itm~ ~override~
+	SAY NAME1 @101
+	SAY NAME2 @123
+	SAY UNIDENTIFIED_DESC @102
+	SAY DESC @124
+
+COPY ~saradas_magic_2/spl/!szom.spl~ ~override~
+	SAY NAME1 @123
+	SAY UNIDENTIFIED_DESC @124
+
+COPY ~saradas_magic_2/eff/!szom1.eff~  ~override~
+     ~saradas_magic_2/eff/!szom2.eff~  ~override~
+     ~saradas_magic_2/eff/!szom3.eff~  ~override~
+     ~saradas_magic_2/eff/!szom4.eff~  ~override~
+     ~saradas_magic_2/eff/!szom5.eff~  ~override~
+     ~saradas_magic_2/eff/!szom6.eff~  ~override~
+     ~saradas_magic_2/eff/!szom7.eff~  ~override~
+     ~saradas_magic_2/eff/!szom8.eff~  ~override~
+     ~saradas_magic_2/eff/!szom9.eff~  ~override~
+     ~saradas_magic_2/eff/!szom10.eff~ ~override~
+     ~saradas_magic_2/eff/!szom11.eff~ ~override~
+     ~saradas_magic_2/eff/!szom12.eff~ ~override~
+     ~saradas_magic_2/eff/!szom13.eff~ ~override~
+     ~saradas_magic_2/eff/!szom14.eff~ ~override~
+     ~saradas_magic_2/eff/!szom15.eff~ ~override~
+
+// Impenetrable Defense (Saradas gift)
+// -----------------------------------
+COPY ~saradas_magic_2/spl/!spcabj.spl~ ~override~
+	SAY NAME1 @125
+	SAY UNIDENTIFIED_DESC @126
+
+COPY ~saradas_magic_2/spl/!spcabj2.spl~ ~override~
+
+// Ego's frailty (Saradas gift)
+// ----------------------------
+COPY ~saradas_magic_2/spl/!spcalt.spl~ ~override~
+	SAY NAME1 @127
+	SAY UNIDENTIFIED_DESC @128
+	SAY 0x51e @129 // ~Magic, elemental and physical resistances have been lowered~
+
+// Summon Devil of Baator (Saradas gift)
+// -------------------------------------
+COPY ~saradas_magic_2/spl/!spccon.spl~ ~override~
+	SAY NAME1 @131
+	SAY UNIDENTIFIED_DESC @132
+
+COPY ~saradas_magic_2/spl/!spccon2.spl~ ~override~
+
+COPY ~saradas_magic_2/eff/!spccon.eff~ ~override~
+
+COPY ~saradas_magic_2/cre/!spccon.cre~ ~override~
+	SAY NAME1 @133 // ~Demonic Prince~
+	SAY NAME2 @133
+COPY ~saradas_magic_2/itm/!sbalorc.itm~ ~override~
+
+// Foreseeing the future (Saradas gift)
+// ------------------------------------
+COPY ~saradas_magic_2/spl/!spcdiv.spl~ ~override~
+	SAY NAME1 @135
+	SAY UNIDENTIFIED_DESC @136
+	SAY 0x4ee @137 // ~Items created inside inventory~
+
+// Absolute abnegation (Saradas gift)
+// ----------------------------------
+COPY ~saradas_magic_2/spl/!spcenc.spl~ ~override~
+	SAY NAME1 @139
+	SAY UNIDENTIFIED_DESC @140
+
+// Knowledge of the Scholar (Saradas gift)
+// ---------------------------------------
+COPY ~saradas_magic_2/spl/!spcgen.spl~ ~override~
+	SAY NAME1 @141
+	SAY UNIDENTIFIED_DESC @142
+
+COPY ~saradas_magic_2/spl/!spcgen2.spl~ ~override~
+	SAY 0x3ce @143 // ~Magic Aura~
+
+// Legion of shadows (Saradas gift)
+// --------------------------------
+COPY ~saradas_magic_2/spl/!spcill.spl~ ~override~
+	SAY NAME1 @145
+	SAY UNIDENTIFIED_DESC @146
+
+COPY ~saradas_magic_2/eff/!spcill.eff~ ~override~
+
+// Deathly Hallows (Saradas gift)
+// ------------------------------
+COPY ~saradas_magic_2/spl/!spcnec.spl~ ~override~
+	SAY NAME1 @147
+	SAY UNIDENTIFIED_DESC @148
+
+COPY ~saradas_magic_2/spl/!spcnec2.spl~ ~override~
+     ~saradas_magic_2/spl/!spcnec3.spl~ ~override~
+
+COPY ~saradas_magic_2/itm/!spcnec.itm~ ~override~
+	SAY NAME1 @149 // ~Lich Touch~
+	SAY NAME2 @149
+
+// Shroud of wild magic (Saradas gift)
+// -----------------------------------
+COPY ~saradas_magic_2/spl/!spcwil.spl~ ~override~
+	SAY NAME1 @151
+	SAY UNIDENTIFIED_DESC @152
+	SAY 0x21e @153 // ~Wrapped in wild magical energy~
+
+// Dragonborn (Saradas gift)
+// -------------------------
+COPY ~saradas_magic_2/spl/!spcdra.spl~ ~override~
+	SAY NAME1 @155
+	SAY UNIDENTIFIED_DESC @156
+
+COPY ~saradas_magic_2/itm/!spcdra.itm~ ~override~
+	SAY NAME1 @157 // ~Attack of the Dragon~
+	SAY NAME2 @157
+
+// Edwina (check portraits)
+// ------------------------
+COPY ~saradas_magic_2/spl/!sedwina.spl~ ~override~
+
+// Does not install anymore these useless file
+//COPY ~saradas_magic_2/eff/!sforce.eff~  ~override~
+
+
+/* ------------------ *
+ *  Installing Items  *
+ * ------------------ */
+
+// Enchanted Mask of King Strohm III
+// ---------------------------------
+COPY ~saradas_magic_2/itm/!strohm2.itm~ ~override~
+	SAY NAME2 @201
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@202" END
+BUT_ONLY
+
+// Enchanted Book of Kaza
+// ----------------------
+COPY ~saradas_magic_2/itm/!skaza2.itm~ ~override~
+	SAY NAME2 @203
+	SAY DESC @204
+BUT_ONLY
+
+// Enchanted Symbol of Amaunator
+// -----------------------------
+COPY ~saradas_magic_2/itm/!samauna.itm~ ~override~
+	SAY NAME2 @205
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@206" END
+BUT_ONLY
+
+// Shaman's Staff +1
+// -----------------
+COPY ~saradas_magic_2/itm/!shaman2.itm~ ~override~
+	SAY NAME2 @207
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@208" END
+BUT_ONLY
+
+// Shadow Ioun Stone
+// -----------------
+COPY ~saradas_magic_2/itm/!shadow2.itm~ ~override~
+	SAY NAME2 @209
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@210" END
+BUT_ONLY
+
+// Enchanted Mantle of Waukeen
+// ---------------------------
+COPY ~saradas_magic_2/itm/!swaukn.itm~ ~override~
+	SAY NAME2 @211
+ 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@212" END
+BUT_ONLY
+
+COPY ~saradas_magic_2/spl/!swaukn1.spl~ ~override~
+	SAY NAME1 @213 // ~Waukeen's Blessing~
+
+COPY ~saradas_magic_2/spl/!swaukn2.spl~ ~override~
+	SAY NAME1 @214 // ~Waukeen's Wealth~
+	SAY 0xce @215  // ~Item created inside inventory~
+
+// Saradas' Ring
+// -------------
+COPY ~saradas_magic_2/itm/!sarring.itm~ ~override~
+	SAY NAME2 @217
+	SAY DESC @218
+
+
+/* --------------------- *
+ *  Installing tooltips  *
+ * --------------------- */
+
+// First, read how many columns are in tooltip.2da file to append it accordingly.
+// ------------------------------------------------------------------------------
+LAM ~GW_READ_COL_TOOLTIP~
+
+// Append tooltip.2da
+// ------------------
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!strohm2~ GW_tooltips = ~12095 12096~ END     // Enchanted Mask of King Strohm III : Invisibility Purge (twice per day) - True Seeing (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!samauna~ GW_tooltips = ~38569~ END           // Enchanted Symbol of Amaunator : False Dawn (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!shaman2~ GW_tooltips = ~12106 7468 2445~ END // Shaman's Staff +1 : Goodberry (once per day) - Mass Cure (twice per day) - Cure Disease (twice per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!shadow2~ GW_tooltips = ~12084 12021~ END     // Shadow Ioun Stone : Sanctuary (once per day) - Improved Invisibility (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!swaukn~  GW_tooltips = ~@213 @214~ END       // Enchanted Mantle of Waukeen : Waukeen's Blessing (once per day) - Waukeen's Wealth (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!sarring~ GW_tooltips = ~12021 55844~ END     // Saradas' Ring : Improved Invisibility (once per day) - Lesser Restoration (once per day)
+
+// Pure cosmetic, but so cool!
+// ---------------------------
+COPY_EXISTING ~tooltip.2da~ ~override~
+	PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+/* ------------------- *
+ *  Compiling Scripts  *
+ * ------------------- */
+
+// SoA part
+// --------
+COMPILE ~saradas_magic_2/baf/!sarad1.baf~
+COMPILE ~saradas_magic_2/baf/!sarad2.baf~
+COMPILE ~saradas_magic_2/baf/!sarad3.baf~
+COMPILE ~saradas_magic_2/baf/!sarafin.baf~
+COMPILE ~saradas_magic_2/baf/!spccon.baf~
+COMPILE EVALUATE_BUFFER ~saradas_magic_2/baf/!scut01.baf~
+COMPILE ~saradas_magic_2/baf/!scut02.baf~
+COMPILE ~saradas_magic_2/baf/!spotted.baf~
+EXTEND_TOP ~ar0902.bcs~ ~saradas_magic_2/baf/ar0902.baf~
+EXTEND_TOP ~ar2805.bcs~ ~saradas_magic_2/baf/ar2805.baf~
+
+// ToB part
+// --------
+COMPILE ~saradas_magic_2/baf/!sartob.baf~
+COMPILE ~saradas_magic_2/baf/!scutbal.baf~
+COMPILE ~saradas_magic_2/baf/!selmcut.baf~
+COMPILE ~saradas_magic_2/baf/!spot2.baf~
+EXTEND_TOP ~ar6104.bcs~ ~saradas_magic_2/baf/!sar6104.baf~
+EXTEND_TOP ~ar6200.bcs~ ~saradas_magic_2/baf/ar6200.baf~
+
+
+/* --------------------- *
+ *  Compiling Dialogues  *
+ * --------------------- */
+
+// SoA part
+// --------
+COMPILE EVALUATE_BUFFER ~saradas_magic_2/dlg/!saradas.d~
+COMPILE ~saradas_magic_2/dlg/!saftrcs.d~
+COMPILE ~saradas_magic_2/dlg/!sarago.d~
+COMPILE ~saradas_magic_2/dlg/!sarangr.d~
+COMPILE ~saradas_magic_2/dlg/!sarafin.d~
+
+// ToB part
+// --------
+COMPILE ~saradas_magic_2/dlg/!sar25j.d~
+COMPILE ~saradas_magic_2/dlg/!sar25b.d~
+COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
+COMPILE ~saradas_magic_2/dlg/!sartob.d~
+COMPILE ~saradas_magic_2/dlg/edwin25j.d~
+
+
+/* ----------------- *
+ *  Appending files  *
+ * ----------------- */
+APPEND ~interdia.2da~ ~!Sartob !SarB !Sar25B~ UNLESS ~!Sartob~
+
+APPEND ~pdialog.2da~  ~!SARTOB !SARP !SARJ !SARD !SAR25P !SAR25J !SAR25D !SARTOB~ UNLESS ~!SARTOB~
+
+
+/* ----------- *
+ *  Epilogues  *
+ * ----------- */
+
+// Epilogue as a deity and Keldorn is a friend - Finale divinità Keldorn amico (F-G-KF)
+// ------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-g-kf.2da~
+	REPLACE ~99999~ @301
+BUT_ONLY
+
+// Epilogue as a deity and Keldorn is not a friend - Finale divinità Keldorn non amico (F-G-KNF)
+// ---------------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-g-knf.2da~
+	REPLACE ~99999~ @302
+BUT_ONLY
+
+// Epilogue as no deity and Keldorn is a friend - Finale non divinità Keldorn amico (F-NG-KF)
+// ------------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-ng-kf.2da~
+	REPLACE ~99999~ @303
+BUT_ONLY
+
+// Epilogue as no deity and Keldorn is not a friend - Finale non divinità Keldorn non amico (F-NG-KNF)
+// ---------------------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-ng-knf.2da~
+	REPLACE ~99999~ @304
+BUT_ONLY
+
+// Epilogue: no deity with CHARNAME as a mage and Keldorn is not a friend - Finale non divinità protagonista mago Keldorn non amico (F-M-KNF)
+// ------------------------------------------------------------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-m-knf.2da~
+	REPLACE ~99999~ @305
+BUT_ONLY
+
+// Epilogue: no deity with CHARNAME as a mage and Keldorn is a friend - Finale non divinità protagonista mago Keldorn amico (F-M-KF)
+// ---------------------------------------------------------------------------------------------------------------------------------
+COPY ~saradas_magic_2/2da/!sfinale.2da~ ~override\f-m-kf.2da~
+	REPLACE ~99999~ @306
+BUT_ONLY
