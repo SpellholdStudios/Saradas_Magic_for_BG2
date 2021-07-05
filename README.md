@@ -50,60 +50,7 @@ In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him thro
 
 [![Lashing Wind spell video](videos/lashing_wind.png)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
 
-Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class. All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
-- Spiritual Explosion (Invocation)
-- Impenetrable Defense (Abjuration)
-- Ego's Frailty (Alteration)
-- Summon Devil of Baator (Evocation)
-- Foreseeing the future (Divination)
-- Absolute abnegation (Enchantment)
-- Legion of shadows (Illusion)
-- Deathly Hallows (Necromancy)
-- Knowledge of the Scholar (Generalist)
-- Shroud of wild magic (Wild magic)
-- Dragonborn (Dragon Disciple)
 
-(work on pure mages, multi-classed mages, dual-classed mages)
-
-
-In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
-
-<details><summary>DEPRECATED as of v 6.0.0</summary>
-<p></br>
-<strong>Important:</strong> Download all content you may require from the Infinity Animations download category at <a href="http://www.shsforums.net/files/category/98-infinity-animations/">Spellhold Studios</a>. If in doubt, download them all (most mega-mod installs will need all archives). Extract all archives using the "<em>Do not extract paths</em>" option on the <strong>Advanced</strong> tab in WinRAR. Also, make sure the "Destination path" on the <strong>General</strong> tab terminates in <strong>/content</strong> or <strong>/restore</strong> after <strong>infinityanimations</strong> (there should be no sub-folders beyond that).
-
-<p>Extract all archives to the :file_folder: /content folder except IA_BG2_Restores.rar, which should go in the :file_folder: /restore folder. If you extract IA_Wh_Dr_Wyv_LoP.rar (currently only needed for the Planar Sphere mod), you can delete the sub-archive The_Lady's_Shadow.rar after extraction, as it is currently unused due to animation size limitations.</p>
-
-For WinZip, make sure the "Use folder names" box is *unselected*.
-
-You should end up with a bunch of .bam files and no sub-folders in your :file_folder: "content" and/or "restore" folders. The installer will warn you if you're missing anything you need, at which point you can exit it, download missing content, extract it and rerun the installer.
-</p>
-</details>
-
-In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.
-
-Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
-
-Below is a short conversation between the two of them:
-
-<details><summary>DEPRECATED as of v 6.0.0</summary>
-<p></br>
-</p>
-</details>
-
-
-Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
-
-Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
-
-Saradas Magic 2 features in Throne of Bhaal :
-- Banters and dialogues with many of the original BioWare NPCs
-- He expresses his thoughts regarding events and dialogues (interjections)
-- He has a custom ring
-- You can experience 6 different epilogues
-- 1 custom skill
-- Dialogues with the protagonist
-- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin in your party. This time Edwin has really gone too far. :wink:
 <div align="right"><a href="#top">Back to top</a></div>
 
 <hr>
@@ -143,7 +90,7 @@ Saradas can be found in the temple of Lathander of Athkatla. In Throne of Bhaal 
 		<th>Charisma</th>
 	</tr>
 	<tr>
-		<td><img src="saradas_magicè2/readme/images/sartobm.jpg" title="Saradas Portrait"></td>
+		<td><img src="saradas_magic_2/readme/images/sartobm.jpg" title="Saradas Portrait"></td>
 		<td><div align="center">10</div></td>
 		<td><div align="center">13</div></td>
 		<td><div align="center">14</div></td>
@@ -153,7 +100,7 @@ Saradas can be found in the temple of Lathander of Athkatla. In Throne of Bhaal 
 	</tr>
 	<tr>
 		<td colspan="7">
-		<strong>Biography:</strong><br>
+		<strong>Biography:</strong><br><br>
 		You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.</td>
 	</tr>
 </table>
@@ -185,12 +132,15 @@ In the store, you can find seven brand new arcane spells I created:
 - Spectacular Combustion
 - Tenser's Supremacy
 
-<strong>&#10173;</strong> For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
+&#9755; For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
 
 The prices are not very cheap, but you can still try to steal from the store. :wink:
 
 
-<strong>&#9755;</strong> In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
+&nbsp;
+
+
+&#10173; In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
 - The Shaman's Staff
 - The Book of Kaza
 - The Mask of King Strohm III
@@ -199,37 +149,99 @@ The prices are not very cheap, but you can still try to steal from the store. :w
 - The Mantle of Waukeen
 
 
-## 
-
-
-## 
-
-
-## 
-
-
-## 
-
-
-## 
-
-### Player-initiated dialogues
-
-You have the opportunity to initiate dialogue with Sebastian and Andrei if you click the *Talk* icon and click on their portraits or avatars. This option is available once they have had their first talk while in the party. Their reactions will depend on your behaviour during both scripted and player-initiated talks.
-
-&#10173; If you want to write your own NPC talking about or with Sebastian or Andrei, or commenting about their quest, you don't have to ask our permission. However, if you'd like to get in contact and get some ideas going, we're more than willing to put the work in.
-
 &nbsp;
 
-<ins>Notes on flirting with Andrei:</ins>
 
-You can choose the option "*flirt with*" irrespective of race or gender. If the number of flirts he has accepted gets high enough, he will start a dialogue with you commenting on your behaviour and you can decide whether to try to take things further or remain friends.
+&#10173; Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class (All are available for pure, multi-classed, and dual-classed mages). All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
+- Ego's Frailty (Alteration)</li>
+- Impenetrable Defense (Abjuration)</li>
+- Foreseeing the future (Divination)</li>
+- Dragonborn (Dragon Disciple)</li>
+- Absolute abnegation (Enchantment)</li>
+- Summon Devil of Baator (Evocation)</li>
+- Knowledge of the Scholar (Generalist)</li>
+- Legion of shadows (Illusion)</li>
+- Deathly Hallows (Necromancy)</li>
+- Shroud of wild magic (Wild magic)</li>
+- Spiritual Explosion (Invocation)</li>
 
-<ins>Notes on flirting with Sebastian:</ins>
+With Saradas Magic 2 the possibilities are infinite. You can:
+- Teleport behind an opponent and turn it into a pathetic zombie.</li>
+- Summon a demon prince to tear your enemies apart.</li>
+- Turn yourself into a fearsome Lich and drain the life out of your rivals up to send them into the Abyss.</li>
+- Crush the will of your enemies and then finish them off with a burst of spiritual energy.</li>
+- Get the appearance of a dragon and lay waste wherever you go!</li>
+- Turn the most dangerous of wizards to a meek kitten by stealing his spells or wrapping him in a burst of wild magic.</li>
+- ...
 
-You can choose "*flirt with*" irrespective of race or gender. If the number of flirts he has accepted gets high enough, your Bioware loved one will object. Under certain circumstances, you can choose to try to take your relationship with Sebastian further.
+## 
 
-With both, you can choose the option "*I'd like us to just be friends*" at any time, and "*flirt with*" will disappear from the response menu.
+#### ToB content
+
+- Banters and dialogues with many of the original BioWare NPCs.
+- He expresses his thoughts regarding events and dialogues (interjections).
+- He has a custom ring.
+- You can experience 6 different epilogues.
+- 1 custom skill.
+- Dialogues with the protagonist.
+- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party.<br>
+The other one eventually triggers if you have both Saradas and Edwin inside your party. This time Edwin has really gone too far. :wink:
+
+
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Sendai's enclave video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/NC6YPDjXcjg" title="Easter Egg: Saradas and the Balrog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+						</div>
+					</div>
+				</div>
+				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
+					<div class="quotetitle">
+						<strong>&nbsp;&nbsp;&#x25BA; Banters and Edwin-Elminster duel video</strong>:
+						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
+						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
+					</div>
+					<div class="quotecontent">
+						<div style="display: none; ">
+							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/kkoBmEKTCw8" title="banters_and_edwin_vs_elminster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+						</div>
+					</div>
+				</div>
+
+### NPC Relationships
+
+In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
+
+<details>&nbsp;&nbsp;&#x25BA; spoiler:</summary>
+<p></br>
+<em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.</em>
+</p>
+</details>
+
+
+Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
+
+<details>&nbsp;&nbsp;&#x25BA; Below is a short conversation between the two of them:</summary>
+<p></br>
+Keldorn: "<em>What will you do when our journey is over, Saradas?</em>"<br>
+Saradas: "<em>I think I will finally come back to my house, in Sembia. My hometown is Yhaunn, a quiet coastal city. There I will finally rest after my long travels.</em>"<br>
+Keldorn: "<em>Sounds like a good place to rest after retiring from adventure.</em>"<br>
+Saradas: "<em>It really is, and you will always be welcome there, if you plan to visit me in Sembia, Lord Keldorn.</em>"<br>
+Keldorn: "<em>I surely will. Oh and by the way there's no need of such titles between friends, Saradas. Just call me Keldorn.</em><br>
+Saradas: <em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
+But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>"<br>
+Keldorn: "<em>You are wise as always. Let's continue our path.</em>"<br>
+</p>
+</details>
+
+Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his/her future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
+
+Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
 
 <div align="right"><a href="#top">Back to top</a></div>
 
