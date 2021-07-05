@@ -20,7 +20,6 @@ IF ~~ THEN BEGIN Greetings1_2
   IF ~~ THEN EXIT
 END
 
-
 IF ~~ THEN BEGIN Greetings2
   SAY @108  /* mi presento */
   IF ~~ THEN REPLY @109   /* apri negozio */   DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
@@ -52,7 +51,6 @@ IF ~~ THEN BEGIN SaradasProvoked1
   IF ~~ THEN REPLY @117 /* Mmm...forse sara'  per la prossima volta!*/ GOTO SaradasProvoked2
 END
 
-
 IF ~~ THEN BEGIN SaradasProvoked2
   SAY @118 /* ~Saggia decisione, ora va.*/
   IF ~~ THEN EXIT
@@ -75,6 +73,7 @@ IF ~~ THEN BEGIN GiveRewardShadowStone
   IF ~~ THEN DO ~setglobal("!SGivenShadowStone","GLOBAL",1) TakePartyItem("misc6p") DestroyItem("misc6p") TakePartyGold(2500) DestroyGold(2500) GiveItemCreate("!Shadow2",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
 
+
 IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) PartyHasItem("misc8L") PartyHasItem("scrl72") PartyHasItem("misc42") PartyHasItem("misc43") PartyHasItem("misc41")~ THEN BEGIN WaukeenAndGems
   SAY @184 /* avete il mantello e le gemme */
   IF ~PartyGoldGT(3499)~ THEN REPLY @185  /* Incanta l'oggetto */ GOTO GiveRewardWaukeen
@@ -83,6 +82,7 @@ IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) PartyHasItem("misc
   IF ~~ THEN REPLY @191 DO ~StartStore("!saradas",LastTalkedToBy(Myself))~  EXIT
 
 END
+
 
 IF ~NumTimesTalkedToGT(0) global("!SGivenWaukeen","GLOBAL",0) partyhasitem("misc8L") OR(4) !partyhasitem("scrl72") !partyhasitem("misc42") !partyhasitem("misc43") !partyhasitem("misc41")~ THEN BEGIN WaukeenNoGems
   SAY @183 /* avete il mantello ma non le gemme */
@@ -95,7 +95,6 @@ IF ~~ THEN BEGIN GiveRewardWaukeen
   SAY @169 /* bene, iniziamo */
   IF ~~ THEN DO ~setglobal("!SGivenWaukeen","GLOBAL",1) TakePartyItem("misc8l") DestroyItem("misc8l") TakePartyItem("scrl72") DestroyItem("scrl72") TakePartyItem("misc41") DestroyItem("misc41") TakePartyItem("misc42") DestroyItem("misc42") TakePartyItem("misc43") DestroyItem("misc43") TakePartyGold(3500) DestroyGold(3500) GiveItemCreate("!Swaukn",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
-
 
 IF ~~ THEN BEGIN AsYouPrefer
   SAY @168 /* come back if you change your mind */
@@ -142,7 +141,7 @@ END
 
 IF ~~ THEN BEGIN GiveRewardAmaunator
   SAY @169 /* a great addition to my collection */
- IF ~~ THEN DO ~setglobal("!SGivenAmaunator","GLOBAL",1) TakePartyItem("key23") DestroyItem("key23") TakePartyGold(4000) DestroyGold(4000) GiveItemCreate("!Samauna",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
+  IF ~~ THEN DO ~setglobal("!SGivenAmaunator","GLOBAL",1) TakePartyItem("key23") DestroyItem("key23") TakePartyGold(4000) DestroyGold(4000) GiveItemCreate("!Samauna",lasttalkedtoby,1,1,0) Startcutscene("!Scut01") ~ EXIT
 END
 
 
@@ -163,7 +162,7 @@ END
 
 /* ---------------BLOCCO SECONDO INCONTRO------------------------------ */
 
-IF ~NumTimesTalkedToGT(0) GlobalLT("Chapter","GLOBAL",5)~ THEN BEGIN SaradasSecondDialog
+IF ~NumTimesTalkedToGT(0) GlobalLT("Chapter","GLOBAL",%bg2_chapter_5%)~ THEN BEGIN SaradasSecondDialog
   SAY @123 /* Oh, siete tornati.*/
   IF ~~ THEN REPLY @124 /* Bentrovato, Saradas. Apri negozio*/ DO ~StartStore("!saradas",LastTalkedToBy(Myself))~ EXIT
   IF ~~ THEN REPLY @125 /* A dire il vero siamo solo di passaggio*/ EXIT
@@ -201,30 +200,30 @@ END
 
 IF ~~ THEN BEGIN HealGoodParty
   SAY @135   /* Vi curero' */
-IF ~~ THEN DO ~ApplySpell(player1,Cleric_cure_serious_wounds)
-               ApplySpell(player2,Cleric_cure_serious_wounds)
-               ApplySpell(player3,Cleric_cure_serious_wounds)
-               ApplySpell(player4,Cleric_cure_serious_wounds)
-               ApplySpell(player5,Cleric_cure_serious_wounds)
-               ApplySpell(player6,Cleric_cure_serious_wounds)
-               SetGlobalTimer("!SaradasHealedParty","GLOBAL",2400)~ EXIT
+  IF ~~ THEN DO ~ApplySpell(Player1,CLERIC_CURE_SERIOUS_WOUNDS)
+                 ApplySpell(Player2,CLERIC_CURE_SERIOUS_WOUNDS)
+                 ApplySpell(Player3,CLERIC_CURE_SERIOUS_WOUNDS)
+                 ApplySpell(Player4,CLERIC_CURE_SERIOUS_WOUNDS)
+                 ApplySpell(Player5,CLERIC_CURE_SERIOUS_WOUNDS)
+                 ApplySpell(Player6,CLERIC_CURE_SERIOUS_WOUNDS)
+                 SetGlobalTimer("!SaradasHealedParty","GLOBAL",2400)~ EXIT
 END
 
 IF ~~ THEN BEGIN NoHealBadParty
   SAY @136   /* Non vi curero' */
-IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN HealNotReady
   SAY @137    /* Vi ho gia' curati, tornate in seguito*/
-IF ~~ THEN EXIT
+  IF ~~ THEN EXIT
 END
 
 
 
 /* ---------------BLOCCO DOPO SPELLHOLD-UNDERDARK E ASSEGNAZIONE SKILLS EPICHE------------------------------ */
 
-IF ~NumTimesTalkedToGT(0) Global("Chapter","GLOBAL",6) global("!SaradasTalkAfterUnderdark","GLOBAL",0)~ THEN BEGIN SaradasAfterUnderdark
+IF ~NumTimesTalkedToGT(0) Global("Chapter","GLOBAL",%bg2_chapter_6%) global("!SaradasTalkAfterUnderdark","GLOBAL",0)~ THEN BEGIN SaradasAfterUnderdark
   SAY @127               /* Bentornati! ho saputo della vostra eroica impresa a Spellhold e Underdark */
   IF ~~ THEN REPLY @128  /* ~Oh, vedo che le notizie viaggiano piuttosto veloci...*/ GOTO SaradasTeachesEpic
   IF ~~ THEN REPLY @129  /* Non sono affari tuoi, vecchio*/ DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1)~ GOTO SaradasLeaves
@@ -232,42 +231,42 @@ END
 
 IF ~~ THEN BEGIN SaradasTeachesEpic
   SAY @130 /* non c'e' ragione di essere modesti con me*/
-IF ~Kit(Protagonist,MAGESCHOOL_ABJURER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveAbjurerSpell
-IF ~Kit(Protagonist,MAGESCHOOL_DIVINER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDivinerSpell
-IF ~Kit(Protagonist,MAGESCHOOL_ENCHANTER)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveEnchanterSpell
-IF ~Kit(Protagonist,MAGESCHOOL_CONJURER)~                  THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveConjurerSpell
-IF ~Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveIllusionistSpell
-IF ~Kit(Protagonist,MAGESCHOOL_INVOKER)~                   THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveInvokerSpell
-IF ~Kit(Protagonist,MAGESCHOOL_NECROMANCER)~               THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveNecromancerSpell
-IF ~Kit(Protagonist,MAGESCHOOL_TRANSMUTER)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveTransmuterSpell
-IF ~Class(Protagonist,MAGE)
-    !Kit(Protagonist,MAGESCHOOL_ABJURER)
-    !Kit(Protagonist,MAGESCHOOL_DIVINER)
-    !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
-    !Kit(Protagonist,MAGESCHOOL_CONJURER)
-    !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
-    !Kit(Protagonist,MAGESCHOOL_INVOKER)
-    !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
-    !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
-    !Kit(Protagonist,WILDMAGE)
-    !Kit(Protagonist,DRAGON_DISCIPLE)~                     THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
-IF ~!Kit(Protagonist,MAGESCHOOL_ABJURER)
-    !Kit(Protagonist,MAGESCHOOL_DIVINER)
-    !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
-    !Kit(Protagonist,MAGESCHOOL_CONJURER)
-    !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
-    !Kit(Protagonist,MAGESCHOOL_INVOKER)
-    !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
-    !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
+  IF ~Kit(Protagonist,MAGESCHOOL_ABJURER)~              THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveAbjurerSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_DIVINER)~              THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDivinerSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_ENCHANTER)~            THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveEnchanterSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_CONJURER)~             THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveConjurerSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)~          THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveIllusionistSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_INVOKER)~              THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveInvokerSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_NECROMANCER)~          THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveNecromancerSpell
+  IF ~Kit(Protagonist,MAGESCHOOL_TRANSMUTER)~           THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveTransmuterSpell
+  IF ~Class(Protagonist,MAGE)
+      !Kit(Protagonist,MAGESCHOOL_ABJURER)
+      !Kit(Protagonist,MAGESCHOOL_DIVINER)
+      !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
+      !Kit(Protagonist,MAGESCHOOL_CONJURER)
+      !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
+      !Kit(Protagonist,MAGESCHOOL_INVOKER)
+      !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
+      !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
+      !Kit(Protagonist,WILDMAGE)
+      !Kit(Protagonist,DRAGON_DISCIPLE)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
+  IF ~!Kit(Protagonist,MAGESCHOOL_ABJURER)
+      !Kit(Protagonist,MAGESCHOOL_DIVINER)
+      !Kit(Protagonist,MAGESCHOOL_ENCHANTER)
+      !Kit(Protagonist,MAGESCHOOL_CONJURER)
+      !Kit(Protagonist,MAGESCHOOL_ILLUSIONIST)
+      !Kit(Protagonist,MAGESCHOOL_INVOKER)
+      !Kit(Protagonist,MAGESCHOOL_NECROMANCER)
+      !Kit(Protagonist,MAGESCHOOL_TRANSMUTER)
     OR(5)
-    Class(Protagonist,FIGHTER_MAGE)
-    Class(Protagonist,FIGHTER_MAGE_THIEF)
-    Class(Protagonist,MAGE_THIEF)
-    Class(Protagonist,CLERIC_MAGE)
-    Class(Protagonist,FIGHTER_MAGE_CLERIC)~                THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
-IF ~Kit(Protagonist,WILDMAGE)~                             THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveWildSpell
-IF ~Kit(Protagonist,DRAGON_DISCIPLE)~                      THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
-IF ~~ THEN REPLY @131 /*Grazie Saradas, ma c'e' ancora molto da fare*/ DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1)~ EXIT
+      Class(Protagonist,FIGHTER_MAGE)
+      Class(Protagonist,FIGHTER_MAGE_THIEF)
+      Class(Protagonist,MAGE_THIEF)
+      Class(Protagonist,CLERIC_MAGE)
+      Class(Protagonist,FIGHTER_MAGE_CLERIC)~           THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveGeneralistSpell
+  IF ~Kit(Protagonist,WILDMAGE)~                        THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveWildSpell
+  IF ~Kit(Protagonist,DRAGON_DISCIPLE)~                 THEN REPLY @132 /* I just want my soul back. Irenicus will pay */ GOTO GiveDragonSpell
+  IF ~~ THEN REPLY @131 /*Grazie Saradas, ma c'e' ancora molto da fare*/ DO ~setglobal("!SaradasTalkAfterUnderdark","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN GiveConjurerSpell
@@ -335,7 +334,7 @@ END
 
 /* -----------------BLOCCO ULTIMO CAPITOLO--------------------------------  */
 
-IF ~NumTimesTalkedToGT(0) global("!SaradasTalkAfterUnderdark","GLOBAL",1) GlobalGT("Chapter","GLOBAL",5)~ THEN BEGIN SaradasFinalChapter
+IF ~NumTimesTalkedToGT(0) global("!SaradasTalkAfterUnderdark","GLOBAL",1) GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)~ THEN BEGIN SaradasFinalChapter
   SAY @162 /* The final battle awaits, son of Bhaal. */
   IF ~~ THEN REPLY @163 /* I'm ready. Irenicus will face the true wrath of a son of Bhaal.*/ DO ~StartStore("!saradas",LastTalkedToBy(Myself))~ EXIT
   IF ~~ THEN REPLY @164 /* I just want to live my life like any other creature of this world*/ EXIT
@@ -343,30 +342,29 @@ IF ~NumTimesTalkedToGT(0) global("!SaradasTalkAfterUnderdark","GLOBAL",1) Global
   ~ReputationGT([PC],9)
   !GlobalTimerNotExpired("!SaradasHealedParty","GLOBAL")
   OR(6)
-  HPpercentLT(Player1,50)
-  HPpercentLT(Player2,50)
-  HPpercentLT(Player3,50)
-  HPpercentLT(Player4,50)
-  HPpercentLT(Player5,50)
-  HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO HealGoodParty
+    HPpercentLT(Player1,50)
+    HPpercentLT(Player2,50)
+    HPpercentLT(Player3,50)
+    HPpercentLT(Player4,50)
+    HPpercentLT(Player5,50)
+    HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO HealGoodParty
   IF
   ~ReputationLT([PC],10)
   OR(6)
-  HPpercentLT(Player1,50)
-  HPpercentLT(Player2,50) 
-  HPpercentLT(Player3,50) 
-  HPpercentLT(Player4,50)
-  HPpercentLT(Player5,50) 
-  HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO NoHealBadParty
+    HPpercentLT(Player1,50)
+    HPpercentLT(Player2,50) 
+    HPpercentLT(Player3,50) 
+    HPpercentLT(Player4,50)
+    HPpercentLT(Player5,50) 
+    HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO NoHealBadParty
   IF
   ~ReputationGT([PC],9)
   GlobalTimerNotExpired("!SaradasHealedParty","GLOBAL")
   OR(6)
-  HPpercentLT(Player1,50)
-  HPpercentLT(Player2,50)
-  HPpercentLT(Player3,50)
-  HPpercentLT(Player4,50)
-  HPpercentLT(Player5,50)
-  HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO HealNotReady
+    HPpercentLT(Player1,50)
+    HPpercentLT(Player2,50)
+    HPpercentLT(Player3,50)
+    HPpercentLT(Player4,50)
+    HPpercentLT(Player5,50)
+    HPpercentLT(Player6,50)~ THEN REPLY @134  GOTO HealNotReady
 END
-

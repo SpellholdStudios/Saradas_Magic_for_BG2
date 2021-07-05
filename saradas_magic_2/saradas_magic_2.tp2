@@ -5,6 +5,37 @@ SUPPORT ~SHS Staff at http://www.shsforums.net/forum/633-bgee-modding~
 
 VERSION ~v1.7~
 
+ALWAYS
+
+	ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN // Always block must run only once per install!
+
+		/* ----------------------------------------- *
+		 *    Determines which game is installed.    *
+		 * ----------------------------------------- */
+
+		OUTER_SET is_tob   = (GAME_IS ~bgt tob tutu tutu_totsc~) ? 1 : 0     // based on vanilla ToB engine
+		OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0                       // b2gee
+		OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0                         // eet
+		OUTER_SET is_ee    = (GAME_IS ~bg2ee eet~) ? 1 : 0                   // EE game
+
+		/* ------------------------------------------- *
+		 *    EET chapters continuity compatibility    *
+		 * ------------------------------------------- */
+		ACTION_IF is_eet BEGIN
+			OUTER_SET bg2_chapter = 12
+		END ELSE BEGIN
+			OUTER_SET bg2_chapter = 0
+		END
+		OUTER_FOR (i = 1 ; i <= 10 ; ++i) BEGIN
+			OUTER_SET bg2_chapter = bg2_chapter + 1
+			OUTER_SPRINT name_source ~bg2_chapter_%i%~
+			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+		END
+
+	END
+
+END
+
 
 AUTO_TRA ~saradas_magic_2/lang/%s~
 
@@ -219,20 +250,20 @@ COPY ~saradas_magic_2/eff/!szom1.eff~  ~override~
      ~saradas_magic_2/eff/!szom14.eff~ ~override~
      ~saradas_magic_2/eff/!szom15.eff~ ~override~
 
-// Impenetrable Defense ()
+// Impenetrable Defense (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcabj.spl~ ~override~
 	SAY NAME1 @125
 	SAY UNIDENTIFIED_DESC @126
 
 COPY ~saradas_magic_2/spl/!spcabj2.spl~ ~override~
 
-// Ego's frailty ()
+// Ego's frailty (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcalt.spl~ ~override~
 	SAY NAME1 @127
 	SAY UNIDENTIFIED_DESC @128
 	SAY 0x51e @129 // ~Magic, elemental and physical resistances have been lowered~
 
-// Summon Devil of Baator ()
+// Summon Devil of Baator (Saradas gift)
 COPY ~saradas_magic_2/spl/!spccon.spl~ ~override~
 	SAY NAME1 @131
 	SAY UNIDENTIFIED_DESC @132
@@ -246,18 +277,18 @@ COPY ~saradas_magic_2/cre/!spccon.cre~ ~override~
 	SAY NAME2 @133
 COPY ~saradas_magic_2/itm/!sbalorc.itm~ ~override~
 
-// Foreseeing the future ()
+// Foreseeing the future (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcdiv.spl~ ~override~
 	SAY NAME1 @135
 	SAY UNIDENTIFIED_DESC @136
 	SAY 0x4ee @137 // ~Items created inside inventory~
 
-// Absolute abnegation ()
+// Absolute abnegation (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcenc.spl~ ~override~
 	SAY NAME1 @139
 	SAY UNIDENTIFIED_DESC @140
 
-// Knowledge of the Scholar ()
+// Knowledge of the Scholar (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcgen.spl~ ~override~
 	SAY NAME1 @141
 	SAY UNIDENTIFIED_DESC @142
@@ -265,14 +296,14 @@ COPY ~saradas_magic_2/spl/!spcgen.spl~ ~override~
 COPY ~saradas_magic_2/spl/!spcgen2.spl~ ~override~
 	SAY 0x3ce @143 // ~Magic Aura~
 
-// Legion of shadows ()
+// Legion of shadows (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcill.spl~ ~override~
 	SAY NAME1 @145
 	SAY UNIDENTIFIED_DESC @146
 
 COPY ~saradas_magic_2/eff/!spcill.eff~ ~override~
 
-// Deathly Hallows ()
+// Deathly Hallows (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcnec.spl~ ~override~
 	SAY NAME1 @147
 	SAY UNIDENTIFIED_DESC @148
@@ -284,13 +315,13 @@ COPY ~saradas_magic_2/itm/!spcnec.itm~ ~override~
 	SAY NAME1 @149 // ~Lich Touch~
 	SAY NAME2 @149
 
-// Shroud of wild magic ()
+// Shroud of wild magic (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcwil.spl~ ~override~
 	SAY NAME1 @151
 	SAY UNIDENTIFIED_DESC @152
 	SAY 0x21e @153 // ~Wrapped in wild magical energy~
 
-// Dragonborn ()
+// Dragonborn (Saradas gift)
 COPY ~saradas_magic_2/spl/!spcdra.spl~ ~override~
 	SAY NAME1 @155
 	SAY UNIDENTIFIED_DESC @156
