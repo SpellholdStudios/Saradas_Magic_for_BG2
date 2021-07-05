@@ -37,29 +37,21 @@ TODO : fix items and spells
 
 - Deathly Hallows Remove Immunity to effect (101),Target: Self (1),Power: 0,Unused: 0,Effect: Dispel effects (58) + spcnec3 25817 Disable display string (267) String: MY MOTHER SAYS THAT ELVES SHOULD GO CLIMB A TREE SOMEWHERE!.
 
-- Enchanted Mask of King Strohm III (!strohm2.itm)
-	+ Add tooltip :12095 12096
-
 - Enchanted Book of Kaza
 	+ Remove Wizard Slayer unusability
 
 - Enchanted Symbol of Amaunator (!samauna.itm)
-	+ Add tooltip 38569
 	+ immunity to Blindness restored
 	+ Remove wizard slayer unusability
 
 - Shaman's Staff +1 (!shaman2.itm)
-	+ Add tooltip 12106 7468 2445
 	+ Q3 alternate2
 	+ added +1 thac0
 
 - Shadow Ioun Stone (!shadow2.itm)
 	+ category headgear
-	+ Add tooltip 12084 - 12021
 	+ rename Enchanted Ioun shadow stone to Shadow Ioun Stone
 
 - Enchanted Mantle of Waukeen: Waukeen's Wealth (!swaukn2.spl)
-	+ Add tooltip
 
 - Saradas' Ring (!sarring.itm)
-	+ Add tooltip 12021 Improved Invisibility - 55844 Lesser Restoration

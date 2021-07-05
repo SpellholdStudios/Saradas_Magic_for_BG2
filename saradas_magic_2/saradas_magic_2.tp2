@@ -397,6 +397,30 @@ COPY ~saradas_magic_2/itm/!sarring.itm~ ~override~
 	SAY DESC @218
 
 
+/* --------------------- *
+ *  Installing tooltips  *
+ * --------------------- */
+
+// First, read how many columns are in tooltip.2da file to append it accordingly.
+// ------------------------------------------------------------------------------
+LAM ~GW_READ_COL_TOOLTIP~
+
+// Append tooltip.2da
+// ------------------
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!strohm2~ GW_tooltips = ~12095 12096~ END     // Enchanted Mask of King Strohm III : Invisibility Purge (twice per day) - True Seeing (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!samauna~ GW_tooltips = ~38569~ END           // Enchanted Symbol of Amaunator : False Dawn (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!shaman2~ GW_tooltips = ~12106 7468 2445~ END // Shaman's Staff +1 : Goodberry (once per day) - Mass Cure (twice per day) - Cure Disease (twice per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!shadow2~ GW_tooltips = ~12084 12021~ END     // Shadow Ioun Stone : Sanctuary (once per day) - Improved Invisibility (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!swaukn~  GW_tooltips = ~@213 @214~ END       // Enchanted Mantle of Waukeen : Waukeen's Blessing (once per day) - Waukeen's Wealth (once per day)
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~!sarring~ GW_tooltips = ~12021 55844~ END     // Saradas' Ring : Improved Invisibility -  Lesser Restoration
+
+// Pure cosmetic, but so cool!
+// ---------------------------
+COPY_EXISTING ~tooltip.2da~ ~override~
+	PRETTY_PRINT_2DA
+BUT_ONLY
+
+
 /* ------------------- *
  *  Compiling Scripts  *
  * ------------------- */
