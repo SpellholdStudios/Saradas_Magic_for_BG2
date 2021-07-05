@@ -190,8 +190,10 @@ The installer includes the following components. All optional components require
 - Added native EET compatibility (thanks Austin!):
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added chapters continuity for EET games.
+    - Provided accurate sized NPC portraits for EE games.
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
+    - Fixed `Face()` and `LeaveAreaLUA` actions using dir.ids in EE games, and crashing classical games.
     - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
 - Renamed "*english.tra*" file to "*setup.tra*" for consistency.
@@ -241,8 +243,6 @@ The installer includes the following components. All optional components require
 - Added an option to set an alternate appearance for Saradas (as a mage, not a monk). Added due to the fact that the monk does not have a paperdoll on the inventory screen and some players asked to add this option
 - Added full compatibility with "vanilla" (non-EE) version of the game: 
     - Added adaptation of WILDMAGE and DRAGON_DISCIPLE kits, as well as WIZARD_IMPROVED_ALACRITY spell for the vanilla version of the game. Corresponding changes have been made to the TP2-file and the !SARADAS.d and !Scut01.baf files
-    - Added a command to TP2 that adds the dir.ids file to the game when a vanilla version of the game is found (since it is absent in it, and the mod will not be installed without it)
-    - Added different size options for portraits (for the EE version of the game and for the classic version of the game) 
 
 ## 
 

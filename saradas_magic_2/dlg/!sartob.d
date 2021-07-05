@@ -81,7 +81,7 @@ END
 
 IF ~~ THEN BEGIN GOODKickedNoPP
 	SAY @26
-	IF ~~ THEN DO ~DialogInterrupt(FALSE) ForceSpell(Myself,WIZARD_DIMENSION_DOOR) wait(4) LeaveAreaLUA("AR4500","",[1468.1455],S) DialogInterrupt(TRUE)~ EXIT
+	IF ~~ THEN DO ~DialogInterrupt(FALSE) ForceSpell(Myself,WIZARD_DIMENSION_DOOR) wait(4) LeaveAreaLUA("AR4500","",[1468.1455],0) DialogInterrupt(TRUE)~ EXIT
 END
 
 IF ~~ THEN BEGIN GOODKickedPP
