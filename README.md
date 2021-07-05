@@ -21,6 +21,10 @@
 
 ## 
 
+:page_facing_up: [Read the mod's readme](https://spellholdstudios.github.io/readmes/saradas_magic_2-readme-english.html)
+
+:inbox_tray: [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1139-saradas-magic-2)<br>
+
 ## 
 
 <div align="center">
@@ -32,35 +36,13 @@
 
 ## <a name="intro" id="intro"></a>Overview
 
-<img style="float: left;" src="saradas_magic_2/readme/images/sartobm.jpg"> This mod introduces a new NPC, Saradas the archmage, which interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit.
+This mod introduces a new NPC, Saradas the archmage, who interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit.
+
+In addition, Saradas is an artifacts collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item.
+
+In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
 
 
-SARADAS MAGIC 2:SoA PART
-
-In addition to having several exclusive dialogues that take place as the plot takes shape, he offers:
-- Identification at reduced price
-- Cure the party when one or more members of the group are seriously injured
-- An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him
-- A store with exclusive articles
-
-In the latter, you can find seven brand new arcane spells I created:
-- Flawless Teleport
-- Lashing Wind
-- Gravitational Field
-- Horrid transformation
-- Drain Spell
-- Spectacular Combustion
-- Tenser's Supremacy
-
-The prices are not very cheap, but you can still try to steal from the store. :wink:
-
-In addition, Saradas is an artifacts collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
-- The Shaman's Staff
-- The Book of Kaza
-- The Mask of King Strohm III
-- The Shadow Dragon Wardstone
-- The Symbol of Amaunator
-- The Mantle of Waukeen
 
 [![Lashing Wind](videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
 
@@ -83,12 +65,6 @@ Saradas Magic 2 aims to improve the tactical approach to the game as a magician,
 
 (work on pure mages, multi-classed mages, dual-classed mages)
 
-
-In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage. 
-
-Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
-
-Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way. He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.
 
 In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
 
@@ -151,6 +127,110 @@ Saradas Magic 2 features in Throne of Bhaal :
 
 ## <a name="details" id="details"></a>Details
 
+
+Saradas can be found in the temple of Lathander of Athkatla. In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
+
+#### Statistics and Biography
+
+<table cellpadding=0 cellspacing=0 style="margin-top: 1%; margin-left: 80px" summary="Saradas statistics">
+	<tr style= "line-height: 170%;">
+		<th>Portrait</th>
+		<th>Strength</th>
+		<th>Dexterity</th>
+		<th>Constitution</th>
+		<th>Intelligence</th>
+		<th>Wisdom</th>
+		<th>Charisma</th>
+	</tr>
+	<tr>
+		<td><img src="saradas_magicè2/readme/images/sartobm.jpg" title="Saradas Portrait"></td>
+		<td><div align="center">10</div></td>
+		<td><div align="center">13</div></td>
+		<td><div align="center">14</div></td>
+		<td><div align="center">18</div></td>
+		<td><div align="center">20</div></td>
+		<td><div align="center">15</div></td>
+	</tr>
+	<tr>
+		<td colspan="7">
+		<strong>Biography:</strong><br>
+		You don't know much about this old wizard, and any attempt to shed some light on the details of his past results in cryptic words. By the way you know that he is over 80 and comes from Sembia. He has been serving as a Priest of Lathander for a good part of his life, until he started studying the arcane magic.</td>
+	</tr>
+</table>
+
+## 
+
+#### Background
+
+Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
+
+Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way. He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.
+
+## 
+
+#### SoA content
+
+In addition to having several exclusive dialogues that take place as the plot takes shape, Saradas offers:
+- Identification at reduced price.
+- Cure the party when one or more members of the group are seriously injured.
+- An advanced artificial intelligence scripted by Saradas that offers an epic fight, should you decide to fight him.
+- A store with exclusive articles.
+
+In the store, you can find seven brand new arcane spells I created:
+- Flawless Teleport
+- Lashing Wind
+- Gravitational Field
+- Horrid transformation
+- Drain Spell
+- Spectacular Combustion
+- Tenser's Supremacy
+
+<strong>&#10173;</strong> For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
+
+The prices are not very cheap, but you can still try to steal from the store. :wink:
+
+
+<strong>&#9755;</strong> In addition, Saradas is an artifact collector. If you find any ancient artifact, you can bring it to him, and he will enchant it for you, granting magic properties to the item. I have introduced this new feature in Saradas Magic 2 because sometimes, after a quest has been completed, it's not rare to find some useless items inside your inventory. The funny thing is they are mostly ancient relics made of gold but end up being sold for a fistful of coins or abandoned in some dusty chest, and forgotten soon after. My idea was to give them a purpose. The six artifacts are:
+- The Shaman's Staff
+- The Book of Kaza
+- The Mask of King Strohm III
+- The Shadow Dragon Wardstone
+- The Symbol of Amaunator
+- The Mantle of Waukeen
+
+
+## 
+
+
+## 
+
+
+## 
+
+
+## 
+
+
+## 
+
+### Player-initiated dialogues
+
+You have the opportunity to initiate dialogue with Sebastian and Andrei if you click the *Talk* icon and click on their portraits or avatars. This option is available once they have had their first talk while in the party. Their reactions will depend on your behaviour during both scripted and player-initiated talks.
+
+&#10173; If you want to write your own NPC talking about or with Sebastian or Andrei, or commenting about their quest, you don't have to ask our permission. However, if you'd like to get in contact and get some ideas going, we're more than willing to put the work in.
+
+&nbsp;
+
+<ins>Notes on flirting with Andrei:</ins>
+
+You can choose the option "*flirt with*" irrespective of race or gender. If the number of flirts he has accepted gets high enough, he will start a dialogue with you commenting on your behaviour and you can decide whether to try to take things further or remain friends.
+
+<ins>Notes on flirting with Sebastian:</ins>
+
+You can choose "*flirt with*" irrespective of race or gender. If the number of flirts he has accepted gets high enough, your Bioware loved one will object. Under certain circumstances, you can choose to try to take your relationship with Sebastian further.
+
+With both, you can choose the option "*I'd like us to just be friends*" at any time, and "*flirt with*" will disappear from the response menu.
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -159,7 +239,17 @@ Saradas Magic 2 features in Throne of Bhaal :
 
 ## <a name="components" id="components"></a>Components
 
-The installer includes the following components. All optional components require the main component to be installed.
+As of v2.0.0, the installer offers two sub-components, letting the players decide which one they want to install.
+
+## 
+
+#### [0-1] Saradas Magic NPC for BG2
+&nbsp;&nbsp;&nbsp;**[0]** Saradas has a monk sprite (original)<br>
+&nbsp;&nbsp;&nbsp;**[1]** Saradas has a mage sprite (optional)<br>
+
+&#10173; This is the main component that adds Saradas to the game.
+
+>At the request of players who complained that the monk avatar does not have a paperdoll in the inventory screen, the optional option to display Saradas as a mage has been offered at installation.
 
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -168,6 +258,21 @@ The installer includes the following components. All optional components require
 
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
+
+**Author:** Davide Carta (original author), <a href="http://www.shsforums.net/user/40868-saradas">Saradas</a>  
+
+## 
+
+#### Special Acknowledgements to:
+
+## 
+
+#### Programs/tools used in creation
+
+## 
+
+#### Copyrights Information
+
 
 <div align="right"><a href="#top">Back to top</a></div>
 
