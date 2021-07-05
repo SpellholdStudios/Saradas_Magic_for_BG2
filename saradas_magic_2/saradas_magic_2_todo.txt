@@ -67,3 +67,10 @@ VIDEOS LINKS:
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/kcuMWvShB1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+Codes Markdown:
+
+[![Lashing Wind](videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
+
+[![Lashing Wind spell video](http://img.youtube.com/vi/Ve4__wlDBMI/0.jpg)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
+
+[![Lashing Wind spell video](videos/lashing_wind.png)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")

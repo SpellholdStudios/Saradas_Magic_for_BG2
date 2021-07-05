@@ -43,9 +43,6 @@ In addition, Saradas is an artifacts collector. If you find any ancient artifact
 In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
 
 
-
-[![Lashing Wind](videos/lashing_wind.png)](https://www.youtube.com/embed/Ve4__wlDBMI "Lashing Wind spell video")
-
 [![Lashing Wind spell video](http://img.youtube.com/vi/Ve4__wlDBMI/0.jpg)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
 
 [![Lashing Wind spell video](videos/lashing_wind.png)](https://www.youtube.com/watch?v=Ve4__wlDBMI "Lashing Wind spell video")
@@ -132,9 +129,9 @@ In the store, you can find seven brand new arcane spells I created:
 - Spectacular Combustion
 - Tenser's Supremacy
 
-&#9755; For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
-
 The prices are not very cheap, but you can still try to steal from the store. :wink:
+
+&#9755; For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
 
 
 &nbsp;
@@ -153,25 +150,25 @@ The prices are not very cheap, but you can still try to steal from the store. :w
 
 
 &#10173; Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class (All are available for pure, multi-classed, and dual-classed mages). All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
-- Ego's Frailty (Alteration)</li>
-- Impenetrable Defense (Abjuration)</li>
-- Foreseeing the future (Divination)</li>
-- Dragonborn (Dragon Disciple)</li>
-- Absolute abnegation (Enchantment)</li>
-- Summon Devil of Baator (Evocation)</li>
-- Knowledge of the Scholar (Generalist)</li>
-- Legion of shadows (Illusion)</li>
-- Deathly Hallows (Necromancy)</li>
-- Shroud of wild magic (Wild magic)</li>
-- Spiritual Explosion (Invocation)</li>
+- Ego's Frailty (Alteration)
+- Impenetrable Defense (Abjuration)
+- Foreseeing the future (Divination)
+- Dragonborn (Dragon Disciple)
+- Absolute abnegation (Enchantment)
+- Summon Devil of Baator (Evocation)
+- Knowledge of the Scholar (Generalist)
+- Legion of shadows (Illusion)
+- Deathly Hallows (Necromancy)
+- Shroud of wild magic (Wild magic)
+- Spiritual Explosion (Invocation)
 
 With Saradas Magic 2 the possibilities are infinite. You can:
-- Teleport behind an opponent and turn it into a pathetic zombie.</li>
-- Summon a demon prince to tear your enemies apart.</li>
-- Turn yourself into a fearsome Lich and drain the life out of your rivals up to send them into the Abyss.</li>
-- Crush the will of your enemies and then finish them off with a burst of spiritual energy.</li>
-- Get the appearance of a dragon and lay waste wherever you go!</li>
-- Turn the most dangerous of wizards to a meek kitten by stealing his spells or wrapping him in a burst of wild magic.</li>
+- Teleport behind an opponent and turn it into a pathetic zombie.
+- Summon a demon prince to tear your enemies apart.
+- Turn yourself into a fearsome Lich and drain the life out of your rivals up to send them into the Abyss.
+- Crush the will of your enemies and then finish them off with a burst of spiritual energy.
+- Get the appearance of a dragon and lay waste wherever you go!
+- Turn the most dangerous of wizards to a meek kitten by stealing his spells or wrapping him in a burst of wild magic.
 - ...
 
 ## 
@@ -184,58 +181,48 @@ With Saradas Magic 2 the possibilities are infinite. You can:
 - You can experience 6 different epilogues.
 - 1 custom skill.
 - Dialogues with the protagonist.
-- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party.<br>
-The other one eventually triggers if you have both Saradas and Edwin inside your party. This time Edwin has really gone too far. :wink:
+- Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin inside your party. This time Edwin has really gone too far. :wink:
+
+<details><summary>Sendai's enclave video</summary>
+<p><br>
+[![Easter Egg: Saradas and the Balrog video](videos/easter_egg.png)](https://www.youtube.com/watch?v=NC6YPDjXcjg "Easter Egg: Saradas and the Balrog video")
+
+</p>
+</details><br>
 
 
-				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
-					<div class="quotetitle">
-						<strong>&nbsp;&nbsp;&#x25BA; Sendai's enclave video</strong>:
-						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
-						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
-					</div>
-					<div class="quotecontent">
-						<div style="display: none; ">
-							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/NC6YPDjXcjg" title="Easter Egg: Saradas and the Balrog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
-						</div>
-					</div>
-				</div>
-				<div style="margin: 8px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; padding: 6px;">
-					<div class="quotetitle">
-						<strong>&nbsp;&nbsp;&#x25BA; Banters and Edwin-Elminster duel video</strong>:
-						<input value="Show" style="color: #e3e3db; margin: 0px; padding: 0px; width: 60px; background:#781808;"
-						onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" type="button" >
-					</div>
-					<div class="quotecontent">
-						<div style="display: none; ">
-							<p><center><iframe width="1024" height="576" src="https://www.youtube.com/embed/kkoBmEKTCw8" title="banters_and_edwin_vs_elminster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
-						</div>
-					</div>
-				</div>
+<details>Banters and Edwin-Elminster duel video</summary>
+<p><br>
+[![Banters and Easter Egg: Edwin-Elminster duel video](videos/banters_and_edwin_vs_elminster.png)](https://www.youtube.com/watch?v=kkoBmEKTCw8 "Banters and Easter Egg: Edwin-Elminster duel video")
+
+</p>
+</details><br>
+
+## 
 
 ### NPC Relationships
 
 In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
 
-<details>&nbsp;&nbsp;&#x25BA; spoiler:</summary>
-<p></br>
+<details><summary>spoiler:</summary>
+<p><br>
 <em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.</em>
 </p>
-</details>
+</details><br>
 
 
 Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
 
-<details>&nbsp;&nbsp;&#x25BA; Below is a short conversation between the two of them:</summary>
-<p></br>
-Keldorn: "<em>What will you do when our journey is over, Saradas?</em>"<br>
-Saradas: "<em>I think I will finally come back to my house, in Sembia. My hometown is Yhaunn, a quiet coastal city. There I will finally rest after my long travels.</em>"<br>
-Keldorn: "<em>Sounds like a good place to rest after retiring from adventure.</em>"<br>
-Saradas: "<em>It really is, and you will always be welcome there, if you plan to visit me in Sembia, Lord Keldorn.</em>"<br>
-Keldorn: "<em>I surely will. Oh and by the way there's no need of such titles between friends, Saradas. Just call me Keldorn.</em><br>
-Saradas: <em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
-But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>"<br>
-Keldorn: "<em>You are wise as always. Let's continue our path.</em>"<br>
+<details><summary>Below is a short conversation between the two of them:</summary>
+<p>
+- **Keldorn:** "<em>What will you do when our journey is over, Saradas?</em>"
+- **Saradas:** "<em>I think I will finally come back to my house, in Sembia. My hometown is Yhaunn, a quiet coastal city. There I will finally rest after my long travels.</em>"
+- **Keldorn:** "<em>Sounds like a good place to rest after retiring from adventure.</em>"
+- **Saradas:** "<em>It really is, and you will always be welcome there, if you plan to visit me in Sembia, Lord Keldorn.</em>"
+- **Keldorn:** "<em>I surely will. Oh and by the way there's no need of such titles between friends, Saradas. Just call me Keldorn.</em>"
+- **Saradas:** "<em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
+But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>""
+- **Keldorn:** "<em>You are wise as always. Let's continue our path.</em>"
 </p>
 </details>
 
