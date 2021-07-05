@@ -21,7 +21,7 @@ THEN
 		MoveViewPoint([1800.997],FAST)
 		FadeFromColor([30.0],0)
 		SmallWait(38)
-		ActionOverride("!saradie",ForceSpell(Myself,WIZARD_IMPROVED_ALACRITY))
+		ActionOverride("!saradie",ForceSpell(Myself,%improved_alacrity%))
 		Wait(10)
 		ActionOverride("!saradie",ForceSpell(Myself,CLERIC_HOLY_POWER))
 		Wait(9)

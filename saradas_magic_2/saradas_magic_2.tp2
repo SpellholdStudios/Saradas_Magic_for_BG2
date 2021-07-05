@@ -29,6 +29,11 @@ ALWAYS
 			OUTER_SPRINT ee_file ""
 		END
 
+		OUTER_PATCH 0 BEGIN
+			LOOKUP_IDS_SYMBOL_OF_INT improved_alacrity ~spell~ 2921
+			// PATCH_PRINT "CONTROL DEBUGGING improved_alacrity variable = %improved_alacrity%"
+		END
+
 		/* ------------------------------------------- *
 		 *    EET chapters continuity compatibility    *
 		 * ------------------------------------------- */
@@ -484,7 +489,7 @@ COMPILE ~saradas_magic_2/baf/!sarad2.baf~
 COMPILE ~saradas_magic_2/baf/!sarad3.baf~
 COMPILE ~saradas_magic_2/baf/!sarafin.baf~
 COMPILE ~saradas_magic_2/baf/!spccon.baf~
-COMPILE ~saradas_magic_2/baf/!scut01.baf~
+COMPILE EVALUATE_BUFFER ~saradas_magic_2/baf/!scut01.baf~
 COMPILE ~saradas_magic_2/baf/!scut02.baf~
 COMPILE ~saradas_magic_2/baf/!spotted.baf~
 EXTEND_TOP ~ar0902.bcs~ ~saradas_magic_2/baf/ar0902.baf~

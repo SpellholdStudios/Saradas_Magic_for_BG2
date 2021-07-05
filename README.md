@@ -194,6 +194,7 @@ The installer includes the following components. All optional components require
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Fixed `Face()` and `LeaveAreaLUA` actions using dir.ids in EE games, and crashing classical games.
+    - Solved the wrong `WIZARD_IMPROVED_ALACRITY` entry in classic spells.ids (`WIZARD_IMPROVED_ALUCRITY`) that was crashing installation in a rather elegant way that does not break other mods compatibility. 
     - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
 - Renamed "*english.tra*" file to "*setup.tra*" for consistency.
