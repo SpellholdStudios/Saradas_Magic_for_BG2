@@ -65,13 +65,13 @@
 (Invocation)
 
 Level: 7
-Range: 30 m
+Range: 30 ft.
 Duration: 4 rounds
 Casting Time: 7
 Area of effect: 1 creature
 Saving throw: 1/2
 
-The wizard creates a small luminescent sphere into its hands, ready to be thrown at the target. When it touches the target, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not roll a successful Saving Throw vs. Spells, it must let it fall to the ground to avoid being burned. The initial fire damage is 5d10 points, plus an extra 3d10 if the target fails a saving throw. The target also continues to burn for the next three rounds, suffering 10 points of fire damage every round.~
+The wizard creates a small luminescent sphere into <PRO_HISHER> hands, ready to be thrown at the target. When it touches the target, it triggers an immense column of fire that surrounds it, causing terrible burns. In addition, the target's weapon becomes incandescent and if the opponent does not roll a successful Saving Throw vs. Spells, it must let it fall to the ground to avoid being burned. The initial fire damage is 5d10 points, plus an extra 3d10 if the target fails a saving throw. The target also continues to burn for the next three rounds, suffering 10 points of fire damage every round.~
 
 @105 = ~Drain spell~
 @106 = ~Drain spell
@@ -138,7 +138,7 @@ Note that the sphere can overcome the effects of protective barriers.~
 (Illusion)
 
 Level: 3
-Range: 30m
+Range: 30 ft.
 Duration: Instant
 Casting Time: 3
 Area of Effect: The caster
@@ -408,10 +408,7 @@ These bonuses are permanent.
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
-Weight: 25
-
-Not usable by:
- Wizard Slayer~
+Weight: 25~
 
 @205 = ~Enchanted Symbol of Amaunator~
 @206 = ~Saradas has inscribed magic runes all around the edge of this ancient symbol and has awaken its holy sleeping powers. It now vibrates at touch and its surface emits a resplendent golden light, to the point you cannot look at it directly. It has now been modified to be an enchanted buckler, particularly repellent to the undead.

@@ -189,6 +189,7 @@ The installer includes the following components. All optional components require
 - Added native EET compatibility (thanks Austin!):
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
+    - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
 - Fully TRAified the mod (some lines were not traified in .d and tp2 file).

@@ -40,6 +40,9 @@ TODO : fix items and spells
 - Enchanted Mask of King Strohm III (!strohm2.itm)
 	+ Add tooltip :12095 12096
 
+- Enchanted Book of Kaza
+	+ Remove Wizard Slayer unusability
+
 - Enchanted Symbol of Amaunator (!samauna.itm)
 	+ Add tooltip 38569
 	+ immunity to Blindness restored

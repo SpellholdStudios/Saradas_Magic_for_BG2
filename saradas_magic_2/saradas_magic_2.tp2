@@ -53,6 +53,13 @@ LOAD_TRA ~saradas_magic_2\english\!sarangr.tra~
 LOAD_TRA ~saradas_magic_2\english\!sarafin.tra~
 
 
+/* -------------------------------- *
+ *    Loads macros and functions    *
+ * -------------------------------- */
+
+INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~ // Loads macros and functions library dealing with tooltip appending, specific EE items descriptions, and more...
+
+
 /* ---------------------- *
  *  Installing Creatures  *
  * ---------------------- */
@@ -344,39 +351,45 @@ COPY ~saradas_magic_2/spl/!sedwina.spl~ ~override~
 // Enchanted Mask of King Strohm III
 COPY ~saradas_magic_2/itm/!strohm2.itm~ ~override~
 	SAY NAME2 @201
-	SAY DESC @202
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@202" END
+BUT_ONLY
 
 // Enchanted Book of Kaza
 COPY ~saradas_magic_2/itm/!skaza2.itm~ ~override~
 	SAY NAME2 @203
 	SAY DESC @204
+BUT_ONLY
 
 // Enchanted Symbol of Amaunator
 COPY ~saradas_magic_2/itm/!samauna.itm~ ~override~
 	SAY NAME2 @205
-	SAY DESC @206
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@206" END
+BUT_ONLY
 
 // Shaman's Staff +1
 COPY ~saradas_magic_2/itm/!shaman2.itm~ ~override~
 	SAY NAME2 @207
-	SAY DESC @208
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@208" END
+BUT_ONLY
 
 // Shadow Ioun Stone
 COPY ~saradas_magic_2/itm/!shadow2.itm~ ~override~
 	SAY NAME2 @209
-	SAY DESC @210
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@210" END
+BUT_ONLY
 
 // Enchanted Mantle of Waukeen
 COPY ~saradas_magic_2/itm/!swaukn.itm~ ~override~
 	SAY NAME2 @211
-	SAY DESC @212
-  
+ 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@212" END
+BUT_ONLY
+
 COPY ~saradas_magic_2/spl/!swaukn1.spl~ ~override~
 	SAY NAME1 @213 // ~Waukeen's Blessing~
 
 COPY ~saradas_magic_2/spl/!swaukn2.spl~ ~override~
 	SAY NAME1 @214 // ~Waukeen's Wealth~
-	SAY 0xce @215 = ~Item created inside inventory~
+	SAY 0xce @215  // ~Item created inside inventory~
 
 // Saradas' Ring
 COPY ~saradas_magic_2/itm/!sarring.itm~ ~override~
@@ -417,7 +430,7 @@ EXTEND_TOP ~ar6200.bcs~ ~saradas_magic_2/baf/ar6200.baf~
 
 // SoA part
 // --------
-COMPILE ~saradas_magic_2/dlg/!saradas.d~ USING ~saradas_magic_2\english\!saradas.tra~
+COMPILE EVALUATE_BUFFER ~saradas_magic_2/dlg/!saradas.d~
 COMPILE ~saradas_magic_2/dlg/!saftrcs.d~
 COMPILE ~saradas_magic_2/dlg/!sarago.d~
 COMPILE ~saradas_magic_2/dlg/!sarangr.d~
