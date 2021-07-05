@@ -1,7 +1,9 @@
 /* -------------------- *
  *  Installer messages  *
  * -------------------- */
-@0   = ~Saradas Magic NPC Mod for BGII~
+@0   = ~Saradas has a monk sprite (original)~
+@1   = ~Saradas has a mage sprite (optional)~
+@2   = ~Saradas Magic NPC Mod for BGII~
 
 @10  = ~You must have ToB, BGT, BG2:EE or EET installed to install the Saradas Magic mod.~
 

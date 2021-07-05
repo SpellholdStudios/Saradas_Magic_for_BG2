@@ -187,6 +187,7 @@ The installer includes the following components. All optional components require
 - Added `REQUIRE_PREDICATE` condition to avoid installing the mod in inaccurate games.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
+- Added a brand new optional sub-component to set an alternate appearance for Saradas (as a mage, not a monk).
 - Added native EET compatibility (thanks Austin!):
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added chapters continuity for EET games.
@@ -239,9 +240,7 @@ The installer includes the following components. All optional components require
 
  CHANGELOG: v_1.8
 
-- Added EET-compatibility:
- 
- added the EET_TRANSITION function
+added the EET_TRANSITION function
 - Added an option to set an alternate appearance for Saradas (as a mage, not a monk). Added due to the fact that the monk does not have a paperdoll on the inventory screen and some players asked to add this option
 
 ## 

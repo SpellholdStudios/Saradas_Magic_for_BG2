@@ -97,7 +97,21 @@ LANGUAGE ~English~
  *    Saradas Magic NPC Mod for BGII  (main component)    *
  * ====================================================== */
 
-BEGIN @0                                          // ~Saradas Magic NPC Mod for BGII~
+BEGIN @0                                          // ~Saradas has a monk sprite (original)~
+DESIGNATED 0 LABEL ~saradas_magic_npc_for_bg2_monk~
+SUBCOMPONENT @2                                   // ~Saradas Magic NPC Mod for BGII~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @10 // ~You must have ToB, BGT, BG2:EE or EET installed to install the Saradas Magic mod.~
+
+OUTER_SET mage_appearance = 0
+
+INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
+
+
+BEGIN @1                                          // ~Saradas has a mage sprite (optional)~
+DESIGNATED 1 LABEL "saradas_magic_npc_for_bg2_mage"
+SUBCOMPONENT @2
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @10
+
+OUTER_SET mage_appearance = 1
 
 INCLUDE ~%MOD_FOLDER%/lib/main_component.tpa~
