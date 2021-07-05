@@ -391,7 +391,6 @@ Not usable by:
  Mage
  Thief
  Monk
- Wizard Slayer
  Kensai~
 
 @203 = ~Enchanted Book of Kaza~
@@ -433,7 +432,6 @@ Weight: 1
 Not usable by:
  Mage
  Monk
- Wizard Slayer
  Kensai~
 
 @207 = ~Shaman's Staff +1~
@@ -476,17 +474,14 @@ Charge abilities:
 - Sanctuary once per day
 - Improved Invisibility once per day
 
-Weight: 1
-
-Not usable by:
- Wizard Slayer~
+Weight: 1~
 
 @211 = ~Enchanted Mantle of Waukeen~
 @212 = ~Before Saradas had enchanted the Mantle of Waukeen for you, its sockets, once filled with marvelous gems, were empty. The mantle has passed from hand to hand for centuries, and the precious stones were stolen.
 This fine artifact was worn as a necklace by aristocrat women and the legend has it that the owner is blessed by Waukeen's influence. Luck will shine on its wearer, and commercial business will thrive. On top of that, the wearer looks irresistible and charming.
 The gems you gave to Saradas now adorn the necklace and restored its ancient magnificence.
 
-WHEN WORN:
+STATISTICS:
 
 Equipped abilities:
 - Charisma: +3

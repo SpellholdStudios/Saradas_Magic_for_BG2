@@ -194,6 +194,7 @@ The installer includes the following components. All optional components require
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided NPC portraits for original games.
 - Proofread strrefs (Gwendolyne).
+- Renamed "*english.tra*" file to "*setup.tra*" for consistency.
 - Fully TRAified the mod (some lines in tp2 ans some .d files were not traified).
 - Added a brand new *saradas_magic_2-readme-english.html* file.
 - Lower cased files.
