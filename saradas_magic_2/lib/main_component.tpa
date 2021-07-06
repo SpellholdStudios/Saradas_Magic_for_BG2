@@ -416,6 +416,23 @@ COPY ~saradas_magic_2/spl/!swaukn2.spl~ ~override~
 COPY ~saradas_magic_2/itm/!sarring.itm~ ~override~
 	SAY NAME2 @217
 	SAY DESC @218
+	PATCH_IF is_ee BEGIN
+		LPF ~GW_ITEM_RESTRICT_USABILITY_EE~ STR_VAR GW_restrict = "@21" GW_kind = "name" GW_power = 1 GW_mess319 = "@21" END
+	END
+
+// EE and ToBEx: Append Saradas' Ring to item_use.2da
+// --------------------------------------------------
+ACTION_IF is_item_use BEGIN
+	OUTER_SET strref_saradas = RESOLVE_STR_REF (@21)  // ~Saradas~
+	OUTER_SET strref_exclu   = RESOLVE_STR_REF (@219) // ~Saradas courteously informs you that this ring is a personal gift from Lathander, and therefore useless for you.~ [GAM_47]
+	ACTION_IF is_ee BEGIN
+		APPEND ~item_use.2da~ ~!sarring !SARTOB %strref_exclu% 1 %strref_saradas% ~ UNLESS ~!sarring~
+	END ELSE BEGIN
+		APPEND ~item_use.2da~ ~!sarring !SARTOB %strref_exclu% 	3 	%strref_exclu% 	%strref_exclu% 	%strref_exclu% 	%strref_exclu% 	%strref_exclu% 	%strref_exclu%~ UNLESS ~!sarring~
+	END
+	COPY_EXISTING ~item_use.2da~ ~override~
+		PRETTY_PRINT_2DA
+END
 
 
 /* --------------------- *

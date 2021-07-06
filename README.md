@@ -16,8 +16,7 @@
 </div><br>
 
 **Author:** <a href="http://www.shsforums.net/user/40868-saradas">Saradas</a>  
-**Mod Website:** <a href="">Spellhold Studios</a>  
-**Mod Forum:** <a href="">TODO</a>
+**Mod Website and Forum:** <a href="http://www.shsforums.net/forum/633-bgee-modding">Spellhold Studios</a>
 
 ## 
 
@@ -51,7 +50,6 @@ In addition, Saradas is an artifacts collector. If you find any ancient artifact
 
 In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.
 
-
 <div align="right"><a href="#top">Back to top</a></div>
 
 <hr>
@@ -67,7 +65,7 @@ This mod is designed to work on the following Infinity Engine games: the origina
 
 #### Other Mods Compatibility
 
-The Saradas Magic for BG2 mod is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. It is only compatible with BGII: ToB. If you do encounter an error, please let us know by <a href="">reporting it on the forum</a>.<br>
+The Saradas Magic for BG2 mod is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. It is only compatible with BGII: ToB. If you do encounter an error, please let us know by <a href="http://www.shsforums.net/forum/633-bgee-modding">reporting it on the forum</a>.<br>
 
 ## 
 
@@ -339,7 +337,22 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 
 #### Special Acknowledgements to:
 
-- Syntia13  for the Edwina's portrait artwork  (https://forum.baldursgate.com/profile/8324/Syntia13)
+- <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).
+- a href="https://forum.baldursgate.com/profile/8324/Syntia13">Syntia13</a>: Edwina's portrait artwork..
+- ustin and Gwendolyne: native original BG2 and EET compatibility.
+- Everyone else from the <a href="http://www.shsforums.net/">Spellhold Studios</a> and IE games forums for testing and giving feedback!
+## 
+
+#### Programs/tools used in creation
+
+- <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> by Wes Weimer, Valerio Bigiani (the bigg) and Wisp.
+- <a href="https://github.com/Argent77/NearInfinity/releases">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
+- <a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a> maintained by igi and lynx.
+- <a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.
+- <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters </a>, by Argent77.
+- <a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a>, by AL|EN.
+
+## 
 
 #### Copyrights Information
 
@@ -413,11 +426,10 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
     - Appended tooltip.2da: *Waukeen's Blessing, Waukeen's Wealth*.
 - <ins>Saradas' Ring</ins> (!sarring.itm):
     - Appended tooltip.2da: *Improved Invisibility, Lesser Restoration*.
+    - EE and ToBEx compatibility: added Item Creature Exclusion (item_use.2da).
+    - EE games: added op#319 (Item Usability) to restrict item usability (Saradas).
 
 ## 
-
- CHANGELOG: v_1.8
-
 added the EET_TRANSITION function
 ## 
 
