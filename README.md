@@ -71,7 +71,7 @@ The Saradas Magic for BG2 mod is a WeiDU mod, and therefore should be compatible
 
 #### Installation Order
 
->Since it is required for Saradas Magic for BG2 mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+>:warning: Since it is required for Saradas Magic for BG2 mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 
 Here is the recommended installation order:
 - Please install Saradas Magic for BG2 after TobEx, BG2 Fixpack, and EET.
