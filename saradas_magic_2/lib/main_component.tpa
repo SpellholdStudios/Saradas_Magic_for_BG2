@@ -21,7 +21,8 @@ APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
  *    Loads macros and functions    *
  * -------------------------------- */
 
-INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~ // Loads macros and functions library dealing with tooltip appending, specific EE items descriptions, and more...
+// Loads macros and functions library dealing with tooltip appending, specific EE items descriptions, and more...
+INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~
 
 
 /* ---------------------- *
@@ -507,9 +508,35 @@ COMPILE ~saradas_magic_2/dlg/!sartob.d~
 COMPILE ~saradas_magic_2/dlg/edwin25j.d~
 
 
+/* ------------- *
+ *  Fate Spirit  *
+ * ------------- */
+
+ACTION_IF is_eet BEGIN
+	INCLUDE ~EET/other/EET_functions.tph~  // functions from EET mod
+	LAF ~EET_NPC_TRANSITION~
+		INT_VAR
+			type         = 4               // NPC joinable only in ToB
+			default_ToB  = 1               // controls if NPC should be spawnable in ToB when the game has been started in ToB
+		STR_VAR
+			dv           = "!Sartob"       // Death Variable (script name) of the NPC
+			override_SoA = "!Sartob"       // override script of your NPC (SoA)
+			override_ToB = "!Sartob"       // override script of your NPC (ToB)
+			cre_ToB      = "!sartob"       // if type = 4 and/or default_ToB = 1 name of the ToB CRE file is needed (used to create new CRE rather than migrating existing one from SoA)
+			dialog_ToB   = "!Sartob"       // Name of the dialogue file used after spawning NPC in ToB
+			traFile      = EVAL "saradas_magic_2/lang/%LANGUAGE%/!sfatesp.tra"
+			string       = "@0"            // ~Bring Saradas the Mage to this plane, spirit.~
+			stringPosDV  = "Valygar"       // Set the DV of NPC right below your response (used for sorting FATESP responses alphabetically)
+	END
+END ELSE BEGIN
+	COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
+END
+
+
 /* ----------------- *
  *  Appending files  *
  * ----------------- */
+
 APPEND ~interdia.2da~ ~!Sartob !SarB !Sar25B~ UNLESS ~!Sartob~
 
 APPEND ~pdialog.2da~  ~!SARTOB !SARP !SARJ !SARD !SAR25P !SAR25J !SAR25D !SARTOB~ UNLESS ~!SARTOB~

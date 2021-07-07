@@ -222,20 +222,20 @@ The prices are not very cheap, but you can still try to steal from the store. :w
 &nbsp;
 
 
-&#10173; Saradas Magic 2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class (All are available for pure, multi-classed, and dual-classed mages). All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
-- Ego's Frailty (Alteration)
+&#10173; Saradas Magic for BG2 aims to improve the tactical approach to the game as a magician, in the battles of the Forgotten Realms, creating dozens of new devastating combinations. This is possible with the new exclusive class skills. You certainly felt that one increased slot capacity for spell level was not a very high reward for being a specialist mage. So, I introduced those epic level spells that can be acquired after you finish the Underdark portion of the game. Saradas will teach you the skill related to your mage class (All are available for pure, multi-classed, and dual-classed mages). All this is possible thanks to the epic level spells, available for each school of specialization, and taught by Saradas:
 - Impenetrable Defense (Abjuration)
+- Ego's Frailty (Alteration)
 - Foreseeing the future (Divination)
 - Dragonborn (Dragon Disciple)
 - Absolute abnegation (Enchantment)
 - Summon Devil of Baator (Evocation)
 - Knowledge of the Scholar (Generalist)
 - Legion of shadows (Illusion)
+- Spiritual Explosion (Invocation)
 - Deathly Hallows (Necromancy)
 - Shroud of wild magic (Wild magic)
-- Spiritual Explosion (Invocation)
 
-With Saradas Magic 2 the possibilities are infinite. You can:
+With Saradas Magic for BG2 the possibilities are infinite. You can:
 - Teleport behind an opponent and turn it into a pathetic zombie.
 - Summon a demon prince to tear your enemies apart.
 - Turn yourself into a fearsome Lich and drain the life out of your rivals up to send them into the Abyss.
@@ -257,18 +257,20 @@ With Saradas Magic 2 the possibilities are infinite. You can:
 - Two small but enjoyable easter egg cutscenes. One takes place inside the Sendai's enclave if you have Saradas in your party. The other one eventually triggers if you have both Saradas and Edwin inside your party. This time Edwin has really gone too far. :wink:
 
 <details><summary>Sendai's enclave video</summary>
-<p><br>
-[![Easter Egg: Saradas and the Balrog video](saradas_magic_2/readme/images/easter_egg.png)](https://www.youtube.com/watch?v=NC6YPDjXcjg "Easter Egg: Saradas and the Balrog video")
+<div align="center">
+&nbsp;
 
+[![Easter Egg: Saradas and the Balrog video](saradas_magic_2/readme/images/easter_egg.png)](https://www.youtube.com/watch?v=NC6YPDjXcjg "Easter Egg: Saradas and the Balrog video")
+</div>
 </p>
 </details><br>
 
+<details><summary>Banters and Edwin-Elminster duel video</summary>
+<<div align="center">
+&nbsp;
 
-<details>Banters and Edwin-Elminster duel video</summary>
-<p><br>
 [![Banters and Easter Egg: Edwin-Elminster duel video](saradas_magic_2/readme/images/banters_and_edwin_vs_elminster.png)](https://www.youtube.com/watch?v=kkoBmEKTCw8 "Banters and Easter Egg: Edwin-Elminster duel video")
-
-</p>
+</div>
 </details><br>
 
 ## 
@@ -382,6 +384,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - Added native EET compatibility (thanks Austin!):
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added chapters continuity for EET games.
+    - Added `EET_NPC_TRANSITION` function.
     - Provided accurate sized NPC portraits for EE games.
 - Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
@@ -400,7 +403,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - Updated WeiDU installer to v247.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
-&#9755; <ins>a. Items and spells updates</ins>
+&#9755; <ins>Items updates</ins>
 - Fixed items classes and kits restriction flags, and appended tooltip.2da whenever relevant.
 - .
 - .
@@ -429,8 +432,6 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
     - EE and ToBEx compatibility: added Item Creature Exclusion (item_use.2da).
     - EE games: added op#319 (Item Usability) to restrict item usability (Saradas).
 
-## 
-added the EET_TRANSITION function
 ## 
 
 ##### Version Beta 1.7 &nbsp;(January 24, 2016)
