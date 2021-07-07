@@ -1,9 +1,9 @@
-/* ============================================================================================ *
- *  v2.0.0                                                                                      *
- *                                                                                              *
- *    S A R A D A S    M A G I C    N P C   f o r   B G 2   ( m a i n    c o m p o n e n t )    *
- *                                                                                              *
- * ============================================================================================ */
+/* =============================================================================================== *
+ *  v2.0.0                                                                                         *
+ *                                                                                                 *
+ *    S A R A D A S    M A G I C    N P C    f o r    B G 2    ( m a i n    c o m p o n e n t )    *
+ *                                                                                                 *
+ * =============================================================================================== */
 
 SILENT
 
@@ -107,7 +107,7 @@ COPY ~saradas_magic_2/cre/!sartob.cre~ ~override~
 BUT_ONLY
 
 // Invisible creature
-// -------
+// ------------------
 COPY ~saradas_magic_2/cre/!spotted.cre~ ~override~
 
 // Balrog (ToB)
@@ -354,6 +354,9 @@ COPY ~saradas_magic_2/itm/!spcdra.itm~ ~override~
 // Edwina (check portraits)
 // ------------------------
 COPY ~saradas_magic_2/spl/!sedwina.spl~ ~override~
+	PATCH_IF NOT is_ee BEGIN
+		LPF ALTER_EFFECT INT_VAR check_globals = 0 multi_match = 1 silent = 1 match_opcode = 107 match_parameter2 = 1 STR_VAR resource = "!sedwinm" END // modifies large portrait
+	END
 
 // Does not install anymore these useless file
 //COPY ~saradas_magic_2/eff/!sforce.eff~  ~override~
@@ -537,6 +540,7 @@ ACTION_IF is_eet BEGIN
 END ELSE BEGIN
 	COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
 END
+SILENT
 
 
 /* ----------------- *

@@ -391,10 +391,10 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
     - Fixed `Face()` and `LeaveAreaLUA` actions using dir.ids in EE games, and crashing classical games.
     - Solved the wrong `WIZARD_IMPROVED_ALACRITY` entry in classic spell.ids (misspelled `WIZARD_IMPROVED_ALUCRITY`) that was crashing installation in a way that does not break other mods compatibility.
     - Solved the missing `DRAGON_DISCIPLE` entry in classic kit.ids that was crashing installation in a way that does not break other mods compatibility (in case they restore this kit).
-    - Provided NPC portraits for original games.
+    - Provided NPC portraits for original games (patched *!sedwina.spl* in classic games).
 - Proofread strrefs (Gwendolyne).
 - Renamed "*english.tra*" file to "*setup.tra*" for consistency.
-- Fully TRAified the mod (some lines in tp2 ans some .d files were not traified).
+- Fully TRAified the mod (some lines in tp2 and some .d files were not traified).
 - Added a brand new *saradas_magic_2-readme-english.html* file.
 - Lower cased files.
 - Reorganized mod architecture tree: created folders to sort files according to their types.
@@ -404,6 +404,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 &#9755; <ins>Items updates</ins>
+- Fixed items descriptions.
 - Fixed items classes and kits restriction flags, and appended tooltip.2da whenever relevant.
 - Added EE and ToBEx *Toggle critical hit aversion* item flag (BIT25) whenever relevant.
 - Added 1PP compatibility to harmonize colors items with EE games and classic 1PP modded games.
