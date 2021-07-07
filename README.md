@@ -405,7 +405,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 
 &#9755; <ins>Items updates</ins>
 - Fixed items classes and kits restriction flags, and appended tooltip.2da whenever relevant.
-- .
+- Added EE and ToBEx *Toggle critical hit aversion* item flag (BIT25) whenever relevant.
 - .
 - .
 - <ins>Enchanted Mask of King Strohm III</ins> (!strohm2.itm):
@@ -424,6 +424,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - <ins>Shadow Ioun Stone</ins> (!shadow2.itm):
     - Fixed item description: Renamed *Enchanted Ioun shadow stone* to *Shadow Ioun Stone*.
     - Removed Wizard Slayer restriction flag, and added Magical item flag.
+    - Added EE and ToBEx *EE/Ex: Toggle critical hit aversion* item flag (BIT25).
     - Appended tooltip.2da: *Sanctuary, Improved Invisibility*.
 - <ins>Enchanted Mantle of Waukeen</ins> (!swaukn.itm):
     - Appended tooltip.2da: *Waukeen's Blessing, Waukeen's Wealth*.

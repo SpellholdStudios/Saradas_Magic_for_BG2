@@ -396,6 +396,9 @@ BUT_ONLY
 COPY ~saradas_magic_2/itm/!shadow2.itm~ ~override~
 	SAY NAME2 @209
 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@210" END
+	PATCH_IF (is_ee OR is_tobex) BEGIN
+		WRITE_LONG 0x18 THIS | BIT25  // add EE/TobEx Toggle critical hit aversion flag
+	END
 BUT_ONLY
 
 // Enchanted Mantle of Waukeen
@@ -503,7 +506,7 @@ COMPILE ~saradas_magic_2/dlg/!sarafin.d~
 // --------
 COMPILE ~saradas_magic_2/dlg/!sar25j.d~
 COMPILE ~saradas_magic_2/dlg/!sar25b.d~
-COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
+//COMPILE ~saradas_magic_2/dlg/!sfatesp.d~
 COMPILE ~saradas_magic_2/dlg/!sartob.d~
 COMPILE ~saradas_magic_2/dlg/edwin25j.d~
 

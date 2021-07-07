@@ -18,6 +18,13 @@ ALWAYS
 		OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0                         // eet
 		OUTER_SET is_ee    = (GAME_IS ~bg2ee eet~) ? 1 : 0                   // EE game
 
+		/* ------------------------ *
+		 *    Detects other mods    *
+		 * ------------------------ */
+
+		// Detects ToBEx
+		OUTER_SET is_tobex = (FILE_EXISTS ~tobex_ini/tobexcore.ini~) ? 1 : 0
+
 		/* ------------------------------------------------------- *
 		 *    Sets default variables if they're not set already    *
 		 * ------------------------------------------------------- */
