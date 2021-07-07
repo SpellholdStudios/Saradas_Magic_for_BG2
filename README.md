@@ -277,16 +277,15 @@ With Saradas Magic for BG2 the possibilities are infinite. You can:
 
 ### NPC Relationships
 
-In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
+- In a conversation with Imoen, she will eventually find out that Saradas is more than he shows... 
 
 <details><summary>spoiler:</summary>
 <p><br>
 <em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.</em>
 </p>
-</details><br>
+</details>
 
-
-Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
+- Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
 
 <details><summary>Below is a short conversation between the two of them:</summary>
 <p>
@@ -299,7 +298,7 @@ Between all the companion of the Bhaalspawn, Saradas will start a good friendshi
 But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>""
 - **Keldorn:** "<em>You are wise as always. Let's continue our path.</em>"
 </p>
-</details>
+</details><br>
 
 Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his/her future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
 
@@ -369,7 +368,6 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 
 
 ## <a name="versions" id="versions"></a>Version History
-
 
 ##### Version 2.0 &nbsp;(July, 2021)
 
