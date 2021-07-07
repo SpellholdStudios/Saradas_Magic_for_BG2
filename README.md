@@ -288,7 +288,8 @@ With Saradas Magic for BG2 the possibilities are infinite. You can:
 - Between all the companion of the Bhaalspawn, Saradas will start a good friendship with one in particular, a venerable paladin of Torm.
 
 <details><summary>Below is a short conversation between the two of them:</summary>
-<p>
+&nbsp;
+
 - **Keldorn:** "<em>What will you do when our journey is over, Saradas?</em>"
 - **Saradas:** "<em>I think I will finally come back to my house, in Sembia. My hometown is Yhaunn, a quiet coastal city. There I will finally rest after my long travels.</em>"
 - **Keldorn:** "<em>Sounds like a good place to rest after retiring from adventure.</em>"
@@ -297,12 +298,11 @@ With Saradas Magic for BG2 the possibilities are infinite. You can:
 - **Saradas:** "<em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
 But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>""
 - **Keldorn:** "<em>You are wise as always. Let's continue our path.</em>"
-</p>
-</details><br>
+</details>
 
-Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his/her future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
+- Moreover, Saradas will speak often with the Bhaalspawn to interrogate him/her on his/her future decisions. The wizard doesn't plan to interfere in his/her destiny, but will try to make him/her ponder on the power he/she controls, to guide him/her to a wise decision.
 
-Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
+- Obviously, Saradas will not take part in evil deeds because of his good nature, and will leave the party if that is the case. 
 
 <div align="right"><a href="#top">Back to top</a></div>
 
