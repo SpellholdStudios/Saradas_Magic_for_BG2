@@ -389,6 +389,9 @@ BUT_ONLY
 COPY ~saradas_magic_2/itm/!shaman2.itm~ ~override~
 	SAY NAME2 @207
 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@208" END
+	PATCH_IF (is_1pp_staff = 0) BEGIN
+		WRITE_ASCII 0x22 ~QS~ #2  // Quarterstaff (Q3 alternate 2 is not supported by classic games without 1PP)
+	END
 BUT_ONLY
 
 // Shadow Ioun Stone

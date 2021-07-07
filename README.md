@@ -406,8 +406,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 &#9755; <ins>Items updates</ins>
 - Fixed items classes and kits restriction flags, and appended tooltip.2da whenever relevant.
 - Added EE and ToBEx *Toggle critical hit aversion* item flag (BIT25) whenever relevant.
-- .
-- .
+- Added 1PP compatibility to harmonize colors items with EE games and classic 1PP modded games.
 - <ins>Enchanted Mask of King Strohm III</ins> (!strohm2.itm):
     - Fixed item description: Added missing +15 Lore bonus.
     - Removed Wizard Slayer restriction flag.
@@ -420,6 +419,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
     - Appended tooltip.2da: *False Dawn*.
 - <ins>Shaman's Staff +1</ins> (!shaman2.itm):
     - Fixed item description: Added missing THAC0 bonus.
+    - Added 1PP compatibility: Restored QS Quaterstaff Weapon appearance in 1PP unmodded classic games (don't support Q3 alternate 2 entry).
     - Appended tooltip.2da: *Goodberry, Mass Cure, Cure Disease*.
 - <ins>Shadow Ioun Stone</ins> (!shadow2.itm):
     - Fixed item description: Renamed *Enchanted Ioun shadow stone* to *Shadow Ioun Stone*.
@@ -440,8 +440,6 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - Fixed *Spectacular combustion* spell: replaced SPCOMEX visual effet with FLMSTRK, and 10 additional points of fire damage instead of 5.
 - Nerved *Drain spell* spell to 8 the highest spell level the mage can restore.
 - Balanced *Lashing Wind* spell's effects. TODO effect #206 icons.
-- .
-- .
 
 ## 
 
