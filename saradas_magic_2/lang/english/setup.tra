@@ -560,3 +560,11 @@ He kept in contact with another of his good friends, Lord Keldorn Firecam, who v
 After five years, Saradas eventually passed away in the warmth of his house. The ceremony was very solemn, although Saradas would have wanted something less pompous and many of the Faerûn's most important personalities came to Yhaunn for the event; Elminster Aumar, Khelben Arunsun and his friend Keldorn, for naming a few.
 Legend has it that a bright, outstanding light, invested the temple's hall that day, and many believe that it was the Morninglord himself who claimed Saradas by his side until the end of times.~
 
+
+/* ============================================================================================================= *
+ *  Usability flags                                                                                              *
+ * ------------------------------------------------------------------------------------------------------------- *
+ * Note for translators: you will find usability flags REGEXP expressions in other items mods (Rolles, Ruad...)  *
+ * ============================================================================================================= */
+@9001 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~

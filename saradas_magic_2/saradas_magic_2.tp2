@@ -54,7 +54,7 @@ ALWAYS
 		OUTER_SET is_dragon_disciple_kit = IDS_OF_SYMBOL (~kit~ ~DRAGON_DISCIPLE~) // 0x4023 DRAGON_DISCIPLE
 		ACTION_IF (is_dragon_disciple_kit > "-1") BEGIN
 			OUTER_SPRINT no_dragon_disciple_kit    "!Kit(Protagonist,DRAGON_DISCIPLE)"
-			OUTER_SPRINT dragon_disciple_kit_trans "Kit(Protagonist,DRAGON_DISCIPLE)~ THEN REPLY @132 GOTO GiveDragonSpell"
+			OUTER_SPRINT dragon_disciple_kit_trans "IF ~Kit(Protagonist,DRAGON_DISCIPLE)~ THEN REPLY @132 GOTO GiveDragonSpell"
 		END ELSE BEGIN
 			OUTER_SPRINT no_dragon_disciple_kit    ""
 			OUTER_SPRINT dragon_disciple_kit_trans ""
