@@ -7,7 +7,7 @@
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
 
 
-<div align="center"><h1></a>Saradas Magic for BG2 (WIP)</h1>
+<div align="center"><h1></a>Saradas Magic for BG2</h1>
 
 <h3>A Spellhold Studios mod for Baldur's Gate II:ToB, Baldur's Gate Trilogy, BG2:EE and EET<h3>
 
@@ -204,7 +204,7 @@ In the store, you can find seven brand new arcane spells I created:
 
 The prices are not very cheap, but you can still try to steal from the store. :wink:
 
-&#9755; For spells descriptions, please read the <a href="https://gwendolynefreddy.github.io/docs/spellholdstudios/test/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
+&#9755; For spells descriptions, please read the <a href="https://spellholdstudios.github.io/readmes/saradas_magic_2-readme-english.html#details#spells">mod readme</a>.
 
 
 &nbsp;
@@ -296,7 +296,7 @@ With Saradas Magic for BG2 the possibilities are infinite. You can:
 - **Saradas:** "<em>It really is, and you will always be welcome there, if you plan to visit me in Sembia, Lord Keldorn.</em>"
 - **Keldorn:** "<em>I surely will. Oh and by the way there's no need of such titles between friends, Saradas. Just call me Keldorn.</em>"
 - **Saradas:** "<em>Fair enough, Keldorn. You will find the best Cormyrian wines waiting for you, there.<br>
-But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>""
+But now we must focus on our journey, it's not over yet and our minds should not indulge too much on such pleasant thoughts.</em>"
 - **Keldorn:** "<em>You are wise as always. Let's continue our path.</em>"
 </details>
 
@@ -339,8 +339,8 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 #### Special Acknowledgements to:
 
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).
-- a href="https://forum.baldursgate.com/profile/8324/Syntia13">Syntia13</a>: Edwina's portrait artwork..
-- ustin and Gwendolyne: native original BG2 and EET compatibility.
+- <a href="https://forum.baldursgate.com/profile/8324/Syntia13">Syntia13</a>: Edwina's portrait artwork..
+- Austin and Gwendolyne: native original BG2 and EET compatibility.
 - Everyone else from the <a href="http://www.shsforums.net/">Spellhold Studios</a> and IE games forums for testing and giving feedback!
 ## 
 
@@ -369,7 +369,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 
 ## <a name="versions" id="versions"></a>Version History
 
-##### Version 2.0 &nbsp;(July, 2021)
+##### Version 2.0 &nbsp;(July 23, 2021)
 
 &#9755; <ins>Major updates</ins>
 - Added *saradas_magic_2.ini* metadata file (including dynamic install order syntax and global `LABELS`) to support AL|EN's "Project Infinity".
@@ -384,7 +384,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
     - Added chapters continuity for EET games.
     - Added `EET_NPC_TRANSITION` function.
     - Provided accurate sized NPC portraits for EE games.
-- Added native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
+- Added backward native classic BG2:ToB compatibility (thanks Austin and Gwendolyne!):
     - Restored items usability restriction flags in description for classic games and automatically removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Fixed `Face()` and `LeaveAreaLUA` actions using dir.ids in EE games, and crashing classical games.
     - Solved the wrong `WIZARD_IMPROVED_ALACRITY` entry in classic spell.ids (misspelled `WIZARD_IMPROVED_ALUCRITY`) that was crashing installation in a way that does not break other mods compatibility.
@@ -393,7 +393,7 @@ As of v2.0.0, the installer offers two sub-components, letting the players decid
 - Proofread strrefs (Gwendolyne).
 - Renamed "*english.tra*" file to "*setup.tra*" for consistency.
 - Fully TRAified the mod (some lines in tp2 and some .d files were not traified).
-- Added a brand new *saradas_magic_2-readme-english.html* file.
+- Added a brand new *saradas_magic_2-readme-english.html* file, with videos. :wink:
 - Lower cased files.
 - Reorganized mod architecture tree: created folders to sort files according to their types.
 - Included Linux and Mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
