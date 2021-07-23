@@ -421,7 +421,7 @@ BEGIN
 				INNER_PATCH_SAVE GWspecial ~%GW_mess319%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
 					REPLACE_TEXTUALLY ~^[@#]~  ~~
 				END
-				PATCH_IF ("GW_mess319%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				PATCH_IF ("%GW_mess319%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
 					SET GW_special319 = RESOLVE_STR_REF ((AT %GWspecial%))
 				END ELSE BEGIN
 					SET GW_special319 = EVAL "%GWspecial%"
