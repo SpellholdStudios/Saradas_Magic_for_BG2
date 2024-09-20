@@ -1,18 +1,18 @@
 /* -------------------- *
  *  Installer messages  *
  * -------------------- */
-@0   = ~~萨拉达斯 has a monk sprite (original)~
-@1   = ~~萨拉达斯 has a mage sprite (optional)~
-@2   = ~~萨拉达斯 Magic NPC Mod for BGII~
+@0   = ~萨拉达斯 has a monk sprite (original)~
+@1   = ~萨拉达斯 has a mage sprite (optional)~
+@2   = ~萨拉达斯 Magic NPC Mod for BGII~
 
-@10  = ~~You must have ToB, BGT, BG2:EE or EET installed to install the 萨拉达斯 Magic mod.~
+@10  = ~You must have ToB, BGT, BG2:EE or EET installed to install the 萨拉达斯 Magic mod.~
 
 
 /* ----------- *
  *  Creatures  *
  * ----------- */
-@21  = ~~萨拉达斯~
-@22  = ~~炎魔~
+@21  = ~萨拉达斯~
+@22  = ~炎魔~
 
 // 萨拉达斯 soundset
 // ----------------
