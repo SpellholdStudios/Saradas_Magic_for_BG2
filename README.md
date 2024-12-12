@@ -2,7 +2,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Saradas_Magic_for_BG2?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Saradas_Magic_for_BG2?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20Simplified%20Chinese&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
 
@@ -179,7 +179,7 @@ Saradas can be found in the temple of Lathander of Athkatla. In Throne of Bhaal 
 
 #### Background
 
-Saradas is an old mage who has spent his entire life traveling throughout Faerûn. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
+Saradas is an old mage who has spent his entire life traveling throughout FaerÃ»n. His homeland is Sembia, where he has a old house in the city of Yhaunn. He was a priest of Lathander with an innate interest for all the forms of magic. So he started getting more and more interested in studying the arcane arts and ancient artifacts and dedicated his life to this purpose. Before he met the Gorion's ward, he thought that his days as an adventurer were finished, but his interest towards the child of Bhaal grew stronger, and he decided to follow his/her path.
 
 Saradas is a very wise man indeed and he always tries to share his knowledge with the young ones, in his own cryptic way. He doesn't speak much about his past and his trust is hardly earned, but he can be a very good friend to those who prove worthy of his time. You suspect that he's hiding much more information about his past, but you can try and ask him.
 
@@ -281,7 +281,7 @@ With Saradas Magic for BG2 the possibilities are infinite. You can:
 
 <details><summary>spoiler:</summary>
 <p><br>
-<em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in Faerûn.</em>
+<em>In his youth, he used to cooperate with a renowned organization that Jaheira knows very well and that seeks to maintain balance in FaerÃ»n.</em>
 </p>
 </details>
 

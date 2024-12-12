@@ -83,7 +83,7 @@ dragon_disciple_kit_trans = %dragon_disciple_kit_trans%"*/
 		 *    No exception, everything needs to be converted                                             *
 		 *    setup.tra contains in game texts as well as installation texts and needs to be converted   *
 		 * --------------------------------------------------------------------------------------------- */
-		ACTION_DEFINE_ARRAY sar#noconvert BEGIN END
+		ACTION_DEFINE_ARRAY sar#noconvert BEGIN install END
 		// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
 		ACTION_DEFINE_ARRAY sar#reload BEGIN setup END
 
@@ -108,6 +108,9 @@ LANGUAGE ~English~
          ~english~
          ~saradas_magic_2/lang/english/setup.tra~
 
+LANGUAGE ~Simplified Chinese~
+		 ~schinese~ 
+         ~saradas_magic_2/lang/schinese/install.tra~
 
 /* ====================================================== *
  *    Saradas Magic NPC Mod for BGII  (main component)    *
